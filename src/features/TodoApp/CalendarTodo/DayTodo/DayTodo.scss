@@ -1,0 +1,41 @@
+.day-todo {
+    width: 330px;
+    height: 298px;
+    background-color: red;
+
+    position: fixed;
+    top: 10px;
+    left: 360px;
+
+    &_header {
+        background-color: aquamarine;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    &_body {
+        height: calc(100% - 30px);
+        display: flex;
+        background-color:springgreen;
+        justify-content: space-between;
+        &_todo {
+            flex: 1;
+            text-align: center;
+            background-color: aliceblue;
+            margin: 10px 5px 10px 10px;
+            &_detail {
+                background-color: blueviolet;
+            }
+        }
+
+        &_note {
+            flex: 1;
+            text-align: center;
+            background-color: aliceblue;
+            margin: 10px 10px 10px 5px;
+            &_detail {
+                background-color: blueviolet;
+            }
+        }
+    }
+}
