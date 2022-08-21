@@ -9,6 +9,15 @@ function DayTodo() {
   <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
   <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
   <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
+  <DayTodoCard type='todo' createdAt={new Date()} content={"content"} isDone={false} ></DayTodoCard>
   </>
   const noteCards = <>
   <DayTodoCard type='note' createAt={new Date()} content={"content"} ></DayTodoCard>
@@ -22,9 +31,9 @@ function DayTodo() {
       </div>
       <div className="day-todo_body">
         <div className="day-todo_body_todo">
-          <span style={{textAlign: "center"}}>TODO</span>
-          <div className="day-todo_body_todo_detail">
-            {todoCards}
+          <span>TODO</span>
+          <div className="day-todo_body_todo_detail">  
+              {todoCards}
           </div>
         </div>
         <div className="day-todo_body_note">

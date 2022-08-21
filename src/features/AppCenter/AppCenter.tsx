@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom';
 import TodoApp from '../TodoApp/TodoApp';
+import "./AppCenter.scss";
 
 export default function AppCenter() {
   return (
-    <div>
-        Tool-Bar
-        <nav>
-            <Link to="/app/todoApp">todoApp</Link>
-            <Link to="/app/noteApp">noteApp</Link>
-        </nav>
+    <div className='app-center'>
+        <div className='tool-bar'>
+          <label className='tool-bar-label'>Tool-Bar</label>
+          <nav className='app-center-links'>
+            <Link to="/app/todoApp" className='todo-link'>Todo</Link>
+            <Link to="/app/noteApp" className='note-link'>Note</Link>
+          </nav>
+        </div>
         <Outlet />
     </div>
   )

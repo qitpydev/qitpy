@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import "./DayTodoCard.scss"
 
 DayTodoCard.prototypes = {
     type: PropTypes.string.isRequired,
@@ -22,14 +23,22 @@ function DayTodoCard(props) {
 }
 
 const DayCardTodo = ({createdAt, content, isDone}) => {
-    return <div className="day-card-todo">
-        <input type="checkbox" />
-        <span>{content}</span>
+    return <div className="day-card">
+        <div className="day-card_checkbox">
+            <input type="checkbox" />
+        </div>
+        <div className="day-card_content">
+            <span>{"long texttttttttttttttttttttt"}</span>
+        </div>
     </div>
 }
 
 const DayCardNote = ({createdAt, content}) => {
-    return <div className="day-card-note">daycardnote</div>
+    return <div className="day-card">
+        <div className="day-card_content">
+        <span>{content}</span>
+        </div>
+    </div>
 }
 
 export default DayTodoCard
