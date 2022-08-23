@@ -4,11 +4,6 @@ import { Month } from '../../../enums/EMonth';
 import "./ChartTodo.scss";
 import CustomTooltip from './CustomTooltip/CustomTooltip';
 
-
-// tasks done in day
-// tasks done in year
-// total tasks in year
-
 const TaskDoneInDay_objKey = "tasks done in day";
 const TaskDoneInYear_objKey = "tasks done in year";
 const TotalTaskInYear_objKey = "total tasks in year";

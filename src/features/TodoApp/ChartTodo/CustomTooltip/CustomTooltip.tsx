@@ -14,7 +14,6 @@ import "./CustomTooltip.scss";
  */
 
 const renderTooltip = (date, doneDayAmount, doneYearAmount, totalAmount) => {
-  // console.log("date",date);
   return (
     <div className='tooltip-custom'>
         <div className="tooltip-custom-date">{date}</div>
@@ -27,7 +26,6 @@ const renderTooltip = (date, doneDayAmount, doneYearAmount, totalAmount) => {
 
 function CustomTooltip(props) {
   const {active, payload} = props;
-  // console.log(props)
 
   if (active && payload && payload.length) {
     const [doneDay, doneYear, total] = payload;
