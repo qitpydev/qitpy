@@ -3,7 +3,7 @@ import "./DailyTask.scss"
 
 function DailyTask(props) {
 
-  const taskName = "task name";
+  const taskName = "task namsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssse";
   return (
     <div className='daily-task'>
       <input type="checkbox"className="daily-task-checkbox" />

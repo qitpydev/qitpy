@@ -3,6 +3,9 @@ import { Link, Outlet } from 'react-router-dom';
 import TodoApp from '../TodoApp/TodoApp';
 import "./AppCenter.scss";
 
+
+// add transision bw todo and note: display none -> dissapear 1s
+
 export default function AppCenter() {
 
 
