@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, Outlet } from 'react-router-dom';
 import "./MyManagement.scss";
 
@@ -7,18 +7,21 @@ import "./MyManagement.scss";
 
 export default function MyManagement() {
 
+  const [toolBar, setToolbar] = useState(false)
 
-  const handleToolBar = (a) => {
-    console.log("click", a);
+  const handleToolBar = () => {
+    setToolbar(!toolBar)
   }
 
   return (
     <div className='my-management'>
         <div className='tool-bar' onClick={handleToolBar}>
-          <label className='tool-bar-label'>Tool-Bar</label>
-          <nav className='my-management-links'>
-            <Link to="/app/todoApp" className='todo-link'>Todo</Link>
-            <Link to="/app/noteApp" className='note-link'>Note</Link>
+          <label className='tool-bar-label' style={toolBar ? {display: 'none'} : {display: 'block'}}>
+            Tool-Bar
+            </label>
+          <nav className='my-management-links' style={toolBar ? {display: 'flex'} : {display: 'none'}}>
+            <Link to="/my-management/todo" className='todo-link' onClick={handleToolBar}>Todo</Link>
+            <Link to="/my-management/note" className='note-link' onClick={handleToolBar}>Note</Link>
           </nav>
         </div>
         <Outlet />
