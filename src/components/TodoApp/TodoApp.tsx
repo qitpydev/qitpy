@@ -6,11 +6,11 @@ import ChartTodo from './ChartTodo/ChartTodo';
 import { DailyTodo } from './DailyTodo/DailyTodo';
 
 function TodoApp() {
-  return (<>
+  return (<div className="todo-app">
   <CalendarTodo />
   <ChartTodo />
   <DailyTodo />
-  </>
+  </div>
   );
 }
 

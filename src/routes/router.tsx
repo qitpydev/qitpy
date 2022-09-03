@@ -1,15 +1,17 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import TodoApp from '../features/TodoApp/TodoApp';
-import AppCenter from '../features/AppCenter/AppCenter';
-import NoteApp from '../features/NoteApp/NoteApp';
+import TodoApp from '../components/TodoApp/TodoApp';
+import NoteApp from '../components/NoteApp/NoteApp';
+import MyManagement from '../pages/MyManagement/MyManagement';
+import Portfolio from '../pages/Portfolio/Portfolio';
 
 function RouterManagement() {
   return (
       <Routes>
-          <Route path='/app' element={<AppCenter />} >
-            <Route path='todoApp' element={<TodoApp />} />
-            <Route path='noteApp' element={<NoteApp />} />
+          <Route path="/" element={<Portfolio />} />
+          <Route path='/my-management' element={<MyManagement />} >
+            <Route path='todo' element={<TodoApp />} />
+            <Route path='note' element={<NoteApp />} />
           </Route>
       </Routes>
   )
