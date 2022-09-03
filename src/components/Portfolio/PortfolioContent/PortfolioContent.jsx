@@ -1,4 +1,5 @@
 import React from 'react'
+import './PortfolioContent.scss'
 
 function PortfolioContent() {
   return (
