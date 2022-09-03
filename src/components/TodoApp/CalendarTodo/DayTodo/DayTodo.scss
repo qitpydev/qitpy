@@ -1,0 +1,76 @@
+$label-header: 30px;
+
+.day-todo {
+    width: 330px;
+    height: 298px;
+    background-color: #181818;
+    color: black;
+
+    position: fixed;
+    top: 10px;
+    left: 360px;
+
+    &_header {
+        background-color: #A27B5C;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    &_body {
+        transform: translateY(5px);
+        height: calc(100% - 35px);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #DCD7C9;
+        
+        
+        &_todo {
+            text-align: center;
+            margin: 10px 5px 10px 10px;
+            width: 150px;
+
+            &_detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #3F4E4F;
+                height: calc(100% - 20px);
+                overflow-y: hidden;
+                padding: 8px 2px;
+            }
+            &_detail:hover {
+                overflow-y: scroll;
+                .day-card {
+                    margin-right: -4px;
+                }
+            }
+        }
+
+        &_note {
+            text-align: center;
+            margin: 10px 10px 10px 5px;
+            width: 150px;
+            
+            &_detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #3F4E4F;
+                height: calc(100% - 20px);
+                overflow-y: hidden;
+                padding: 8px 2px
+            }
+            &_detail:hover {
+                overflow-y: scroll;
+                .day-card {
+                    margin-right: -4px;
+                }
+            }
+        }
+    }
+}
+
+span {
+    height: $label-header;
+}

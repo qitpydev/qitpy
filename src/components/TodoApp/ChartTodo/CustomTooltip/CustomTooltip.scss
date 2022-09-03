@@ -1,0 +1,28 @@
+.tooltip-custom {
+    width: fit-content;
+    height: fit-content;
+    background-color: aliceblue;
+    padding: 5px;
+    opacity: .6;
+    border: 0px;
+
+    &-date {
+        text-align: center;
+        background-color:chartreuse;
+    }
+
+    &-done-day {
+        font-size:medium;
+        color: #8884d8;
+    }
+
+    &-done-year {
+        font-size:medium;
+        color: #82ca9d;
+    }
+
+    &-total {
+        font-size:medium;
+        color: #825a9d;
+    }
+}
