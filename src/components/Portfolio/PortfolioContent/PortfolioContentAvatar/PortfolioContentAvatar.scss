@@ -7,14 +7,17 @@
         border: 5px solid green;
         border: 5px solid green;
         border-radius: 0;
+        margin-right: 5px;
     }
 
     &-info {
         display: flex;
         height: 250px;
-        width: max-content;
-        // padding: 0;
+        width: 750px;
         color: green;
+        border: 1px dotted green;
+        box-sizing: border-box;
+        margin-left: 5px;
         align-items: center;
 
         p {

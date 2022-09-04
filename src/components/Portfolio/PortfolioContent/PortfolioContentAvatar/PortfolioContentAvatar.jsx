@@ -24,7 +24,7 @@ function PortfolioContentAvatar() {
             "Hi, my name is Quyet - a young guys that love Computer, Programming & Technologies."
         ],
         paragraphBody: [
-            "I am working as Web-Developer at SmartDev company, with about 2 years experience, from 2021.",
+            "I am a Web-Developer, with about 2 years experience, from 2021.",
             "My beginning is Springboot (a Java Framework)",
             "Besides, i can build CI/CD to VPS or Cloud-Service (Kubernetes) by myself.",
             "In previous projects, i was working as DevOps - Front End - Back End (but DevOps &BE is my mainly)",
