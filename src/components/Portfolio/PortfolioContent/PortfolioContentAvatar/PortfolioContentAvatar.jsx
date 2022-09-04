@@ -3,19 +3,26 @@ import avatar from "../../../../images/portfolio-avatar.png";
 import "./PortfolioContentAvatar.scss"
 
 const renderInfoData = (info) => {
-    return <>
-    {info.paragraphHeader.map((element, index) => (<div key={index}>{element}</div>))}
+    return (<p>
+    {info.paragraphHeader.map((element, index) => <React.Fragment key={index}>{element}<br/></React.Fragment>)}
     <br />
-    {info.paragraphBody.map((element, index) => (<div key={index}>{element}</div>))}
+    {info.paragraphBody.map((element, index) => (<React.Fragment key={index}>{element}<br /></React.Fragment>))}
     <br />
-    {info.paragraphFooter.map((element, index) => (<div key={index}>{element}</div>))}
-    </>
+    {info.paragraphFooter.map((element, index, array) => {
+        if (array.length === index + 1) {
+            return <React.Fragment key={index}>{element}</React.Fragment>
+        } else {
+            return <React.Fragment key={index}>{element}<br/></React.Fragment>
+        }})}
+    </p>)
 }
 
 function PortfolioContentAvatar() {
 
     const info = {
-        paragraphHeader: ["Hi, my name is Quyet - a young guys that love Computer, Programming & Technologies."],
+        paragraphHeader: [
+            "Hi, my name is Quyet - a young guys that love Computer, Programming & Technologies."
+        ],
         paragraphBody: [
             "I am working as Web-Developer at SmartDev company, with about 2 years experience, from 2021.",
             "My beginning is Springboot (a Java Framework)",

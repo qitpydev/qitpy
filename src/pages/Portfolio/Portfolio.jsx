@@ -11,10 +11,18 @@ function Portfolio() {
   const [showFooterOn, setShowFooterOn] = useState(false);
 
   const handleOnScroll = (event) => {
-    if (event.deltaY > 0) {
-      setShowFooterOn(true)
-    } else if (event.deltaY < 0) {
-      setShowFooterOn(false)
+    console.log(event)
+
+    if (event.ctrlKey || event.shiftKey || event.altKey
+      || event.target.nodeName === 'CANVAS') {
+      console.log("element", event.target.nodeName === 'CANVAS');
+    }
+    else {
+      if (event.deltaY > 0) {
+        setShowFooterOn(true)
+      } else if (event.deltaY < 0) {
+        setShowFooterOn(false)
+      } 
     }
   }
 
