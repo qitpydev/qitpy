@@ -1,5 +1,22 @@
 .portfolio-content {
     width: 100vw;
     height: 90vh;
-    background-color: red;
+    background-color: black;
+    background: #1D1F20;
+    color: white;
+
+    .portfolio-avatar {
+        // background-image: url("../../../images/portfolio-avatar.png");
+        // background-size:cover;
+        // // background-color: #cccccc;
+        // background-repeat: no-repeat;
+        img {
+            width: 250px;
+            height: auto;
+            border: 5px solid #20C20E;
+            // border-radius: 50%;
+
+            
+        }
+    }
 }

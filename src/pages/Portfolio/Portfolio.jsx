@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PortfolioHeader from '../../components/Portfolio/PortfolioHeader/PortfolioHeader';
 import PortfolioContent from '../../components/Portfolio/PortfolioContent/PortfolioContent';
 import PortfolioFooter from '../../components/Portfolio/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import { BsChevronDoubleDown } from 'react-icons/bs';
+import PortfolioScrollWrapper from '../../components/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper.jsx';
+
 
 function Portfolio() {
 
-  const [showFooterOn, setShowFooterOn] = useState(false)
+  const [showFooterOn, setShowFooterOn] = useState(false);
 
   const handleOnScroll = (event) => {
     if (event.deltaY > 0) {
@@ -22,8 +23,7 @@ function Portfolio() {
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
-      <BsChevronDoubleDown className='portfolio-scroll-wrapper'/>
-      <BsChevronDoubleDown className='portfolio-scroll-wrapper-2'/>
+      <PortfolioScrollWrapper direction={showFooterOn? 'up' : 'down'}/>
     </div>
   )
 }

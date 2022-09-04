@@ -1,0 +1,42 @@
+
+.portfolio-scroll-wrapper {
+    position: fixed;
+    left: 50%;
+    
+    &-item-1, &-item-2 {
+        position: absolute;
+        transform: scale(2);
+        opacity: .6;
+        animation-delay: 10s;
+        animation: bottomShowOn;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-fill-mode:both;
+    }
+
+    &-item-2 {
+        margin-top: 16px;
+    }
+}
+
+.up {
+    top: 15px;
+
+    .portfolio-scroll-wrapper-item-1 {
+        animation-timing-function: ease-out;
+    }
+    .portfolio-scroll-wrapper-item-2 {
+        animation-timing-function: ease-in;
+    }
+}
+
+.down {
+    bottom: 45px;
+    .portfolio-scroll-wrapper-item-1 {
+        animation-timing-function: ease-in;
+    }
+    .portfolio-scroll-wrapper-item-2 {
+        animation-timing-function: ease-out;
+    }
+}
