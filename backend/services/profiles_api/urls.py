@@ -5,8 +5,10 @@ from services.profiles_api import views
 
 router = DefaultRouter()
 router.register('profiles-viewset', views.ProfileViewSet, basename='profiles-viewset')
+router.register('profile', views.UserProfileViewSet)
 
 urlpatterns = [
-    path('hello-view', views.ProfileApiView.as_view()),
-    path('hh/', include(router.urls))
+    path('hello-view/', views.ProfileApiView.as_view()),
+    path('view-set/', include(router.urls)),
+    path('login/', views.UserLoginAPiView.as_view()),
 ]
