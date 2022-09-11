@@ -3,7 +3,7 @@ import PortfolioHeader from '../../components/Portfolio/PortfolioHeader/Portfoli
 import PortfolioContent from '../../components/Portfolio/PortfolioContent/PortfolioContent';
 import PortfolioFooter from '../../components/Portfolio/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import PortfolioScrollWrapper from '../../components/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper.jsx';
+import PortfolioScrollWrapper from '../../components/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
 
 
 function Portfolio() {

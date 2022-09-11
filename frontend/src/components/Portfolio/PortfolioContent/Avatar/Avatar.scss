@@ -1,10 +1,11 @@
 .portfolio-avatar {
     margin: 10px;
     display: flex;
+    width: fit-content;
+    position: relative;
     &-image {
         width: auto;
         height: 250px;
-        border: 5px solid green;
         border: 5px solid green;
         border-radius: 0;
         margin-right: 5px;

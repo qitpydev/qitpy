@@ -7,6 +7,21 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .label-rotate {
+    position: absolute;
+    background-color: green;
+    font-size: 20px;
+    font-weight: 700;
+    width:200px;
+    text-align:center;
+    height:30px;
+    color:black;
+    line-height: 30px;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: -65px;     
+  }
 }
 
 code {

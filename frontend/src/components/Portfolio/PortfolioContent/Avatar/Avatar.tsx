@@ -1,6 +1,6 @@
 import React from 'react'
 import avatar from "../../../../images/portfolio-avatar.png";
-import "./PortfolioContentAvatar.scss"
+import './Avatar.scss'
 
 const renderInfoData = (info) => {
     return (<p>
@@ -17,17 +17,17 @@ const renderInfoData = (info) => {
     </p>)
 }
 
-function PortfolioContentAvatar() {
+function Avatar() {
 
     const info = {
         paragraphHeader: [
-            "Hi, my name is Quyet - a young guys that love Computer, Programming & Technologies."
+            "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
         ],
         paragraphBody: [
             "I am a Web-Developer, with about 2 years experience, from 2021.",
             "My beginning is Springboot (a Java Framework)",
-            "Besides, i can build CI/CD to VPS or Cloud-Service (Kubernetes) by myself.",
-            "In previous projects, i was working as DevOps - Front End - Back End (but DevOps &BE is my mainly)",
+            "Besides, i can build CI/CD to deploy to VPS or Cloud-Service (Kubernetes) by myself.",
+            "In previous projects, i was working as DevOps - FrontEnd - BackEnd roles (but DevOps &BE is my mainly)",
         ],
         paragraphFooter:[
             "I love Python because the ability, strongly, shortly, quickly and intelligence.",
@@ -45,4 +45,4 @@ function PortfolioContentAvatar() {
   )
 }
 
-export default PortfolioContentAvatar
+export default Avatar
