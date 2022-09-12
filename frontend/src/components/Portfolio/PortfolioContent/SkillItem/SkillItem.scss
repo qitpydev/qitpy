@@ -1,3 +1,38 @@
+$tagHeight: 30px;
+
 .skill-item {
-    color: white;
+    display: flex;
+    height: $tagHeight;
+    // border: 1px solid green;
+    // border-radius: 0;
+    margin: 30px 70px;
+    background-color:beige;
+
+    &-label {
+        position: relative;
+        // width: auto;
+        font-size:large;
+        font-weight: 600;
+        line-height: $tagHeight;
+        // text-align: start;
+        margin-bottom: -100px;
+        letter-spacing: .8px;
+        text-transform: capitalize;
+        height: inherit;
+        padding: 0 15px;
+        // background-color: green;
+        color: green;
+    }
+
+    &-items {
+        display: flex;
+        font-size: medium;
+        &-child {
+            margin: 0 5px;
+            padding: 0 5px;
+            border: 1px solid green;
+            line-height: $tagHeight - 1px;
+            text-transform: capitalize;
+        }
+    }
 }

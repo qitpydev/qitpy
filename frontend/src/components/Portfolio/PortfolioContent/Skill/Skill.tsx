@@ -2,18 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Skill.scss'
 import SkillItem from '../SkillItem/SkillItem';
+import { skillsData } from '../../../../data';
+
+const osItemWidth = 500;
+const webItemWidth = 500;
+const databaseItemWidth = 500;
+const devopsItemWidth = 500;
+const toolsItemWidth = 500;
+const othersItemWidth = 500;
 
 function Skill(props) {
   return (
     <div className='portfolio-skill'>
         <div className="label-rotate">Skills</div>
-        <div className="skill-os">Fedora, ubuntu</div>
-        <div className="skill-web">JavaScript, Reactjs, Redux, Python, Django, Microservices</div>
-        <div className="skill-database">Mysql, Postgres, MongoDB</div>
-        <div className="skill-devops">docker, kubenetes, Helm, ECR, VPS, bitbucket-pipeline, Crontab, Shell script</div>
-        <div className="skill-tool">Visual Code, Postman, Lens, Brave, Figma, Bitbucket, Jira, FileZilla, SSH, Github</div>
-        <div className="skill-others">Heroku, SpringBoot, Azure-Function, NestJs, EMQX</div>
-        <SkillItem />
+        <SkillItem label={skillsData.os.name} skills={skillsData.os.items} width={osItemWidth} />
+        <SkillItem label={skillsData.web_skill.name} skills={skillsData.web_skill.items} width={webItemWidth} />
+        <SkillItem label={skillsData.database_skill.name} skills={skillsData.database_skill.items} width={databaseItemWidth} />
+        <SkillItem label={skillsData.devops_skill.name} skills={skillsData.devops_skill.items} width={devopsItemWidth} />
+        <SkillItem label={skillsData.tools.name} skills={skillsData.tools.items} width={toolsItemWidth} />
+        <SkillItem label={skillsData.others.name} skills={skillsData.others.items} width={othersItemWidth} />
     </div>
   )
 }

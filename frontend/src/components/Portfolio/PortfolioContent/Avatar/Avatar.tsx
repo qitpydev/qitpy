@@ -1,5 +1,5 @@
 import React from 'react'
-import { info } from '../../../../data';
+import { infoData } from '../../../../data';
 import avatar from "../../../../images/portfolio-avatar.png";
 import './Avatar.scss'
 
@@ -24,7 +24,7 @@ function Avatar() {
     <div className="portfolio-avatar">
         <img src={avatar} alt="kk" className='portfolio-avatar-image' />
         <div className="portfolio-avatar-info">
-            {renderInfoData(info)}
+            {renderInfoData(infoData)}
         </div>
     </div>
   )

@@ -1,4 +1,4 @@
-const info = {
+const infoData = {
     paragraphHeader: [
         "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
     ],
@@ -14,12 +14,30 @@ const info = {
     ]
 };
 
-// const skills = {
-//     operating_system: ["Fedora", "ubuntu"],
-//     web_skill: ["JavaScript", "Reactjs", "Redux", "Python", "Django", "Microservices"],
-//     database_skill: ["Mysql", "Postgres", "MongoDB"],
-//     devops_skill: ["docker", "kubenetes", "Helm", "ECR", "VPS", "bitbucket-pipeline", "Crontab", "Shell script"],
-//     skill-tool: ["Visual Code", "Postman", "Lens", "Brave", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Github"],
-//     <div className="skill-others">Heroku, SpringBoot, Azure-Function, NestJs, EMQX</div>
-// }
-export {info}
+const skillsData = {
+    os: {
+        name: "Operating_system",
+        items: ["Fedora", "ubuntu"],
+    },
+    web_skill: {
+        name: "Web_skills",
+        items: ["JavaScript", "Reactjs", "Redux", "Python", "Django", "Microservices"],
+    },
+    database_skill: {
+        name: "Database_skills",
+        items: ["Mysql", "Postgres", "MongoDB"],
+    },
+    devops_skill: {
+        name: "Devops_skills",
+        items: ["docker", "kubenetes", "Helm", "ECR", "VPS", "bitbucket-pipeline", "Crontab", "Shell script"],
+    },
+    tools: {
+        name: "Tools",
+        items: ["Visual Code", "Postman", "Lens", "Brave", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Github"],
+    },
+    others: {
+        name: "Others",
+        items: ["Heroku", "SpringBoot", "Azure-Function", "NestJs", "EMQX"],
+    }
+}
+export {infoData, skillsData}
