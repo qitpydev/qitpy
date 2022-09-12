@@ -11,6 +11,8 @@ const devopsItemWidth = 500;
 const toolsItemWidth = 500;
 const othersItemWidth = 500;
 
+// TODO: add ClassName to SkillItem
+
 function Skill(props) {
   return (
     <div className='portfolio-skill'>
