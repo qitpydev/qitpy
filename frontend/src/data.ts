@@ -29,11 +29,11 @@ const skillsData = {
     },
     devops_skill: {
         name: "Devops_skills",
-        items: ["docker", "kubenetes", "Helm", "ECR", "VPS", "bitbucket-pipeline", "Crontab", "Shell script"],
+        items: ["docker", "kubenetes", "Helm", "ECR", "VPS", "BitbucketPipeline", "Crontab", "ShellScript"],
     },
     tools: {
         name: "Tools",
-        items: ["Visual Code", "Postman", "Lens", "Brave", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Github"],
+        items: ["VisualCode", "Postman", "Lens", "Brave", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Github"],
     },
     others: {
         name: "Others",
