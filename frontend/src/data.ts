@@ -40,4 +40,12 @@ const skillsData = {
         items: ["Heroku", "SpringBoot", "Azure-Function", "NestJs", "EMQX"],
     }
 }
-export {infoData, skillsData}
+
+/** Circle Chart */
+const skillOverviewChart = {
+    front_end: 20,
+    back_end: 35,
+    devops: 45
+}
+
+export {infoData, skillsData, skillOverviewChart}

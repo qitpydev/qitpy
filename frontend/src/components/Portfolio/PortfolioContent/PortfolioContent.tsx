@@ -7,9 +7,9 @@ import  Skill from './Skill/Skill';
 function PortfolioContent() {
   return (
     <div className='portfolio-content'>
-      {/* <PortfolioContentAvatar /> */}
+      <PortfolioContentAvatar />
       <Skill />
-      {/* <Experience /> */}
+      <Experience />
     </div>
   )
 }

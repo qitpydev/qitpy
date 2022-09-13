@@ -1,3 +1,6 @@
+$os_left_position: 80px;
+$database_left_position: 40px;
+
 .portfolio-skill {
     width: 600px;
     height: 250px;
@@ -7,32 +10,36 @@
     overflow: hidden;
     color: green;
 
-    #skill-os {
+    #skill_os {
         position: absolute;
         top: 10px;
+        left: $os_left_position;
+        width: calc(100% - $os_left_position);
     }
 
-    #skill-database {
+    #skill_database {
         position: absolute;
         top: 50px;
+        left: $database_left_position;
+        width: calc(100% - $database_left_position);
     }
 
-    #skill-web {
+    #skill_web {
         position: absolute;
         top: 90px;
     }
 
-    #skill-devops {
+    #skill_devops {
         position: absolute;
         top: 130px;
     }
 
-    #skill-tool {
+    #skill_tool {
         position: absolute;
         top: 170px;
     }
 
-    #skill-other {
+    #skill_other {
         position: absolute;
         top: 210px;
     }

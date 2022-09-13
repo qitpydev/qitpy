@@ -3,8 +3,7 @@ $tagHeight: 30px;
 .skill-item {
     display: flex;
     height: $tagHeight;
-    // background-color:beige;
-    overflow:visible;
+    width: 100%;
 
     &-label {
         position: relative;
@@ -22,14 +21,11 @@ $tagHeight: 30px;
     &-items {
         font-size: medium;
         position: relative;
-        width: 100%;
-        $itemsWidth: width;
-        // background-color: yellow;
         right: 10px;
         overflow: hidden;
 
         &-container {
-            // background-color: red;
+
             width: fit-content;
             display: inline-block;
             .skill-item-items-child {
@@ -40,25 +36,5 @@ $tagHeight: 30px;
                 text-transform: capitalize;
             }
         }
-
-        .skill-animation {
-            animation-name: left-right;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-direction: alternate;
-
-            @keyframes left-right {
-                from {
-                    transform: translateX(0);
-                    left: 0;
-                }
-    
-                to {
-                    left: 100%;
-                    transform: translateX(-100%);
-                }
-            }
-        }
-
     }
 }
