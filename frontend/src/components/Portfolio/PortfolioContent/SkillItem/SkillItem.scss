@@ -35,6 +35,19 @@ $tagHeight: 30px;
                 line-height: $tagHeight - 1px;
                 text-transform: capitalize;
             }
+
+            &:hover {
+                animation-play-state: paused;
+                cursor: pointer;
+
+                &::after {
+                    width: 20px;
+                    height: 20px;
+                    background-color: red;
+                    position: absolute;
+                    z-index: 100;
+                }
+            }
         }
     }
 }
