@@ -1,0 +1,242 @@
+[
+{
+     "model": "profiles_api.userprofile",
+     "pk": 1,
+     "fields": {
+          "password": "pbkdf2_sha256$390000$DguEQevdrBFeIPg6QThJ4c$tXvM3KdR3L0kdl+1bbs9g9WS4CBoRBMZZmtaLbIyRQE=",
+          "last_login": "2022-09-07T04:12:40.971Z",
+          "is_superuser": true,
+          "email": "admin@maitocode.com",
+          "name": "admin",
+          "is_active": true,
+          "is_staff": true,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 2,
+     "fields": {
+          "password": "pbkdf2_sha256$390000$PwZZIstBA2sa7ZIkaXBIm5$HEFDDWr+EMUSwTgtG/GgWTiw6dr4iSKFLPIGVkx3xBs=",
+          "last_login": null,
+          "is_superuser": false,
+          "email": "quyet.doan@smartdev.com",
+          "name": "quyet",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 3,
+     "fields": {
+          "password": "pbkdf2_sha256$390000$F5AlZJfo9a6MO7tKJQjeqd$+RSuQq4uZP3cAcJ2VrBNxUAxCjSDSlULae7i2z6IOyU=",
+          "last_login": null,
+          "is_superuser": false,
+          "email": "aasdasd@asdasd.com",
+          "name": "asdasd",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 4,
+     "fields": {
+          "password": "pbkdf2_sha256$390000$vCG73l5Y0cJhbktdc78lG8$UfZXjdoADRXSykuRVQ6OMvGbxkqz8eAJ7ULuKkkVuZE=",
+          "last_login": null,
+          "is_superuser": false,
+          "email": "quyet@maitocode.com",
+          "name": "quyet",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 5,
+     "fields": {
+          "password": "Within drive standard sometimes raise. Tax indeed around own together low lose.",
+          "last_login": "1984-06-12T13:59:31Z",
+          "is_superuser": true,
+          "email": "james77@example.net",
+          "name": "Marriage week door win indeed might tax. Friend time teacher rest force who.\nAvailable listen plant them kitchen real record. Wife note south against I. Recent not air fine.",
+          "is_active": true,
+          "is_staff": true,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 6,
+     "fields": {
+          "password": "Board medical despite analysis. Loss each early agency student rate. Style around night deep send.",
+          "last_login": "1991-11-10T00:46:41Z",
+          "is_superuser": false,
+          "email": "alexanderallen@example.com",
+          "name": "Throw program available suffer dark career. Bill economic education once health half.\nCheck really short fact talk education source him. Serious stage once world somebody itself pick.\nPart bring during smile lay. Detail in possible. Fast truth talk.",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 7,
+     "fields": {
+          "password": "Not benefit despite small. Adult music political network night live air senior.",
+          "last_login": "2014-07-18T10:37:41Z",
+          "is_superuser": true,
+          "email": "bergerjohn@example.net",
+          "name": "Rock thus writer seem. List finish marriage but treat. Tax dog can discuss save big.\nMajority between customer. Impact give shake.\nAudience clearly bill from. Establish night work front be suggest arm admit. Probably senior girl future serve receive.",
+          "is_active": true,
+          "is_staff": true,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 8,
+     "fields": {
+          "password": "Human field really law win edge north. Industry cut third important source.\nMake use total job.",
+          "last_login": "1991-12-05T21:41:01Z",
+          "is_superuser": true,
+          "email": "james30@example.net",
+          "name": "Admit whose important anything ahead nation position. Of what rule know. Anyone trip gas same believe as.\nPurpose customer computer how involve ten. Involve professional out. Who physical side most remain up bit.",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 9,
+     "fields": {
+          "password": "Size language military money. Fight white authority view fill expert program.",
+          "last_login": "2014-04-04T05:37:44Z",
+          "is_superuser": false,
+          "email": "brittanymelton@example.net",
+          "name": "Responsibility culture plan maybe sit. Recent court between thousand discussion finish heavy.\nAuthor future church. Day chair under letter Mr deal.\nSome open consider hot. Action finally young century common. Radio ask professional debate month.",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.userprofile",
+     "pk": 10,
+     "fields": {
+          "password": "Final hand deep score range. Radio rate daughter. Friend model such six theory already.",
+          "last_login": "2012-10-21T02:55:30Z",
+          "is_superuser": true,
+          "email": "ericksonkevin@example.net",
+          "name": "Seek oil also edge yard make might. Travel ask decide most. Keep tell personal vote road send bar.\nCentury million wear take energy agreement everything.\nMiddle detail college cover group. Else rule answer her see.\nSuggest tell consumer possible leg.",
+          "is_active": true,
+          "is_staff": false,
+          "groups": [],
+          "user_permissions": []
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 3,
+     "fields": {
+          "user_profile": 4,
+          "status_text": "yoyo",
+          "created_on": "2022-09-12T07:15:56.035Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 4,
+     "fields": {
+          "user_profile": 4,
+          "status_text": "sdfsdf",
+          "created_on": "2022-09-12T08:09:56.030Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 5,
+     "fields": {
+          "user_profile": 4,
+          "status_text": "sdfsdfsdfsdf",
+          "created_on": "2022-09-12T08:09:58.037Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 6,
+     "fields": {
+          "user_profile": 4,
+          "status_text": "sdfsdfsdfsdf",
+          "created_on": "2022-09-12T08:10:00.162Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 7,
+     "fields": {
+          "user_profile": 6,
+          "status_text": "Discuss bar oil home available art any. Own discuss present century.\nProcess bar fight policy which. Day job commercial feel happen decade. Fly return maintain speak rich.",
+          "created_on": "2006-05-20T01:12:13Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 8,
+     "fields": {
+          "user_profile": 5,
+          "status_text": "Democrat child participant me good use. Without career continue buy season past first.\nWin machine follow treat when. Only eight side reveal structure write rather.\nFast may member business method north enough.",
+          "created_on": "1970-05-07T12:45:44Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 9,
+     "fields": {
+          "user_profile": 10,
+          "status_text": "Hotel believe place organization especially hear. Board film expert budget Republican address exactly. Program nor evening.\nMajority determine theory manager decade. Us administration remain.",
+          "created_on": "2007-12-21T15:30:00Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 10,
+     "fields": {
+          "user_profile": 10,
+          "status_text": "Green example catch star system represent. Bad there send enough eye. Movement significant possible Congress.\nAge treat operation future future race after. Pay situation poor crime lead whether include. Write should per team one.",
+          "created_on": "1991-05-25T11:23:59Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 11,
+     "fields": {
+          "user_profile": 9,
+          "status_text": "Decade cut agree these success. Exactly test day foreign foot government herself. According thing draw spend.\nCareer government material throughout still environment career. Section perform so sister practice.",
+          "created_on": "1971-12-20T05:48:49Z"
+     }
+},
+{
+     "model": "profiles_api.profilefeeditem",
+     "pk": 12,
+     "fields": {
+          "user_profile": 8,
+          "status_text": "State daughter learn beat. Rock material person. Almost several safe participant community.\nCentral idea customer civil perform property. Bit Mr form million customer property order.",
+          "created_on": "2012-04-12T00:46:12Z"
+     }
+}
+]
