@@ -2,9 +2,9 @@ if [ ! -d ./env ]
 then 
     rm -rf env
     python -m venv env
-    source ./env/bin/activate
 fi
     
+source ./env/bin/activate
 ./env/bin/python -m pip install --upgrade pip
 pip install -r requirements.txt
 
