@@ -1,0 +1,14 @@
+.portfolio-certificate {
+    position: relative;
+    bottom: 10px;
+    height: 300px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px dotted green;
+
+    .label-rotate {
+        left: -35px;
+        top: 25px;
+        width: 150px;
+    }
+}

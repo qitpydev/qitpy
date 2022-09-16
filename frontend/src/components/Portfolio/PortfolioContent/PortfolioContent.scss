@@ -5,4 +5,17 @@
     height: 90vh;
     background-color: black;
     border: 1px solid green;
+
+    .right-side {
+        position: relative;
+        right: 5px;
+        overflow: hidden;
+        width: 850px;
+        min-height: auto;
+        margin: 10px 5px 0 10px;
+        // border: 1px dotted green;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
 }

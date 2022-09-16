@@ -54,16 +54,16 @@ const addAnimationWhetherOverflow = (skillElementId: string) => {
 const addAnimationHandle = (element: HTMLElement, id: string, containerWidth: number, groupItemsWidth: number) => {
 
   const animationName = `left-right-${id}`;
-  const animationDuration = (groupItemsWidth - containerWidth) / 20 + "s";
+  const animationDuration = (groupItemsWidth - containerWidth) / 25 + "s";
   const translateFrom = 0;
   const translateTo = ((groupItemsWidth - containerWidth) / groupItemsWidth) * 100;
   const animation_keyframe = `
   @keyframes ${animationName} {
-    0% {
+    0%, 10% {
         transform: translateX(${translateFrom});
     }
 
-    100% {
+    90%, 100% {
         transform: translateX(-${translateTo}%);
     }
   }`;

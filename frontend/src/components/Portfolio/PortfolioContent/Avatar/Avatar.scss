@@ -14,15 +14,15 @@
     &-info {
         display: flex;
         height: 250px;
-        width: 750px;
+        width: 650px;
         color: green;
         border: 1px dotted green;
         box-sizing: border-box;
-        margin-left: 5px;
+        margin: 0 auto;
         align-items: center;
 
         p {
-            padding: 20px;
+            padding: 10px;
             margin: auto;
         }
     }

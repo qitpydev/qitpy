@@ -6,7 +6,7 @@ const infoData = {
         "I am a Web-Developer, with about 2 years experience, from 2021.",
         "My beginning is Springboot (a Java Framework)",
         "Besides, i can build CI/CD to deploy to VPS or Cloud-Service (Kubernetes) by myself.",
-        "In previous projects, i was working as DevOps - FrontEnd - BackEnd roles (but DevOps &BE is my mainly)",
+        "In previous projects, i was working as DevOps - FrontEnd - BackEnd roles",
     ],
     paragraphFooter:[
         "I love Python because the ability, strongly, shortly, quickly and intelligence.",
@@ -37,7 +37,7 @@ const skillsData = {
     },
     others: {
         name: "Others",
-        items: ["Heroku", "SpringBoot", "Azure-Function", "NestJs", "EMQX"],
+        items: ["Heroku", "SpringBoot", "AzureFunction", "NestJs", "EMQX"],
     }
 }
 
