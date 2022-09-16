@@ -38,10 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
     'django_seed',
-    'services.profiles_api',
+    'rest_framework',
+    # 'rest_framework.authtoken',
+    
+    # Apps
+    'mymanagement',
+    'securities',
 ]
 
 MIDDLEWARE = [
@@ -133,4 +136,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'profiles_api.UserProfile'
+AUTH_USER_MODEL = 'securities.UserAccount'
