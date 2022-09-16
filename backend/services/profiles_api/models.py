@@ -4,6 +4,8 @@ from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
 from django.conf import settings
+from datetime import datetime
+
 
 
 # Create your models here.
@@ -66,7 +68,7 @@ class ProfileFeedItem(models.Model):
     )
     
     status_text = models.CharField(max_length=255)
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     
     def __str__(self):
         """Return string representation of"""

@@ -28,7 +28,9 @@ class UserAccountManager(BaseUserManager):
 class UserAccount(AbstractBaseUser, PermissionsMixin):
     """Basic user account model"""
     username = models.CharField(max_length=30, unique=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
     objects = UserAccountManager()
+    
     
     USERNAME_FIELD = 'username'
     
