@@ -1,3 +1,5 @@
+import { WorkExperienceItem } from "./constance/interfaces";
+
 const infoData = {
     paragraphHeader: [
         "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
@@ -29,11 +31,11 @@ const skillsData = {
     },
     devops_skill: {
         name: "Devops_skills",
-        items: ["docker", "kubenetes", "Helm", "ECR", "VPS", "BitbucketPipeline", "Crontab", "ShellScript"],
+        items: ["Docker", "Kubernetes", "Helm", "ECR", "VPS", "CICD", "Crontab", "Linux"],
     },
     tools: {
         name: "Tools",
-        items: ["VisualCode", "Postman", "Lens", "Brave", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Github"],
+        items: ["VisualCode", "Postman", "Lens", "FireFox", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Git"],
     },
     others: {
         name: "Others",
@@ -48,4 +50,76 @@ const skillOverviewChart = {
     devops: 45
 }
 
-export {infoData, skillsData, skillOverviewChart}
+const experienceData: Array<WorkExperienceItem> = [
+    {
+        company: "Smartdev",
+        time: {
+            period: "1 yr 3 mos",
+            from: "17/09/2022",
+            to: "17/09/2023"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-function"]
+            },
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["PlayFab", "azure-function"]
+            },
+        ],
+    },
+    {
+        company: "Smartdev",
+        time: {
+            period: "1 yr 3 mos",
+            from: "17/09/2022",
+            to: "17/09/2023"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"]
+            },
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["PlayFab", "azure-function"]
+            },
+        ],
+    },
+    {
+        company: "Smartdev",
+        time: {
+            period: "1 yr 3 mos",
+            from: "17/09/2022",
+            to: "17/09/2023"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-function"]
+            },
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-function"]
+            },
+        ],
+    },
+]
+
+export {infoData, skillsData, skillOverviewChart, experienceData}

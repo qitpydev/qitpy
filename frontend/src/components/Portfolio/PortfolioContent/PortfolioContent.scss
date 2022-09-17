@@ -1,8 +1,10 @@
+@import "../PortfolioHeader/PortfolioHeader.scss/";
+
 .portfolio-content {
     position: absolute;
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: calc(100% - $header-height);
     background-color: black;
     border: 1px solid green;
 
@@ -10,10 +12,10 @@
         position: relative;
         right: 5px;
         overflow: hidden;
-        width: 850px;
+        width: 950px;
+        // width: 350px;
         min-height: auto;
         margin: 10px 5px 0 10px;
-        // border: 1px dotted green;
         display: flex;
         flex-direction:column;
         justify-content:space-between;

@@ -24,10 +24,25 @@ $tagHeight: 30px;
         right: 10px;
         overflow: hidden;
 
-        &-container {
 
+        // &container > span:first-child {
+
+        // }
+
+        &-container > span:first-of-type {
+            // padding-left: 2px !important;
+            margin-left: 5px !important;
+        }
+
+        &-container > span:last-of-type {
+            // padding-right: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        &-container {
             width: fit-content;
             display: inline-block;
+
             .skill-item-items-child {
                 margin: 0 5px;
                 padding: 0 5px;

@@ -1,6 +1,12 @@
+@import "../../PortfolioHeader/PortfolioHeader.scss/";
+@import "../Certificate/Certificate.scss";
+
+$work_experience_margin_top: 75px;
+
 .portfolio-experience {
-    min-height: 450px;
-    height: 495px;
+    position: relative;
+    height: calc(100% - $certificate-height - 15px);
+    width: 100%;
     border: 1px dotted green;
     margin-bottom: 5px;
 
@@ -8,5 +14,30 @@
         left: -55px;
         top: 30px;
         width: 200px;
+    }
+
+    .work-experience-years {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        padding: 5px 20px;  
+        font-size: x-small;
+        color: green; 
+    }
+
+    .work-experience-container {
+        // display: none;
+        position: relative;
+        width: 350px;
+        height: calc(100% - $work_experience_margin_top - 10px);
+        // margin-bottom: 20px;
+        // overflow: hidden;
+        padding-bottom: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        // background-color: red;
+        left: -7px;
+        margin-top: $work_experience_margin_top;
+
     }
 }

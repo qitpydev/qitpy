@@ -10,14 +10,15 @@ function Portfolio() {
 
   const [showFooterOn, setShowFooterOn] = useState(false);
 
-  const handleOnScroll = (event) => {
-    console.log(event)
+  const notScrapperList = ['']
 
+  const handleOnScroll = (event) => {
     if (event.ctrlKey || event.shiftKey || event.altKey
-      || event.target.nodeName === 'CANVAS') {
-      console.log("element", event.target.nodeName === 'CANVAS');
+      || event.target.className?.includes('no-wrap')) {
+      console.log('no-wrap');
     }
     else {
+      console.log("scroll at", event);
       if (event.deltaY > 0) {
         setShowFooterOn(true)
       } else if (event.deltaY < 0) {

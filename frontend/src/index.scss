@@ -31,25 +31,29 @@ code {
 
 ::-webkit-scrollbar {
   width: 5px;
+  color: green;
+ 
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);;
+  color: green;
+  background: green;
   margin-block: 3px;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: green;
   border-radius: 5px;
-  border: 1px solid #3F4E4F;
+  border: 1px solid green;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  border: 20px solid #ffffff;
+  border: 20px solid green;
 }
 
 * {
   box-sizing: border-box;
   border-radius: 3px;
+  scrollbar-color: green;
 }

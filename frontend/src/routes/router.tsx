@@ -10,7 +10,7 @@ import ExperienceTimeline from '../components/Portfolio/PortfolioContent/Experie
 function RouterManagement() {
   return (
       <Routes>
-          <Route path="/" element={<ExperienceTimeline />} />
+          <Route path="/" element={<Portfolio />} />
           <Route path='/my-management/' element={<MyManagement />} >
             <Route path='todo' element={<TodoApp />} />
             <Route path='note' element={<NoteApp />} />
