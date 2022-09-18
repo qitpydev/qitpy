@@ -15,4 +15,15 @@ interface WorkExperienceItem {
     projects: Array<ProjectItem>
 }
 
-export type {ProjectItem, WorkExperienceItem}
+//------------------------------------------
+
+interface Quote {
+    _id: string,
+    content: string,
+    author: string,
+    authorSlug: string,
+    length: number,
+    tags: string[]
+}
+
+export type {ProjectItem, WorkExperienceItem, Quote}

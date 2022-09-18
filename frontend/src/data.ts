@@ -5,7 +5,7 @@ const infoData = {
         "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
     ],
     paragraphBody: [
-        "I am a Web-Developer, with about 2 years experience",
+        "I am a Python-Developer, with about 2 years experience",
         "My beginning is Java-Springboot",
         "Besides, i can build CI/CD to deploy to VPS or Cloud-Service (using Kubernetes) by myself.",
         "In previous projects, i was working as DevOps - FrontEnd - BackEnd roles",

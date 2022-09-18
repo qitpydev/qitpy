@@ -1,0 +1,25 @@
+.quote-random {
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: red;
+    // width: fit-content;
+    height: fit-content;
+    // flex-direction: column;
+    line-break: auto;
+    text-align: center;
+
+    .quote-content {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .quote-author {
+        position: relative;
+        width: fit-content;
+        left: 50%;
+    }
+
+}

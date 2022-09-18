@@ -1,7 +1,54 @@
 $header-height: 80px;
 
 .portfolio-header {
+    position: relative;
     width: 100vw;
     height: $header-height;
     background-color: black;
+    color: green;
+    display: flex;
+
+    &-logo {
+        position: relative;
+        margin: auto 30px;
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        width: 500px;
+    }
+
+    &-getcv {
+        // border: 2px solid green;
+        font-weight: 600;
+        padding: 5px;
+        width: fit-content;
+        height: fit-content;
+        line-height: 100%;
+        margin-top: 10px;
+        color: black;
+        background-color: green;
+    }
+
+    &-contact {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        &-linkedin {
+            margin-top: 1.5px;
+            margin-right: 2px;
+        }
+    }
 }
