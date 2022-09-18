@@ -11,12 +11,13 @@ function PortfolioHeader() {
       <div className='portfolio-header-logo'>
           LOGO
       </div>
-      <div className="portfolio-header-quote">
-        <PortfolioHeaderQuote />
-      </div>
       <div className="portfolio-header-getcv">
         Get My CV
       </div>
+      <div className="portfolio-header-quote">
+        <PortfolioHeaderQuote />
+      </div>
+      
       <div className="portfolio-header-contact">
         <div className="portfolio-header-contact-linkedin">
           <ImLinkedin size={"22px"} />

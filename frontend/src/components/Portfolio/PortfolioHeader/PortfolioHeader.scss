@@ -21,15 +21,20 @@ $header-height: 80px;
     }
 
     &-quote {
+        position: relative;
+        left: 50%;
+        transform: translateX(-80%);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 30px;
+        // margin-right: 30px;
         width: 500px;
     }
 
     &-getcv {
         // border: 2px solid green;
+        // position: absolute;
+        left: 0;
         font-weight: 600;
         padding: 5px;
         width: fit-content;
