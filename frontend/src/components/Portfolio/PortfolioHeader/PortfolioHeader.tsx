@@ -9,7 +9,7 @@ function PortfolioHeader() {
   return (
     <div className='portfolio-header'>
       <div className='portfolio-header-logo'>
-          Portfolio
+          LOGO
       </div>
       <div className="portfolio-header-quote">
         <PortfolioHeaderQuote />
