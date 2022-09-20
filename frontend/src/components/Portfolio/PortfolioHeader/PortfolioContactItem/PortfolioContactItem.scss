@@ -1,0 +1,31 @@
+.portfolio-header-contact-item {
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    margin: auto 5px;
+    padding: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: green;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 80%;
+        width: 0%;
+        height: 3px;
+        border-radius: 50px;
+        background-image: linear-gradient(to bottom right, green, black);
+        transition: width .3s, height 4s;
+    }
+
+    &:hover {
+        &::after {
+            width: 65%;
+        }
+    }
+}

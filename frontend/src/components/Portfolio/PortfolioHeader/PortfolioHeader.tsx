@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './PortfolioHeader.scss'
 import { FaFacebookSquare, FaGithubSquare } from 'react-icons/fa'
 import { ImLinkedin } from 'react-icons/im'
 import PortfolioHeaderQuote from './PortfolioHeaderQuote/PortfolioHeaderQuote';
+import PortfolioContactItem from './PortfolioContactItem/PortfolioContactItem'
 
 function PortfolioHeader() {
   return (
@@ -17,10 +18,11 @@ function PortfolioHeader() {
       </div>
       
       <div className="portfolio-header-contact">
-        <PortfolioHeaderGetCV />
-        <PortfolioHeaderLeaveMessage />
-        <PortfolioHeaderSocial />
-        <PortfolioHeaderInfo />
+        {/* <PortfolioHeaderGetCV /> */}
+        <PortfolioContactItem text="Get my CV" element={PortfolioHeaderGetCV()}/>
+        <PortfolioContactItem text="Leave message" element={PortfolioHeaderLeaveMessage()}/>
+        <PortfolioContactItem text="Social links" element={PortfolioHeaderSocial()}/>
+        <PortfolioContactItem text="Contact info" element={PortfolioHeaderInfo()}/>
       </div>
   </div>
   )
@@ -29,33 +31,35 @@ function PortfolioHeader() {
 const PortfolioHeaderGetCV = () => {
   return (
     <div className="portfolio-header-contact-getcv">
-      Get My CV
+      Get_My_CV
     </div>
   )
 }
 
 const PortfolioHeaderLeaveMessage = () => {
   return (
-    <div className="portfolio-header-contact-give-message">give MS</div>
+    <div className="portfolio-header-contact-give-message">
+      Message
+    </div>
   )
 }
 
 const PortfolioHeaderSocial = () => {
+    return (
+      <>
+        <div className="portfolio-header-contact-linkedin">
+          <ImLinkedin size={"22px"} />
+        </div>
+        <div className="portfolio-header-contact-fb" >
+          <FaFacebookSquare size={"25px"}/>
+        </div>
+        <div className="portfolio-header-contact-git">
+          <FaGithubSquare size={"25px"}/>
+        </div>
+      </>
+    )
+  }
 
-  return (
-    <div className="portfolio-header-contact-social">
-      <div className="portfolio-header-contact-linkedin">
-        <ImLinkedin size={"22px"} />
-      </div>
-      <div className="portfolio-header-contact-fb" >
-        <FaFacebookSquare size={"25px"}/>
-      </div>
-      <div className="portfolio-header-contact-git">
-        <FaGithubSquare size={"25px"}/>
-      </div>
-    </div>
-  )
-}
 
 const PortfolioHeaderInfo = () => {
   return (
