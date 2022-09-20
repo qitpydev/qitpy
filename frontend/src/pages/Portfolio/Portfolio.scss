@@ -1,9 +1,10 @@
 .portfolio {
+    position: relative;
     width: 100vw;
     height: 100vh;
 
     @keyframes bottomShowOn {
-        from  {color: #20C20E;}
+        from  {color: red}
         to {color:black}
     }
 
