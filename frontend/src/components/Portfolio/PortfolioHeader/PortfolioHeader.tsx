@@ -11,25 +11,58 @@ function PortfolioHeader() {
       <div className='portfolio-header-logo'>
           LOGO
       </div>
-      <div className="portfolio-header-getcv">
-        Get My CV
-      </div>
+
       <div className="portfolio-header-quote">
         <PortfolioHeaderQuote />
       </div>
       
       <div className="portfolio-header-contact">
-        <div className="portfolio-header-contact-linkedin">
-          <ImLinkedin size={"22px"} />
-        </div>
-        <div className="portfolio-header-contact-fb" >
-          <FaFacebookSquare size={"25px"}/>
-        </div>
-        <div className="portfolio-header-contact-git">
-          <FaGithubSquare size={"25px"}/>
-        </div>
+        <PortfolioHeaderGetCV />
+        <PortfolioHeaderLeaveMessage />
+        <PortfolioHeaderSocial />
+        <PortfolioHeaderInfo />
       </div>
   </div>
+  )
+}
+
+const PortfolioHeaderGetCV = () => {
+  return (
+    <div className="portfolio-header-contact-getcv">
+      Get My CV
+    </div>
+  )
+}
+
+const PortfolioHeaderLeaveMessage = () => {
+  return (
+    <div className="portfolio-header-contact-give-message">give MS</div>
+  )
+}
+
+const PortfolioHeaderSocial = () => {
+
+  return (
+    <div className="portfolio-header-contact-social">
+      <div className="portfolio-header-contact-linkedin">
+        <ImLinkedin size={"22px"} />
+      </div>
+      <div className="portfolio-header-contact-fb" >
+        <FaFacebookSquare size={"25px"}/>
+      </div>
+      <div className="portfolio-header-contact-git">
+        <FaGithubSquare size={"25px"}/>
+      </div>
+    </div>
+  )
+}
+
+const PortfolioHeaderInfo = () => {
+  return (
+    <div className="portfolio-header-contact-info">
+      <div className="portfolio-header-contact-info-email">code.maito@outlook.com</div>
+      <div className="portfolio-header-contact-info-phone">0868260254</div>
+    </div>
   )
 }
 

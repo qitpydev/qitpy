@@ -12,7 +12,7 @@ const infoData = {
     ],
     paragraphFooter:[
         "I love Python because the ability, strongly, shortly, quickly and intelligence.",
-        "Currently, i am interested in to working with ReactJs & Django.",
+        "Currently, i open to working with ReactJs & Django.",
     ]
 };
 

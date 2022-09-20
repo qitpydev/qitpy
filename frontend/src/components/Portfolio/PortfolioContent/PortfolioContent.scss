@@ -6,7 +6,7 @@
     width: 100vw;
     height: calc(100% - $header-height);
     background-color: black;
-    border: 1px solid green;
+    margin-top: -10px;
 
     .right-side {
         position: relative;

@@ -18,7 +18,7 @@ function PortfolioHeaderQuote(props) {
   useEffect( () => {
 
     const getData = async () => {
-        const data = await axios.get("http://api.quotable.io/random?maxLength=500")
+        const data = await axios.get("http://api.quotable.io/random?maxLength=100")
         const json = data.data;
         console.log(json)
         setQuote(json)

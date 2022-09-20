@@ -7,7 +7,7 @@ $work_experience_margin_top: 75px;
     position: relative;
     height: calc(100% - $certificate-height - 15px);
     width: 100%;
-    border: 1px dotted green;
+    border: 1px solid green;
     margin-bottom: 5px;
 
     .label-rotate {
@@ -26,16 +26,12 @@ $work_experience_margin_top: 75px;
     }
 
     .work-experience-container {
-        // display: none;
         position: relative;
-        width: 350px;
+        width: 100%;
         height: calc(100% - $work_experience_margin_top - 10px);
-        // margin-bottom: 20px;
-        // overflow: hidden;
         padding-bottom: 10px;
         overflow-y: scroll;
         overflow-x: hidden;
-        // background-color: red;
         left: -7px;
         margin-top: $work_experience_margin_top;
 

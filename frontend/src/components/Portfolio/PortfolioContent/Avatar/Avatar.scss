@@ -8,7 +8,7 @@
         height: 250px;
         border: 5px solid green;
         border-radius: 0;
-        margin-right: 5px;
+        // margin-right: 5px;
     }
 
     &-info {
@@ -16,7 +16,8 @@
         height: 250px;
         width: 650px;
         color: green;
-        border: 1px dotted green;
+        border: 1px solid green;
+        border-left: 0;
         box-sizing: border-box;
         margin: 0 auto;
         align-items: center;

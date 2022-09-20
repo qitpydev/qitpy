@@ -1,17 +1,16 @@
 .work-experience {
     position: absolute;
     width: 350px;
-    // height: calc(100% - 600px);
 
     padding-left: 30px;
     padding-right: 5px;
-    // overflow: hidden;
 
     &-item {
         position: relative;
         width: 100%;
         color: green;
         padding: 15px 10px 5px;
+
         &-company {
             width: 100%;
             display: flex;

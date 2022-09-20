@@ -1,59 +1,137 @@
-$header-height: 80px;
+$header-height: 70px;
+$logo-width: 30%;
+$quote-width: 40%;
+$contact-width: 30%;
 
 .portfolio-header {
     position: relative;
-    width: 100vw;
-    height: $header-height;
+    width: 100%;
+    height: 70px;
     background-color: black;
-    color: green;
-    display: flex;
 
     &-logo {
-        position: relative;
-        margin: auto 30px;
-        width: 100px;
-        height: 50px;
-        background-color: green;
-        color: black;
+        position: absolute;
+        width: $logo-width;
+        height: 100%;
+        left: 0;
+
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     &-quote {
-        position: relative;
-        left: 50%;
-        transform: translateX(-80%);
+        display: none;
+        position: absolute;
+        width: $quote-width;
+        height: 100%;
+        left: $logo-width;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        // margin-right: 30px;
-        width: 500px;
-    }
-
-    &-getcv {
-        // border: 2px solid green;
-        // position: absolute;
-        left: 0;
-        font-weight: 600;
-        padding: 5px;
-        width: fit-content;
-        height: fit-content;
-        line-height: 100%;
-        margin-top: 10px;
-        color: black;
-        background-color: green;
     }
 
     &-contact {
-        display: flex;
         position: absolute;
-        top: 50%;
+        width: $contact-width;
+        height: 100%;
         right: 0;
+        padding-right: 10px;
 
-        &-linkedin {
-            margin-top: 1.5px;
-            margin-right: 2px;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        color: green;
+
+        // background-color: yellow;
+        > * {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            margin: auto 5px;
+            padding: 5px;
+            // background-color: blue;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: green;
+            cursor: pointer;
+        }
+
+        &-getcv {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 80%;
+                width: 0%;
+                height: 3px;
+                border-radius: 50px;
+                background-image: linear-gradient(to bottom right, green, black);
+                transition: width .3s, height 4s;
+            }
+
+            &:hover {
+                &::after {
+                    width: 65%;
+                }
+            }
+        }
+
+        &-give-message {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 80%;
+                width: 0%;
+                height: 3px;
+                border-radius: 50px;
+                background-image: linear-gradient(to bottom right, green, black);
+                transition: width .3s, height 4s;
+            }
+
+            &:hover {
+                &::after {
+                    width: 65%;
+                }
+            }
+        }
+
+        &-social {
+            position: relative;
+            justify-content: space-evenly;
+
+            & > * {
+                position: relative;
+                width: fit-content;
+                // background-color: red;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 20%;
+                    top: 100%;
+                    width: 0%;
+                    height: 3px;
+                    border-radius: 50px;
+                    background-image: linear-gradient(to bottom right, green, black);
+                    transition: width .2s, height 4s;
+                }
+    
+                &:hover {
+                    &::after {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        &-info {
+            flex-direction: column;
+            justify-content: space-between !important;
+            width: fit-content;
+            cursor:auto;
         }
     }
 }
