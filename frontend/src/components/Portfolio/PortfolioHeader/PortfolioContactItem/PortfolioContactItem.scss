@@ -1,4 +1,6 @@
 .portfolio-header-contact-item {
+
+    &-text {
     position: relative;
     width: fit-content;
     height: 50px;
@@ -27,5 +29,14 @@
         &::after {
             width: 65%;
         }
+    }   
+    }
+ 
+
+    &-detail {
+        position: absolute;
+        top: 100%;
+        width: fit-content;
+        height: fit-content;
     }
 }

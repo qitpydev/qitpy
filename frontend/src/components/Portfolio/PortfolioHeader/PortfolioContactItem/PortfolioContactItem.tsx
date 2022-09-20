@@ -10,12 +10,24 @@ function PortfolioContactItem(props) {
     const [showItems, setShowItems] = useState(false)
 
     return (
-    <div className="portfolio-header-contact-item" 
-        onClick={() => setShowItems(!showItems)}
+    <div className="portfolio-header-contact-item">
+        <div className="portfolio-header-contact-item-text"
+            onClick={() => setShowItems(!showItems)}
         >
-        {showItems && element || text}
+            {text}
+        </div>
+        {showItems && renderItemDetail(element)}
     </div>
-  )
+    )
+}
+
+
+const renderItemDetail = (items) => {
+    return (
+        <div className="portfolio-header-contact-item-detail">
+            {items}
+        </div>
+    )
 }
 
 PortfolioContactItem.propTypes = {
