@@ -155,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
       //.convertGrayscale()
       //.convertPalette();
       //.saveImage();
-      //console.log(px.getPalette());
     };
   };
 
@@ -208,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
       currentPalette = info.value;
       palette.checked = true;
       pixelit();
-      //console.log(info)
     },
   });
 

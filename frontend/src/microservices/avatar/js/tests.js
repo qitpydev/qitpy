@@ -25,13 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
         to: document.getElementById("image" + size),
         scale: 12
       });
-      //console.log(document.getElementById("imagesource" + size), "is loaded");
       px
       .draw()
       .pixelate();
-      //.saveImage();
     }
     document.getElementById("imagesource" + size).src = `assets/tests/image-${size}.jpg`;
-    //console.log(document.getElementById("imagesource" + size),document.getElementById("image" + size));
   });
 });

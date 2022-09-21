@@ -1,22 +1,25 @@
-import React, {useState} from 'react'
-import PropTypes, { element } from 'prop-types'
+import React from 'react'
+import PropTypes from 'prop-types'
 import './PortfolioContactItem.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '../../../../app/store'
+import { ContactValueName, toggleOne } from '../../../../app/contactSlice'
 
 
 function PortfolioContactItem(props) {
+    const {text, element, stateSet} = props
 
-    const {text, element} = props;
-
-    const [showItems, setShowItems] = useState(false)
+    const isShow = useSelector((state: RootState) => state.contact.states[stateSet])
+    const dispatch = useDispatch()
 
     return (
     <div className="portfolio-header-contact-item">
         <div className="portfolio-header-contact-item-text"
-            onClick={() => setShowItems(!showItems)}
+            onClick={() => dispatch(toggleOne(stateSet))}
         >
             {text}
         </div>
-        {showItems && renderItemDetail(element)}
+        { isShow && renderItemDetail(element)}
     </div>
     )
 }
@@ -33,6 +36,7 @@ const renderItemDetail = (items) => {
 PortfolioContactItem.propTypes = {
     text: PropTypes.string.isRequired,
     element: PropTypes.element.isRequired,
+    stateSet: PropTypes.oneOf(Object.values(ContactValueName))
 }
 
 export default PortfolioContactItem

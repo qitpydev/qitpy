@@ -1,42 +1,50 @@
 .portfolio-header-contact-item {
+    position: relative;
+    width: auto;
+    height: auto;
 
     &-text {
-    position: relative;
-    width: fit-content;
-    height: 50px;
-    margin: auto 5px;
-    padding: 5px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        position: relative;
+        width: fit-content;
+        height: 50px;
+        margin: auto 5px;
+        padding: 5px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    color: green;
-    cursor: pointer;
+        color: green;
+        cursor: pointer;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 80%;
-        width: 0%;
-        height: 3px;
-        border-radius: 50px;
-        background-image: linear-gradient(to bottom right, green, black);
-        transition: width .3s, height 4s;
-    }
-
-    &:hover {
         &::after {
-            width: 65%;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0 solid green;
+            border-radius: 2px;
+            transition: width .3s, height .4s;
         }
-    }   
+
+        &:hover {
+            &::after {
+                width: 100%;
+                height: 100%;
+                border: 1px solid green;
+            }
+        }   
     }
  
 
     &-detail {
         position: absolute;
-        top: 100%;
         width: fit-content;
         height: fit-content;
+        background-color: black;
+        padding: 10px 0px;
+        z-index: 1;
+        right: 5px;
+        // border: 1px solid green;
     }
 }

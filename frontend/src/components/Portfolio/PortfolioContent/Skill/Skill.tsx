@@ -40,7 +40,6 @@ const addAnimationWhetherOverflow = (skillElementId: string) => {
   const groupItemsElement = document.querySelector(`#${containerItemsId} div`);
   const groupItemsElementWidth = groupItemsElement?.clientWidth || 0;
 
-  console.log(skillElementId, containerGroupItemsElementWidth, "<", groupItemsElementWidth, containerGroupItemsElementWidth < groupItemsElementWidth);
   if (containerGroupItemsElementWidth < groupItemsElementWidth) {
     addAnimationHandle(
       groupItemsElement as HTMLElement, 
@@ -78,7 +77,6 @@ const addAnimationHandle = (element: HTMLElement, id: string, containerWidth: nu
   element.style.animationIterationCount = "infinite"
   element.style.animationTimingFunction = "linear";
   element.style.animationDelay = "2s";
-  console.log(id, animationDuration)
 }
 
 export default Skill

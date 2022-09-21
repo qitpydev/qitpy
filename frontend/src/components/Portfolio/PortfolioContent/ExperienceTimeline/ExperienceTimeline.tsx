@@ -18,8 +18,7 @@ const WorkExperience = (props) => {
 
     const {company, time, locate, projects } = props.items;
     const { period, from, to } = time;
-    console.log("time", props)
-
+    
     const renderProjects = (projects: Array<ProjectItem> ) => {
         return (
             <>
