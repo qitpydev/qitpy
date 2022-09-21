@@ -79,16 +79,12 @@ $contact-width: 30%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 5px;
+        // padding: 5px;
         & > * {
+            position: relative;
             & > p {
                 padding: 5px;
                 margin: 0;
-            }
-            position: relative;
-            &:hover {
-                cursor: pointer;
-                // opacity: .5;
             }
         }
 
@@ -107,6 +103,7 @@ $contact-width: 30%;
 
             & > *:hover {
                 opacity: .5;
+                cursor: pointer;
             }
         }
 

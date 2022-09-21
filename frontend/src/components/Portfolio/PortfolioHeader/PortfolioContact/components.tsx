@@ -70,8 +70,7 @@ const PortfolioHeaderContactMe = () => {
                 onMouseLeave={() => setShowCopyPhone(false)}
             >
                 <p className='no-close'>0868260254</p>
-                {/* {showCopyPhone && <CopyLabel />} */}
-                <CopyLabel />
+                {showCopyPhone && <CopyLabel />}
             </div>
         </div>
     )
