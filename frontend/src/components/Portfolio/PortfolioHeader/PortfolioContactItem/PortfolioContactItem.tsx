@@ -24,7 +24,6 @@ function PortfolioContactItem(props) {
     )
 }
 
-
 const renderItemDetail = (items) => {
     return (
         <div className="portfolio-header-contact-item-detail">

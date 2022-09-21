@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //.pixelate()
       //.convertGrayscale()
       //.convertPalette();
-      //.saveImage();
+      //.saveImage();z
     };
   };
 

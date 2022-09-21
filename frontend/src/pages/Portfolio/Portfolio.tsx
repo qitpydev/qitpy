@@ -29,6 +29,7 @@ function Portfolio() {
   /** handle Close all Contact-items when click outside of the contact **/
   const handleOnClick = (e) => {
     const classLists = e.target.classList;
+    console.log("classList", classLists);
     const found = closeContactOnClickOutside.find((item: string) => classLists.contains(item))
     if (!found) { dispatch(closeAll()) }
   }

@@ -33,32 +33,4 @@ $contact-width: 30%;
         justify-content: center;
         align-items: center;
     }
-
-    &-contact {
-        position: absolute;
-        width: $contact-width;
-        height: 100%;
-        right: 0;
-        padding-right: 10px;
-
-        display: flex;
-        justify-content:flex-end;
-        align-items: center;
-        color: green;
-
-        &-getcv {
-
-        }
-
-        &-give-message {
-
-        }
-
-        &-social {
-        }
-
-        &-info {
-
-        }
-    }
 }
