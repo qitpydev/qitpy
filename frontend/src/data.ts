@@ -1,5 +1,22 @@
 import { WorkExperienceItem } from "./constance/interfaces";
 
+
+const contactData = {
+    contactMe: {
+        email: "code.maito@outlook.com",
+        phoneNumber: "+84868260254",
+    },
+    socialLinks: {
+        facebook: "https://www.facebook.com/qmait/",
+        linkedin: "https://www.linkedin.com/in/maitocode/",
+        github: "https://github.com/maitocode",
+    }
+}
+
+/**
+ * 3 paragraph, 
+ * each item in array of paragraph have a line-break at the end.
+ */
 const infoData = {
     paragraphHeader: [
         "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
@@ -41,13 +58,6 @@ const skillsData = {
         name: "Others",
         items: ["Heroku", "SpringBoot", "AzureFunction", "NestJs", "EMQX"],
     }
-}
-
-/** Circle Chart */
-const skillOverviewChart = {
-    front_end: 20,
-    back_end: 35,
-    devops: 45
 }
 
 const experienceData: Array<WorkExperienceItem> = [
@@ -122,4 +132,4 @@ const experienceData: Array<WorkExperienceItem> = [
     },
 ]
 
-export {infoData, skillsData, skillOverviewChart, experienceData}
+export { contactData, infoData, skillsData, experienceData}
