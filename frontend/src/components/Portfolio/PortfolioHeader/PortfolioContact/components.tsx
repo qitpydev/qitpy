@@ -44,14 +44,24 @@ const PortfolioHeaderSocial = () => {
   
 const PortfolioHeaderContactMe = () => {
 
+    const email = "code.maito@outlook.com";
+    const phoneNumber = "+84868260254"
 
     const [showCopyEmail, setShowCopyEmail] = useState(false)
     const [showCopyPhone, setShowCopyPhone] = useState(false)
+    const [showCopied, setShowCopied] = useState(false)
+    const handleCopyLabel = (e, value) => {
+        e.stopPropagation()
+        setShowCopied(true)
+        navigator.clipboard.writeText(value)
+        setTimeout(() => setShowCopied(false), 500);
+    }
 
-    const CopyLabel = () => {
+    const CopyLabel = ({value}) => {
         return (
             <div id="copy-label" className='no-close'>
-                <IoIosCopy className='no-close'/>
+                <IoIosCopy className='no-close' onClick={(e) => handleCopyLabel(e, value)}/>
+                {showCopied && <div id="copied">Copied!</div>}
             </div>
         )
     }
@@ -62,15 +72,15 @@ const PortfolioHeaderContactMe = () => {
                 onMouseEnter={() => setShowCopyEmail(true)}
                 onMouseLeave={() => setShowCopyEmail(false)}
             >
-                <p className='no-close'>code.maito@outlook.com</p>
-                {showCopyEmail && <CopyLabel />}
+                <p className='no-close'>{email}</p>
+                {showCopyEmail && <CopyLabel value={email}/>}
             </div>
             <div className="portfolio-header-contact-info-phone no-close"
                 onMouseEnter={() => setShowCopyPhone(true)}
                 onMouseLeave={() => setShowCopyPhone(false)}
             >
-                <p className='no-close'>0868260254</p>
-                {showCopyPhone && <CopyLabel />}
+                <p className='no-close'>{phoneNumber}</p>
+                {showCopyPhone && <CopyLabel value={phoneNumber} />}
             </div>
         </div>
     )
