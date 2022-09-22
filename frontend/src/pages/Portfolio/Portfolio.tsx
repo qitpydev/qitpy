@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import PortfolioHeader from '../../components/Portfolio/PortfolioHeader/PortfolioHeader';
-import PortfolioContent from '../../components/Portfolio/PortfolioContent/PortfolioContent';
-import PortfolioFooter from '../../components/Portfolio/PortfolioFooter/PortfolioFooter';
+import PortfolioHeader from '../../screens/Portfolio/PortfolioHeader/PortfolioHeader';
+import PortfolioContent from '../../screens/Portfolio/PortfolioContent/PortfolioContent';
+import PortfolioFooter from '../../screens/Portfolio/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import PortfolioScrollWrapper from '../../components/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
-import { closeContactOnClickOutside } from './setting';
+import PortfolioScrollWrapper from '../../screens/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
+import { CloseContactOnClickOutside } from './setting';
 import { useDispatch } from 'react-redux';
 import { closeAll } from '../../app/contactSlice';
 
@@ -29,7 +29,8 @@ function Portfolio() {
   /** handle Close all Contact-items when click outside of the contact **/
   const handleOnClick = (e) => {
     const classLists = e.target.classList;
-    const found = closeContactOnClickOutside.find((item: string) => classLists.contains(item))
+    console.log("classList", classLists);
+    const found = CloseContactOnClickOutside.find((item: string) => classLists.contains(item))
     if (!found) { dispatch(closeAll()) }
   }
 

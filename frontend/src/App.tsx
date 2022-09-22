@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-import { Routes, Route, Link, Outlet, useParams } from 'react-router-dom'
 import RouterManagement from './routes/router';
+import ScreenWrapper from './components/ScreenWrapper/ScreenWrapper';
+import { useDispatch } from 'react-redux';
+
 
 function App() {
   return (
     <div>
+      <ScreenWrapper />
       <RouterManagement />
     </div>
   );

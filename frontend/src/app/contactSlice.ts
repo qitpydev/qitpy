@@ -13,7 +13,6 @@ export interface ContactState {
     }
 }
 
-
 const initialState: ContactState = {
     states: {
       [ContactValueName.GET_CV]: false,

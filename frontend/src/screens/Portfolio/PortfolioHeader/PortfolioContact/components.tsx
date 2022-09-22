@@ -3,11 +3,23 @@ import { FaFacebookSquare, FaGithubSquare } from 'react-icons/fa'
 import { ImLinkedin } from 'react-icons/im'
 import {IoIosCopy} from 'react-icons/io'
 import { contactData } from '../../../../data'
+import { setScreenWrapper } from '../../../../app/screenWrapperSlice'
+import { useDispatch } from 'react-redux';
+import { WrapperItemName } from '../../../../components/ScreenWrapper/screenWrapeprItems/screenWrapperItems'
 
 const PortfolioHeaderGetCV = () => {
+
+    const [showPreviewCV, setShowPreviewCV] = useState(false)
+    const dispatch = useDispatch()
+
+    const handleShowPreviewCV = () => {
+        console.log("handleShowPreviewCV");
+        dispatch(setScreenWrapper(WrapperItemName.PREVIEW_CV))
+    }
+
     return (
       <div className="portfolio-header-contact-getcv">
-        <button className="preview-btn">Preview</button>
+        <button className="preview-btn" onClick={handleShowPreviewCV}>Preview</button>
         <button className="download-btn">Download</button>
       </div>
     )

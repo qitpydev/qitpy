@@ -1,0 +1,26 @@
+#screen-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    opacity: .5;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preview-cv {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#downdload-cv {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
