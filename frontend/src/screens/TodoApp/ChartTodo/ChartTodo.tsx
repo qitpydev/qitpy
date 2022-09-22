@@ -1,6 +1,6 @@
 import React from 'react'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Area, AreaChart, Tooltip, Legend } from 'recharts';
-import { Month } from '../../../enums/EMonth';
+import { Month } from '../Objects';
 import "./ChartTodo.scss";
 import CustomTooltip from './CustomTooltip/CustomTooltip';
 

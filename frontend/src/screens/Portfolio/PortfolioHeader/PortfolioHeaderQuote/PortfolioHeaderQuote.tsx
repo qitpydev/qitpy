@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import './PortfolioHeaderQuote.scss'
-import { Quote } from '../../../../constance/interfaces'
 import axios from 'axios'
+import { Quote } from '../../Objects'
 
 function PortfolioHeaderQuote(props) {
   const quoteInit: Quote = {

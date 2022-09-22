@@ -1,8 +1,8 @@
 import React from 'react'
 import './ExperienceTimeline.scss'
 import {GiFeather} from "react-icons/gi"
-import { WorkExperienceItem, ProjectItem } from '../../../../constance/interfaces'
 import { experienceData } from '../../../../data'
+import { WorkExperienceItem, ProjectItem } from '../../Objects'
 
 function ExperienceTimeline() {
   return (

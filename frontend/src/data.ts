@@ -1,5 +1,4 @@
-import { WorkExperienceItem } from "./constance/interfaces";
-
+import { WorkExperienceItem } from "./screens/Portfolio/Objects";
 
 const contactData = {
     contactMe: {
