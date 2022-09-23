@@ -1,6 +1,6 @@
 import { WorkExperienceItem } from "./screens/Portfolio/Objects";
 
-const contactData = {
+const ContactData = {
     contactMe: {
         email: "code.maito@outlook.com",
         phoneNumber: "+84868260254",
@@ -16,7 +16,7 @@ const contactData = {
  * 3 paragraph, 
  * each item in array of paragraph have a line-break at the end.
  */
-const infoData = {
+const InfoData = {
     paragraphHeader: [
         "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
     ],
@@ -32,7 +32,7 @@ const infoData = {
     ]
 };
 
-const skillsData = {
+const SkillsData = {
     os: {
         name: "Operating_system",
         items: ["Fedora", "ubuntu"],
@@ -59,7 +59,7 @@ const skillsData = {
     }
 }
 
-const experienceData: Array<WorkExperienceItem> = [
+const ExperienceData: Array<WorkExperienceItem> = [
     {
         company: "Smartdev",
         time: {
@@ -131,4 +131,4 @@ const experienceData: Array<WorkExperienceItem> = [
     },
 ]
 
-export { contactData, infoData, skillsData, experienceData}
+export { ContactData, InfoData, SkillsData, ExperienceData}

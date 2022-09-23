@@ -1,14 +1,11 @@
 import React from 'react'
-import PortfolioContactItem from '../PortfolioContactItem/PortfolioContactItem'
-import { ContactValueName } from '../../../../app/contactSlice'
-import {
-    PortfolioHeaderGetCV, 
-    PortfolioHeaderLeaveMessage, 
-    PortfolioHeaderSocial, 
-    PortfolioHeaderContactMe
-} from './components'
-
 import "./PortfolioContact.scss"
+import { ContactValueName } from '../../../../app/contactSlice'
+import PortfolioContactItem from '../PortfolioContactItem/PortfolioContactItem'
+import PortfolioHeaderContactMe from './components/PortfolioHeaderContactMe'
+import PortfolioHeaderGetCV from './components/PortfolioHeaderGetCV'
+import PortfolioHeaderLeaveMessage from './components/PortfolioHeaderLeaveMessage'
+import PortfolioHeaderSocial from './components/PortfolioHeaderSocial'
 
 function PortfolioContact(props) {
     return (

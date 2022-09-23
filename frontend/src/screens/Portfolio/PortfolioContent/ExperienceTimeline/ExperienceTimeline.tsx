@@ -1,13 +1,13 @@
 import React from 'react'
 import './ExperienceTimeline.scss'
 import {GiFeather} from "react-icons/gi"
-import { experienceData } from '../../../../data'
+import { ExperienceData } from '../../../../data'
 import { WorkExperienceItem, ProjectItem } from '../../Objects'
 
 function ExperienceTimeline() {
   return (
     <div className='work-experience no-wrap'>
-        {experienceData.map((item: WorkExperienceItem, index: number) => (
+        {ExperienceData.map((item: WorkExperienceItem, index: number) => (
             <WorkExperience key={index} items={item} />
         ))}
     </div>
