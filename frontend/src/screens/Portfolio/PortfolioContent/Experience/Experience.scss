@@ -5,10 +5,10 @@ $work_experience_margin_top: 75px;
 
 .portfolio-experience {
     position: relative;
-    height: calc(100% - $certificate-height - 15px);
+    height: 100%;
     width: 100%;
     border: 1px solid green;
-    margin-bottom: 5px;
+    overflow: hidden;
 
     .label-rotate {
         left: -55px;
@@ -34,6 +34,5 @@ $work_experience_margin_top: 75px;
         overflow-x: hidden;
         left: -7px;
         margin-top: $work_experience_margin_top;
-
     }
 }

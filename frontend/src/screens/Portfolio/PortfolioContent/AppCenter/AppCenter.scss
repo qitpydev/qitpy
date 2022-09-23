@@ -1,0 +1,10 @@
+@import "../PortfolioContent.scss";
+@import "../../PortfolioHeader/PortfolioHeader.scss";
+
+.app-center {
+    border: 1px solid green;
+
+    display: grid;
+    gap: 2px;
+    
+}

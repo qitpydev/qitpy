@@ -6,8 +6,11 @@ const PortfolioHeaderLeaveMessage = () => {
 
     const sendMessage = (e) => {
         e.stopPropagation();
-        alert("sent: " + message)
-        setMessage("")
+        if (message === '') return;
+        else {
+            alert("sent: " + message)
+            setMessage("")
+        }
     }
 
     return (

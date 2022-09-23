@@ -1,14 +1,19 @@
+@import "../PortfolioContent.scss";
+
+$avatar-height: 250px;
+$avatar-width: 190px;
+
 .portfolio-avatar {
-    margin: 10px;
-    display: flex;
-    width: fit-content;
     position: relative;
+    height: $avatar-height;
+    display: flex;
+    width: 100%;
+
     &-image {
         width: auto;
-        height: 250px;
+        height: $avatar-height;
         border: 5px solid green;
         border-radius: 0;
-        // margin-right: 5px;
     }
 
     &-info {
@@ -19,7 +24,6 @@
         border: 1px solid green;
         border-left: 0;
         box-sizing: border-box;
-        margin: 0 auto;
         align-items: center;
 
         p {
