@@ -4,6 +4,7 @@ import './Certificate.scss'
 function Certificate() {
   return (
     <div className='portfolio-certificate'>
+      <div className="label-rotate">Certificates</div>
     </div>
   )
 }

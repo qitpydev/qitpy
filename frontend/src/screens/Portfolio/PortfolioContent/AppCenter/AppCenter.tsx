@@ -5,16 +5,11 @@ import './AppCenter.scss'
 function AppCenter(props) {
   return (
     <div className="app-center">
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
-        <div className="haha">items</div>
+        <div className="app-center-access">access</div>
+        <div className="app-center-commit">commit</div>
+        <div className="app-center-apps">apps</div>
+        <div className="app-center-bottom">bottom</div>
+        <div className="app-center-bottom">bottom</div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ function PortfolioContent() {
       <div className="portfolio-content-avatar"><PortfolioContentAvatar /></div>
       <div className="portfolio-content-skill"><Skill /></div>
       <div className="portfolio-content-experience"><Experience /></div>
-      <div className="portfolio-content-app">app</div>
+      <div className="portfolio-content-app"><AppCenter></AppCenter></div>
       <div className="portfolio-content-certificate"><Certificate /></div>
     </div>
   )
