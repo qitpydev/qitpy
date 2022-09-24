@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import PortfolioHeader from '../../screens/Portfolio/PortfolioHeader/PortfolioHeader';
-import PortfolioContent from '../../screens/Portfolio/PortfolioContent/PortfolioContent';
-import PortfolioFooter from '../../screens/Portfolio/PortfolioFooter/PortfolioFooter';
+import PortfolioHeader from '../../features/Portfolio/PortfolioHeader/PortfolioHeader';
+import PortfolioContent from '../../features/Portfolio/PortfolioContent/PortfolioContent';
+import PortfolioFooter from '../../features/Portfolio/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import PortfolioScrollWrapper from '../../screens/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
+import PortfolioScrollWrapper from '../../features/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
 import { CloseContactOnClickOutside } from './setting';
 import { useDispatch } from 'react-redux';
-import { closeAll } from '../../app/contactSlice';
+import { closeAll } from '../../common/store/contactSlice';
 
 function Portfolio() {
   const [showFooterOn, setShowFooterOn] = useState(false);

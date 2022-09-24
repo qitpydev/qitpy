@@ -1,4 +1,4 @@
-import { WorkExperienceItem } from "./screens/Portfolio/Objects";
+import { WorkExperienceItem } from "./features/Portfolio/Objects";
 
 const ContactData = {
     contactMe: {

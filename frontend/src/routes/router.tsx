@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import TodoApp from '../screens/TodoApp/TodoApp';
-import NoteApp from '../screens/NoteApp/NoteApp';
+import TodoApp from '../features/TodoApp/TodoApp';
+import NoteApp from '../features/NoteApp/NoteApp';
 import MyManagement from '../pages/MyManagement/MyManagement';
 import Portfolio from '../pages/Portfolio/Portfolio';
 

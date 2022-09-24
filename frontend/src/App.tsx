@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import RouterManagement from './routes/router';
-import ScreenWrapper from './components/ScreenWrapper/ScreenWrapper';
+import ScreenWrapper from './common/components/ScreenWrapper/ScreenWrapper';
 
 
 function App() {
