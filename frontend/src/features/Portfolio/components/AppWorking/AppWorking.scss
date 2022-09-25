@@ -6,34 +6,36 @@ $forcus_toolbar-width: 350px;
     height: 100%;
     overflow-x: scroll;
 
-    &-left_side, &-right_side {
-        width: $forcus_toolbar-width;
-        height: 100%;
-        background-color:beige;
-    }
+    // &-left_side, &-right_side {
+    //     width: $forcus_toolbar-width;
+    //     height: 100%;
+    //     background-color:beige;
+    // }
     
-    &-right_side {
-        position: absolute;
-        right: 0;
+    // &-right_side {
+    //     position: absolute;
+    //     right: 0;
         
-        background-image: linear-gradient(to left, black , rgba(0,0,0,0));
-        border-radius: 150px 0 0 150px;
-    }
+    //     background-image: linear-gradient(to left, black , rgba(0,0,0,0));
+    //     border-radius: 150px 0 0 150px;
+    // }
 
 
-    &-left_side {
-        position: absolute;
-        left: 0;
+    // &-left_side {
+    //     position: absolute;
+    //     left: 0;
 
-        background-image: linear-gradient(to right, black , rgba(0,0,0,0));
-        border-radius: 0 150px 150px 0;
-    }
+    //     background-image: linear-gradient(to right, black , rgba(0,0,0,0));
+    //     border-radius: 0 150px 150px 0;
+    // }
 
     &-card-container {
-        position: relative;
-        width: calc(100% + $forcus_toolbar-width);
+        position: absolute;
+        left: 0;
+        width: calc(100% + $forcus_toolbar-width + $forcus_toolbar-width);
         height: 100%;
         padding: 20px $forcus_toolbar-width;
+        // background-color: red;
 
         // background-color: red;
         // TODO: add no wrapper for this
