@@ -52,22 +52,19 @@ $forcus_toolbar-width: 350px;
 
                 position: relative;
                 width: 250px;
-                height: 100%;
-                background-color: red;
-                
+                height: 100%; 
                 margin: 0 20px;
                 padding: 20px;
 
                 box-shadow: 5px 3px green;
-                // border: .5px solid green;
                 background-image: linear-gradient(to bottom right, green, black);
                 border-radius: 5px;
+                color: green;
 
                 &:hover {
                     box-shadow: none;
-                    background-color: black;
-                    background-image: none;
-                    color: green;
+                    background-image: linear-gradient(to bottom right, black, green);
+                    color: black;
                 }
 
                 &-project_name {
