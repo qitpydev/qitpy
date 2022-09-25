@@ -1,5 +1,11 @@
 import { WorkExperienceItem } from "./features/Portfolio/Objects";
 
+interface ProjectWokring {
+    name: string,
+    description: string,
+    link: string
+}
+
 const ContactData = {
     contactMe: {
         email: "code.maito@outlook.com",
@@ -131,4 +137,42 @@ const ExperienceData: Array<WorkExperienceItem> = [
     },
 ]
 
-export { ContactData, InfoData, SkillsData, ExperienceData}
+const ProjectWorkings: Array<ProjectWokring> = [
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    },
+    {
+        name: "My TODO",
+        description: "manage your working by tool - don't keep all things in mind",
+        link: "https://google.com"
+    }
+]
+
+export { ContactData, InfoData, SkillsData, ExperienceData, ProjectWorkings}
