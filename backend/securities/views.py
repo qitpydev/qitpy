@@ -8,6 +8,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import BasePermission
 from rest_framework import filters
 from rest_framework import viewsets
+from rest_framework import mixins
 
 class UserLogin(ObtainAuthToken):
     """Handle creating user authentication tokens"""
@@ -25,10 +26,21 @@ class UserLogin(ObtainAuthToken):
             'email': user.email,
         })
         
-class UserViewSet(viewsets.ModelViewSet):
-    serializer_class = serializers.AuthenticationSerializer
-    queryset = models.UserAccount.objects.all()
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (BasePermission)
-    filter_backends = (filters.SearchFilter,)
-    search_fields = ('username',)
+# class UserViewSet(viewsets.ModelViewSet):
+#     serializer_class = serializers.AuthenticationSerializer
+#     queryset = models.UserAccount.objects.all()
+#     authentication_classes = (TokenAuthentication,)
+#     permission_classes = (BasePermission)
+#     filter_backends = (filters.SearchFilter,)
+#     search_fields = ('username',)
+    
+#     pass
+
+class UserRegister(APIView):
+    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+    def post(self, request):
+        serializer = serializers.AuthenticationSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+                

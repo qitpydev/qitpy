@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_learn',
+        'NAME': 'maitocode_db',
         'USER': 'postgres',
         'PASSWORD': '123456',
         'HOST': 'localhost',

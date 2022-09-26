@@ -12,7 +12,7 @@ class UserAccountManager(BaseUserManager):
             raise ValueError('You must provide a username/password')
         
         username = username.lower()
-        user = self.model(username)
+        user = self.model(username=username)
         user.set_password(password)
         user.save(using=self._db)
         
