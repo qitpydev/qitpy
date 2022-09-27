@@ -5,7 +5,7 @@ class AuthenticationSerializer(serializers.ModelSerializer):
     """Serializer for authentication methods"""
     
     class Meta:
-        models =  models.UserAccount
+        model =  models.UserAccount
         fields = ('id', 'username', 'password')
         extra_kwargs = {
             'password': {

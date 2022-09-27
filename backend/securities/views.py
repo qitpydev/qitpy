@@ -15,26 +15,23 @@ class UserLogin(ObtainAuthToken):
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
     
     def post(self, request, *args, **kwargs):
-        serializer = self.serializer_class(data=request.data,
-                                           context={'request': request})
+        serializer = self.serializer_class(
+            data=request.data,
+            context={'request': request}
+        )
         serializer.is_valid(raise_exception=True)
-        user = serializer.validated_data['user']
-        token, created = Token.objects.get_or_create(user=user)
-        return Response({
-            'token': token.key,
-            'user_id': user.pk,
-            'email': user.email,
-        })
         
-# class UserViewSet(viewsets.ModelViewSet):
-#     serializer_class = serializers.AuthenticationSerializer
-#     queryset = models.UserAccount.objects.all()
-#     authentication_classes = (TokenAuthentication,)
-#     permission_classes = (BasePermission)
-#     filter_backends = (filters.SearchFilter,)
-#     search_fields = ('username',)
-    
-#     pass
+        user = serializer.validated_data['user']
+        isTokenExisted = Token.objects.filter(user=user).exists()
+        if isTokenExisted:
+            Token.delete(Token.objects.get(user=user))
+        token = Token.objects.create(user=user)
+        
+        return Response({
+            'user_id': user.pk,
+            'token': token.key,
+            'username': user.username,
+        })
 
 class UserRegister(APIView):
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES

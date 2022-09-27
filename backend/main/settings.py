@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_seed',
     'rest_framework',
-    # 'rest_framework.authtoken',
+    'rest_framework.authtoken',
     
     # Apps
     'mymanagement',
