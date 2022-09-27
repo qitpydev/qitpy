@@ -1,4 +1,4 @@
-$forcus_toolbar-width: 350px;
+$forcus_toolbar-width: 300px;
 
 .app_working {
     position: relative;
@@ -47,22 +47,30 @@ $forcus_toolbar-width: 350px;
             justify-content: space-around;
 
             .app_working-project_card {
-
                 position: relative;
                 width: 250px;
                 height: 100%; 
                 margin: 0 20px;
-                padding: 20px;
+                padding: 30px;
 
                 box-shadow: 5px 3px green;
                 background-image: linear-gradient(to bottom right, green, black);
                 border-radius: 5px;
-                color: green;
+                transition: all .1s ease-in-out .1s;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
 
                 &:hover {
-                    box-shadow: none;
-                    background-image: linear-gradient(to bottom right, black, green);
-                    color: black;
+                    // box-shadow: none;
+                    // background-image: linear-gradient(to bottom right, black, green);
+                    background-color: green;
+                    background-image: radial-gradient(circle, black, green);
+                    color: red;
+                    // opacity: .8;
+                    font-weight: 700;
                 }
 
                 &-project_name {
@@ -78,21 +86,40 @@ $forcus_toolbar-width: 350px;
                 }
 
                 &-project_description {
-                    // text
+                    text-align: center;
                 }
 
                 &-access_btn {
-                    width: fit-content;
-                    background-color: green;
+                    position: relative;
+                    width: 100px;
+                    height: 35px;
+
                     color: black;
                     text-decoration: none;
+                    background-color: green;
+                    z-index: 10;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: justify;
 
                     > * {
                         color: black;
-                        
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        // background-color: black;
+                        color: green;
+                        box-shadow: 2px 2px black;
+                        cursor: pointer;
+
+                        > * {
+                            color: red;
+                        }
                     }
                 }
-
             }
         }
     }

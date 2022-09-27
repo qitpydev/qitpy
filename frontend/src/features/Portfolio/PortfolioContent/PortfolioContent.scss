@@ -11,12 +11,6 @@
     grid-template-columns: 840px auto 344px;
     grid-template-rows: 250px auto 200px;
 
-    background-color: #fff;
-     & > * {
-        background-color: antiquewhite;
-     }
-
-
     &-skill {
     }
 
@@ -30,7 +24,7 @@
 
     &-app {
         grid-area: 4 / 1 / 2 / 3;
-        border : 1px solid green;
+        // border : 1px solid green;
         bottom: 0;
     }
 }

@@ -7,6 +7,7 @@ import PortfolioScrollWrapper from '../../features/Portfolio/PortfolioScrollWrap
 import { CloseContactOnClickOutside } from './setting';
 import { useDispatch } from 'react-redux';
 import { closeAll } from '../../common/store/contactSlice';
+import * as FUNC from '../../common/hook/functions'
 
 function Portfolio() {
   const [showFooterOn, setShowFooterOn] = useState(false);
@@ -14,6 +15,7 @@ function Portfolio() {
 
   /** Handle scroll to: Footer || Header_Body */
   const handleOnScroll = (event) => {
+    // no-wrapper
     if (event.ctrlKey || event.shiftKey || event.altKey
       || event.target.className?.includes('no-wrap')) {
     }
@@ -24,6 +26,17 @@ function Portfolio() {
         setShowFooterOn(false)
       } 
     }
+
+    // wrapper-horizontal
+    // if (event.target.className?.includes("scroll-horizontal")) {
+    //   console.log("ok nha")
+    //   const stripOfProjectCardsElement = document.getElementById(FUNC.elementId.stripOfProjectCard)
+    //   if (stripOfProjectCardsElement) {
+    //     stripOfProjectCardsElement.style.transform = `translateX(${event.deltaY}%)`
+    //   }
+    // } else {
+    //   console.log("scroll-horizontal scroll-horizontal".includes(FUNC.classNames.wrapperHorizontal));
+    // }
   }
 
   /** handle Close all Contact-items when click outside of the contact **/

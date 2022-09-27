@@ -6,7 +6,7 @@ import { WorkExperienceItem, ProjectItem } from '../../Objects'
 
 function ExperienceTimeline() {
   return (
-    <div className='work-experience no-wrap'>
+    <div className='work-experience'>
         {ExperienceData.map((item: WorkExperienceItem, index: number) => (
             <WorkExperience key={index} items={item} />
         ))}
@@ -23,14 +23,14 @@ const WorkExperience = (props) => {
         return (
             <>
                 {projects.map((project, index) => (
-                    <div key={index} className="project-experience no-wrap">
-                        <div className="project-experience-marker no-wrap"></div>
-                        <div className="project-experience-content no-wrap">
-                            <div className="project-name no-wrap">{project.prjName}</div>
-                            <div className="project-info no-wrap">
-                                <p className='no-wrap'><span className='no-wrap'>Team size: </span> {project.prjTeamSize}</p>
-                                <p className='no-wrap'><span className='no-wrap'>Responsibilities: </span> {project.prjResponsibilities}</p>
-                                <p className='no-wrap'><span className='no-wrap'>Technologies: </span>{project.prjTechnologies}</p>
+                    <div key={index} className="project-experience">
+                        <div className="project-experience-marker"></div>
+                        <div className="project-experience-content">
+                            <div className="project-name">{project.prjName}</div>
+                            <div className="project-info">
+                                <p className=''><span className=''>Team size: </span> {project.prjTeamSize}</p>
+                                <p className=''><span className=''>Responsibilities: </span> {project.prjResponsibilities}</p>
+                                <p className=''><span className=''>Technologies: </span>{project.prjTechnologies}</p>
                             </div>
                         </div>
                     </div>
@@ -40,22 +40,22 @@ const WorkExperience = (props) => {
     }
 
     return (
-        <div className="work-experience-item no-wrap">
-            <div className="work-experience-item-company no-wrap">
-                <GiFeather size="50px" color="green" className='no-wrap'/>
-                <div className="company-info no-wrap">
-                    <div className="company-name no-wrap">
+        <div className="work-experience-item">
+            <div className="work-experience-item-company">
+                <GiFeather size="50px" color="green" className=''/>
+                <div className="company-info">
+                    <div className="company-name">
                         {company}
                     </div>
-                    <div className="company-work-title no-wrap">Fullstack Developer</div>
-                    <div className="company-timeline no-wrap">
+                    <div className="company-work-title">Fullstack Developer</div>
+                    <div className="company-timeline">
                         {`${period} | ${from} - ${to}`}
                         <br />
                         {locate}
                     </div>
                 </div>
             </div>
-            <div className="work-experience-item-projects no-wrap">
+            <div className="work-experience-item-projects">
                 {renderProjects(projects)}
             </div>
         </div>

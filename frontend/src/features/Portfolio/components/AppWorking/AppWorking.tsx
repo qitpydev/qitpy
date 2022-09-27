@@ -2,6 +2,7 @@ import React from 'react'
 import './AppWorking.scss'
 import { Link } from 'react-router-dom'
 import { ProjectWorkings } from '../../../../data'
+import * as FUNC from '../../../../common/hook/functions'
 
 function AppWorking() {
   return (
@@ -9,12 +10,13 @@ function AppWorking() {
       <div className="app_working-left_side"></div>
       <div className="app_working-right_side"></div>
       <div className="app_working-card-container">
-        <div className="app_working-strip_of_cards">
+        <div className="app_working-strip_of_cards" id={FUNC.elementId.stripOfProjectCard}>
           {
-            ProjectWorkings.map((item) => renderCard(
+            ProjectWorkings.map((item, index) => renderCard(
                 item.name,
                 item.description,
-                item.link
+                item.link,
+                index,
               )
             )
           }
@@ -24,21 +26,20 @@ function AppWorking() {
   )
 }
 
-const renderCard = (name, description, link) => {
+const renderCard = (name, description, link, index) => {
   return (
-    <div className='app_working-project_card'>
+    <div className='app_working-project_card' key={index}>
       <div className="app_working-project_card-project_name">
         {name}
       </div>
       <div className="app_working-project_card-project_description">
         {description}
       </div>
-      <button className='app_working-project_card-access_btn'>
+      <div className='app_working-project_card-access_btn'>
         <Link to={link}>Access</Link>
-      </button>
+      </div>
     </div>
   )
 }
-
 
 export default AppWorking

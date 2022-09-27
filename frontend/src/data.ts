@@ -34,7 +34,7 @@ const InfoData = {
     ],
     paragraphFooter:[
         "I love Python because the ability, strongly, shortly, quickly and intelligence.",
-        "Currently, i open0868260254 to working with ReactJs & Django.",
+        "Currently, i open to working with ReactJs & Django.",
     ]
 };
 

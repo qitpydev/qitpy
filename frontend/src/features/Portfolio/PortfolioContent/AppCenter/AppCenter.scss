@@ -1,11 +1,10 @@
 @import "../PortfolioContent.scss";
 @import "../../PortfolioHeader/PortfolioHeader.scss";
 
-.app-center {
+.app_center {
     // border: 1px solid green;
     height: 100%;
     width: 100%;
-    background-color: bisque;
     
     display: grid;
     grid-template-columns: 700px auto 700px;
@@ -13,9 +12,9 @@
     gap: 10px;
     padding: 10px;
 
-    & > * {
-        background-color: azure;
-    }
+    // & > * {
+    //     // background-color: azure;
+    // }
     
     &-access_frequency {
         grid-area: 1 / 1 / 1 / 1;
