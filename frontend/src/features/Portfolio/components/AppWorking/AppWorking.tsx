@@ -9,8 +9,8 @@ function AppWorking() {
     <div className='app_working'>
       <div className="app_working-left_side"></div>
       <div className="app_working-right_side"></div>
-      <div className="app_working-card-container">
-        <div className="app_working-strip_of_cards" id={FUNC.elementId.stripOfProjectCard}>
+      <div className="app_working-card-container" id={FUNC.elementId.AppWorkingCardContainer}>
+        <div className="app_working-strip_of_cards">
           {
             ProjectWorkings.map((item, index) => renderCard(
                 item.name,

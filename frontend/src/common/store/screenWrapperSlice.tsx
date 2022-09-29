@@ -16,7 +16,6 @@ export const screenWrapperSlice = createSlice({
     initialState,
     reducers: {
         clearScreenWrapper: (state) => {
-          console.log("clear")
           state.element = initialState.element;
         },
         setScreenWrapper: (state, action: PayloadAction<WrapperItemName>) => {

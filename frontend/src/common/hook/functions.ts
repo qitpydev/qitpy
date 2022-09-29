@@ -4,7 +4,7 @@ export const classNames: { [key:string]: string } = {
 }
 
 export const elementId: { [key:string]: string } = {
-    stripOfProjectCard: "strip-of-project-card",
+    AppWorkingCardContainer: "app_working-card-container",
 }
 
 export const recursiveToAddClassNameWith = (elementId: string, className: string) => {

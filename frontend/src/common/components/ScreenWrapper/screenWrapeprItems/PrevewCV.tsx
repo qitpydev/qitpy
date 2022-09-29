@@ -5,7 +5,6 @@ import { clearScreenWrapper } from '../../../store/screenWrapperSlice';
 const PreviewCV = () => {
     const dispatch = useDispatch()
     const handleClick = (e) => {
-        console.log("e.target.classList", e.target.classList)
         if (!e.target.classList.contains('no-close')) {
             dispatch(clearScreenWrapper())
         }
