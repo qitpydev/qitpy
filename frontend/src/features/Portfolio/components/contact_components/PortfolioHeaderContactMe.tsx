@@ -13,7 +13,7 @@ const PortfolioHeaderContactMe = () => {
         e.stopPropagation()
         setShowCopied(true)
         navigator.clipboard.writeText(value)
-        setTimeout(() => setShowCopied(false), 500);
+        setTimeout(() => setShowCopied(false), 200);
     }
 
     const CopyLabel = ({value}) => {
