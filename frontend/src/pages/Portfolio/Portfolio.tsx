@@ -11,6 +11,7 @@ import * as FUNC from '../../common/hook/functions'
 import axios from 'axios';
 import { object } from 'prop-types';
 import { publicIpv4 } from 'public-ip';
+import CV from '../../features/Portfolio/components/CV/CV';
 
 function Portfolio() {
   const [showFooterOn, setShowFooterOn] = useState(false);
@@ -61,6 +62,7 @@ function Portfolio() {
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
+      <CV />
       <PortfolioScrollWrapper direction={showFooterOn? 'up' : 'down'}/>
     </div>
   )
