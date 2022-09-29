@@ -24,7 +24,7 @@ const ContactData = {
  */
 const InfoData = {
     paragraphHeader: [
-        "Hi, my name is Quyet - a young guy that loves Computer, Programming & Technologies."
+        "Hi, my name is Quyet - one guy that loves Computer, Programming & Technologies."
     ],
     paragraphBody: [
         "I am a Python-Developer, with about 2 years experience",
