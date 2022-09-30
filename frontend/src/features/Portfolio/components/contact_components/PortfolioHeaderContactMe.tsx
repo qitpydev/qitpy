@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {IoIosCopy} from 'react-icons/io'
+import * as FUNC from '../../../../common/function/functions'
 
 const PortfolioHeaderContactMe = () => {
 
@@ -18,27 +19,27 @@ const PortfolioHeaderContactMe = () => {
 
     const CopyLabel = ({value}) => {
         return (
-            <div id="copy-label" className='no-close'>
-                <IoIosCopy className='no-close' onClick={(e) => handleCopyLabel(e, value)}/>
+            <div id="copy-label" className={FUNC.classNames.noClose}>
+                <IoIosCopy className={FUNC.classNames.noClose} onClick={(e) => handleCopyLabel(e, value)}/>
                 {showCopied && <div id="copied">Copied!</div>}
             </div>
         )
     }
 
     return (
-        <div className="portfolio-header-contact-contact-me no-close">
-            <div className="portfolio-header-contact-info-email no-close" 
+        <div className={`portfolio-header-contact-contact-me ${FUNC.classNames.noClose}`}>
+            <div className={`portfolio-header-contact-info-email ${FUNC.classNames.noClose}`} 
                 onMouseEnter={() => setShowCopyEmail(true)}
                 onMouseLeave={() => setShowCopyEmail(false)}
             >
-                <p className='no-close'>{email}</p>
+                <p className={FUNC.classNames.noClose}>{email}</p>
                 {showCopyEmail && <CopyLabel value={email}/>}
             </div>
-            <div className="portfolio-header-contact-info-phone no-close"
+            <div className={`portfolio-header-contact-info-phone ${FUNC.classNames.noClose}`}
                 onMouseEnter={() => setShowCopyPhone(true)}
                 onMouseLeave={() => setShowCopyPhone(false)}
             >
-                <p className='no-close'>{phoneNumber}</p>
+                <p className={FUNC.classNames.noClose}>{phoneNumber}</p>
                 {showCopyPhone && <CopyLabel value={phoneNumber} />}
             </div>
         </div>

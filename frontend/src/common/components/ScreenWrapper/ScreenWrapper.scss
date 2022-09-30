@@ -2,25 +2,26 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 10000;
-    opacity: .5;
-    background-color: black;
+    z-index: 100;
+    background-color: rgba(0,255,0,0.3);
 
     display: flex;
     justify-content:center;
-    align-items: center;
+
+    overflow-y: scroll;
 }
 
 #preview-cv {
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: fit-content;
+    height: fit-content;
+
+    margin: 100px auto;
 }
 
-#downdload-cv {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
+// #downdload-cv {
+//     position: relative;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+// }

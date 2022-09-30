@@ -5,7 +5,7 @@ import AccessFrequency from '../../components/AccessFrequency/AccessFrequency'
 import ActivityFrequency from '../../components/ActivityFrequency/ActivityFrequency'
 import AppWorking from '../../components/AppWorking/AppWorking'
 import ExploreMore from '../../components/ExploreMore/ExploreMore'
-import * as FUNC from "../../../../common/hook/functions"
+import * as FUNC from "../../../../common/function/functions"
 
 
 function AppCenter(props) {

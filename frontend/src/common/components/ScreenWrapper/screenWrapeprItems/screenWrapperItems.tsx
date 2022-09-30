@@ -4,7 +4,6 @@ import PreviewCV from './PrevewCV';
 export enum WrapperItemName {
     NONE,
     PREVIEW_CV,
-    
 }
 
 const listWrapperItems = {

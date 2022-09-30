@@ -1,0 +1,71 @@
+#CV {
+    position: relative;
+    width: 1240px;
+    height: 1754px;
+    background-color: white;
+
+    display: flex;
+
+    .cv__body {
+        position: relative;;
+        width: 67%;
+        height: 100%;
+        background-color: antiquewhite;
+        
+        display: flex;
+        flex-direction: column;
+
+        &--profile {
+
+            &--title {
+
+            }
+
+            &--content {
+                text-align: left;
+            }
+        }
+
+        &--project {
+            &--title {
+                
+            }
+
+            &--content {
+                text-align: left;
+            }
+        }
+    }
+
+    .cv__side {
+        position: relative;
+        width: 33%;
+        height: 100%;
+        background-color: beige;
+
+        &--name {
+
+        }
+
+        &--contact {
+
+        }
+
+        &--certificate {
+
+        }
+
+        &--skill {
+
+        }
+
+        &--interests {
+
+        }
+    }
+}
+
+.download-cv {
+    position: absolute !important;
+    z-index: 1;
+}

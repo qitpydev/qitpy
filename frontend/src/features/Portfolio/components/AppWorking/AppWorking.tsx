@@ -2,7 +2,7 @@ import React from 'react'
 import './AppWorking.scss'
 import { Link } from 'react-router-dom'
 import { ProjectWorkings } from '../../../../data'
-import * as FUNC from '../../../../common/hook/functions'
+import * as FUNC from '../../../../common/function/functions'
 
 function AppWorking() {
   return (

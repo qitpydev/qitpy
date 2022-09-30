@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import * as FUNC from '../../../../common/function/functions'
 
 const PortfolioHeaderLeaveMessage = () => {
 
@@ -14,12 +15,12 @@ const PortfolioHeaderLeaveMessage = () => {
     }
 
     return (
-        <div className="portfolio-header-contact-leave-message no-close">
-            <div className="portfolio-header-contact-leave-message-frame no-close">
+        <div className={`portfolio-header-contact-leave-message ${FUNC.classNames.noClose}`}>
+            <div className={`portfolio-header-contact-leave-message-frame ${FUNC.classNames.noClose}`}>
                 <input 
                     value={message} 
                     type="text" 
-                    className='no-close' 
+                    className={FUNC.classNames.noClose}
                     onChange={(e) => setMessage(e.target.value)}
                 />
                 <button onClick={(e) => sendMessage(e)}>send</button>

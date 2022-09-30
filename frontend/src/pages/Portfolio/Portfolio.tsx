@@ -7,7 +7,7 @@ import PortfolioScrollWrapper from '../../features/Portfolio/PortfolioScrollWrap
 import { CloseContactOnClickOutside } from './setting';
 import { useDispatch } from 'react-redux';
 import { closeAll } from '../../common/store/contactSlice';
-import * as FUNC from '../../common/hook/functions'
+import * as FUNC from '../../common/function/functions'
 import axios from 'axios';
 import { object } from 'prop-types';
 import { publicIpv4 } from 'public-ip';
@@ -62,7 +62,6 @@ function Portfolio() {
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
-      <CV />
       <PortfolioScrollWrapper direction={showFooterOn? 'up' : 'down'}/>
     </div>
   )

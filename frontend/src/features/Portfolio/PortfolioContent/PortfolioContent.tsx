@@ -5,7 +5,7 @@ import Experience from './Experience/Experience';
 import  Skill from './Skill/Skill';
 import Certificate from './Certificate/Certificate'
 import AppCenter from './AppCenter/AppCenter';
-import * as FUNC from "../../../common/hook/functions"
+import * as FUNC from "../../../common/function/functions"
 
 function PortfolioContent() {
 
