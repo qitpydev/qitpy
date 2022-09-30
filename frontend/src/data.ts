@@ -15,6 +15,7 @@ const ContactData = {
         facebook: "https://www.facebook.com/qmait/",
         linkedin: "https://www.linkedin.com/in/maitocode/",
         github: "https://github.com/maitocode",
+        website: "https://maitocode.com"
     }
 }
 
@@ -78,36 +79,23 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "IResource",
                 prjTeamSize: 7,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"]
+                prjTechnologies: ["playfab", "azure-function"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ]
             },
             {
                 prjName: "IResource",
                 prjTeamSize: 7,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["PlayFab", "azure-function"]
-            },
-        ],
-    },
-    {
-        company: "Smartdev",
-        time: {
-            period: "1 yr 3 mos",
-            from: "17/09/2022",
-            to: "17/09/2023"
-        },
-        locate: "Da Nang",
-        projects: [
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"]
-            },
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["PlayFab", "azure-function"]
+                prjTechnologies: ["PlayFab", "azure-function"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ],
             },
         ],
     },
@@ -124,13 +112,56 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "IResource",
                 prjTeamSize: 7,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"]
+                prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ]
             },
             {
                 prjName: "IResource",
                 prjTeamSize: 7,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"]
+                prjTechnologies: ["PlayFab", "azure-function"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ]
+            },
+        ],
+    },
+    {
+        company: "Smartdev",
+        time: {
+            period: "1 yr 3 mos",
+            from: "17/09/2022",
+            to: "17/09/2023"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-function"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ]
+            },
+            {
+                prjName: "IResource",
+                prjTeamSize: 7,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["playfab", "azure-function"],
+                prjDescription: [
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                ]
             },
         ],
     },

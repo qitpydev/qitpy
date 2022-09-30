@@ -7,6 +7,7 @@ import * as FUNC from '../../../../common/function/functions'
 import {CgProfile} from 'react-icons/cg'
 import {RiProjectorFill} from 'react-icons/ri'
 import './CV.scss'
+import ProjectCV from '../ProjectCV/ProjectCV';
 
 function CV(props) {
   let classNames = "";
@@ -25,7 +26,8 @@ function CV(props) {
         <div className="cv__body">
           <div className="cv__body--profile">
             <div className="cv_body--profile--title">
-              <h1><CgProfile />PROFILE</h1>
+              <CgProfile size={"50px"}/>
+                <span>PROFILE</span>
             </div>
             <div className="cv__body--profile--content">
               <p>{lorem}</p>
@@ -35,7 +37,13 @@ function CV(props) {
             <div className="cv__body--project--title">
               <h1><RiProjectorFill />PROJECT</h1>
             </div>
-            <div className="cv__body--project--content"></div>
+            <div className="cv__body--project--content">
+              <ProjectCV />
+              <ProjectCV />
+              <ProjectCV />
+              <ProjectCV />
+              <ProjectCV />
+            </div>
           </div>
         </div>
         <div className="cv__side">

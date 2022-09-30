@@ -3,6 +3,7 @@ interface ProjectItem {
     prjTeamSize: 7,
     prjResponsibilities: Array<String>,
     prjTechnologies: Array<String>,
+    prjDescription: Array<String>
 }
 interface WorkExperienceItem {
     company: string,
