@@ -15,16 +15,20 @@ function PortfolioHeaderQuote(props) {
   }
   const [quote, setQuote] = useState(quoteInit)
 
-  useEffect( () => {
+  const getData = async () => {
+    const data = await axios.get("https://api.quotable.io/random?maxLength=100")
+    const json = data.data;
+    return json
+  }
 
-    const getData = async () => {
-        const data = await axios.get("https://api.quotable.io/random?maxLength=100")
-        const json = data.data;
-        setQuote(json)
-    }
-
-    getData().catch(console.error)
-  }, [])
+  useEffect(() => {
+    const resetQuote = setTimeout(() => {
+      getData()
+      .then((data) => setQuote(data))
+      .catch(err => console.log(err))
+    }, 10000)
+    return () => clearTimeout(resetQuote)
+  }, [quote])
 
   return (
     <div className="quote-random">

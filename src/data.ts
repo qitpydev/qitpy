@@ -1,4 +1,5 @@
 import { WorkExperienceItem } from "./features/Portfolio/Objects";
+import { getWorkingTimes } from './common/function/functions';
 
 interface ProjectWokring {
     name: string,
@@ -20,21 +21,23 @@ const ContactData = {
 }
 
 /**
- * 3 paragraph, 
+ * 3 paragraph,
  * each item in array of paragraph have a line-break at the end.
  */
+
 const InfoData = {
     paragraphHeader: [
-        "Hi, my name is Quyet - one guy that loves Computer, Programming & Technologies."
+        "Hi, my name is Quyet - there is something about me ✌️."
     ],
     paragraphBody: [
-        "I am a Python-Developer, with about 2 years experience",
-        "My beginning is Java-Springboot",
-        "Besides, i can build CI/CD to deploy to VPS or Cloud-Service (using Kubernetes) by myself.",
-        "In previous projects, i was working as DevOps - FrontEnd - BackEnd roles",
+        `🍀 I am a Python Developer, with ${getWorkingTimes()} in Web Development`,
+        "🍀 I love computer, technology ..and animals :)",
+        "🍀 I am a quick learner",
+        "Always and always welcome new kind friends!",
     ],
-    paragraphFooter:[
-        "I love Python because the ability, strongly, shortly, quickly and intelligence.",
+    paragraphFooter: [
+        "Welcome to come here with me ♥️",
+        "Hope you have a nice day ♥️"
     ]
 };
 
@@ -205,4 +208,4 @@ const ProjectWorkings: Array<ProjectWokring> = [
     }
 ]
 
-export { ContactData, InfoData, SkillsData, ExperienceData, ProjectWorkings}
+export { ContactData, InfoData, SkillsData, ExperienceData, ProjectWorkings }
