@@ -27,7 +27,7 @@ const ContactData = {
 
 const InfoData = {
     paragraphHeader: [
-        "Hi, my name is Quyet - there is something about me ✌️."
+        "Hi, i am Quyet by name - here is something about me ✌️."
     ],
     paragraphBody: [
         `🍀 I am a Python Developer, with ${getWorkingTimes()} in Web Development`,
