@@ -1,4 +1,4 @@
-<h1 align="center">Hello<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="60px"> I'm Quyet</h1>
+<h1 align="center">Hello<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="60px"> I'm Quyet - Pythonista</h1>
 
 
  <br/>
@@ -11,7 +11,7 @@
 
 - ️️️🎧 I'm working at: `DevOps & Backend Developer`
 
-- 🌱 I’m currently targets are `Python, Crypto, AI & Trading bot`
+- 🌱 My goals at this time `Python, Crypto, AI & Trading bot`
 
 - ⚡ My favorite quote: `Follow the while rabbit`
 
