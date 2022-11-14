@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  maitocode_dev:
+    container_name: maito_maitocode_dev
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app

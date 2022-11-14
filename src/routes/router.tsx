@@ -10,16 +10,18 @@ import { GoogleLogin } from '@react-oauth/google';
 function RouterManagement() {
   return (
       <Routes>
-          {/* <Route path="/" element={<Portfolio />} /> */}
+          <Route path="/" element={<Portfolio />} />
 
-          <Route path="/" element={<GoogleLogin
-  onSuccess={credentialResponse => {
-    console.log(credentialResponse);
-  }}
-  onError={() => {
-    console.log('Login Failed');
-  }}
-/>} />
+          {/* <Route path="/" element={
+            <GoogleLogin
+                onSuccess={credentialResponse => {
+                  console.log(credentialResponse);
+                }}
+                onError={() => {
+                  console.log('Login Failed');
+                }}
+            />} 
+          /> */}
 
           <Route path="/CV" element={<CV />} />
           <Route path='/my-management/' element={<MyManagement />} >

@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  maitocode:
+    container_name: maito_maitocode_release
+    build:
+      context: .
+      dockerfile: Dockerfile.deploy
+    restart: unless-stopped
+    expose:
+      - 80
+    networks:
+      - maito-proxy_maito-proxy
+
+networks:
+  maito-proxy_maito-proxy:
+    external: true
