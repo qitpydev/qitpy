@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import Calendar from 'react-calendar';
-import dayjs from 'dayjs';
 import DayTodo from '../components/DayTodo/DayTodo';
 import './CalendarTodo.scss'
 
 function CalendarTodo(props) {
 
-  const [value, onChange] = useState(new Date());
+  const [value,] = useState(new Date());
   return (
     <div className='calendar-todo'>
     <Calendar 

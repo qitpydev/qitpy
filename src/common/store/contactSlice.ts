@@ -1,9 +1,16 @@
+/**
+ * Redux store,
+ * identify that only one element of 
+ * contact item will be shown on the time
+ */
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
+
 
 export enum ContactValueName {
   GET_CV, LEAVE_TEXT, SOCIAL_LINKS, CONTACT_ME
 }
+
 export interface ContactState {
     states: {
         [ContactValueName.GET_CV]: boolean,

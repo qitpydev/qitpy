@@ -1,12 +1,23 @@
-import { WorkExperienceItem } from "./features/Portfolio/Objects";
+/**
+ * Static-Data using for showing basic data needed for Portfolio
+ */
+
+import { WorkExperienceItem } from "./common/Interfaces";
 import { getWorkingTimes } from './common/function/functions';
 
+/**
+ * @interface
+ */
 interface ProjectWokring {
     name: string,
     description: string,
     link: string
 }
 
+
+/**
+ * Static-Data
+ */
 const ContactData = {
     contactMe: {
         email: "code.maito@outlook.com",
@@ -19,11 +30,6 @@ const ContactData = {
         website: "https://maitocode.com"
     }
 }
-
-/**
- * 3 paragraph,
- * each item in array of paragraph have a line-break at the end.
- */
 
 const InfoData = {
     paragraphHeader: [

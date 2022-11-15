@@ -1,32 +1,38 @@
 import React, { useEffect, useState } from 'react'
-import PortfolioHeader from '../../features/Portfolio/PortfolioHeader/PortfolioHeader';
-import PortfolioContent from '../../features/Portfolio/PortfolioContent/PortfolioContent';
-import PortfolioFooter from '../../features/Portfolio/PortfolioFooter/PortfolioFooter';
+import PortfolioFooter from '../../features/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import PortfolioScrollWrapper from '../../features/Portfolio/PortfolioScrollWrapper/PortfolioScrollWrapper';
-import { CloseContactOnClickOutside } from './setting';
+import PortfolioScrollWrapper from '../../features/PortfolioScrollWrapper/PortfolioScrollWrapper';
 import { useDispatch } from 'react-redux';
 import { closeAll } from '../../common/store/contactSlice';
-import * as FUNC from '../../common/function/functions'
-import axios from 'axios';
-import { object } from 'prop-types';
 import { publicIpv4 } from 'public-ip';
-import CV from '../../features/Portfolio/components/CV/CV';
+import { CloseContactOnClickOutside, ElementId } from '../../common/function/functions';
+import PortfolioContent from '../../features/PortfolioContent/PortfolioContent';
+import PortfolioHeader from '../../features/PortfolioHeader/PortfolioHeader';
 
+/**
+ * Portfolio Home-Page
+ */
 function Portfolio() {
   const [showFooterOn, setShowFooterOn] = useState(false);
   const dispatch = useDispatch();
 
+  /**
+   * get some stuff data of user,
+   * to using for somthings needed
+   */
   const getData = async () => {
     console.log(await publicIpv4());
   }
   
   useEffect( () => {
-    //passing getData method to the lifecycle method
     getData()
   }, [])
 
-  /** Handle scroll to: Footer || Header_Body */
+  /** 
+   * when user:
+   *  scroll-down: display the footer screen
+   *  scroll-up: display the header & body screen
+   */
   const handleOnScroll = (event) => {
     // no-wrapper
     if (event.ctrlKey || event.shiftKey || event.altKey
@@ -40,9 +46,11 @@ function Portfolio() {
       } 
     }
 
-    // wrapper-horizontal
+    /**
+     * using the scroll value to verify that user scroll down or up
+     */
     if (event.target.className?.includes("scroll-horizontal")) {
-      const appWorkingCardContainerElement = document.getElementById(FUNC.elementId.AppWorkingCardContainer)
+      const appWorkingCardContainerElement = document.getElementById(ElementId.AppWorkingCardContainer)
       if (appWorkingCardContainerElement) {
         appWorkingCardContainerElement.scrollLeft += event.deltaY;
       }

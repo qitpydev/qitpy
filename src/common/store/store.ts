@@ -1,4 +1,10 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+/**
+ * Main class of Redux store
+ * 
+ * see more about what is React-redux
+ * https://react-redux.js.org/
+ */
+import { configureStore } from '@reduxjs/toolkit';
 import contactReducer from './contactSlice';
 import screenWrapperReducer from './screenWrapperSlice'
 

@@ -6,11 +6,10 @@ import { RootState } from '../../store/store';
 import listWrapperItems, { WrapperItemName } from './screenWrapeprItems/screenWrapperItems';
 
 /**
+ * The Global Wrapper
  * 
- * if WrapperItemName === NONE: no wrapper
+ * if WrapperItemName == NONE: there are no wrappers
  * else: display wrapper items
- * 
- * @Logic
  */
 
 function ScreenWrapper() {
@@ -25,5 +24,4 @@ function ScreenWrapper() {
 ScreenWrapper.propTypes = {
     Element: PropTypes.element,
 }
-
 export default ScreenWrapper

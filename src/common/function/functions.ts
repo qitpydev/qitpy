@@ -2,24 +2,24 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 /**
- * Global class
- * using for components that need some css/style that is used many times
+ * The ClassNames that using for many Components
  */
-export const classNames: { [key: string]: string } = {
+export const ClassNames: { [key: string]: string } = {
     noWrap: "no-wrap",
     scrollHorizontal: "scroll-horizontal",
     noClose: "no-close",
 }
 
 /**
- * id of elements that is used many times
+ * The Element_Id that using for many Components
  */
-export const elementId: { [key: string]: string } = {
+export const ElementId: { [key: string]: string } = {
     AppWorkingCardContainer: "app_working-card-container",
     CV: "CV"
 }
 
 /**
+ * The Util function
  * using for add className to component, and add to all the children of it
  * @param elementId parent Element that is needed to add classNames
  * @param className className that will be add to the Elements
@@ -39,10 +39,11 @@ const recursive = (element: HTMLElement, className: string) => {
 }
 
 /**
- * Save CV to client computer
+ * The Util function
+ * Download CV to local machine
  */
 export const Download_CV = () => {
-    var htmlObject = document.querySelector(`#${elementId.CV}`)
+    var htmlObject = document.querySelector(`#${ElementId.CV}`)
     html2canvas(htmlObject as HTMLElement).then((canvas) => {
         const img = canvas.toDataURL('image/jpeg')
         const pdf = new jsPDF()
@@ -53,7 +54,8 @@ export const Download_CV = () => {
 
 
 /**
- * get amount of working time
+ * The Util function
+ * using for get the experience time working
  */
 export const getWorkingTimes = () => {
     const firstTime = new Date("2021-06-01")
@@ -70,6 +72,17 @@ export const getWorkingTimes = () => {
     const year = Math.floor(month / 12)
     month = month % 12
 
-
     return `${year} yr & ${month} mos`
 }
+
+/**
+ * when user click outside of the header, 
+ *  close the header popup 
+ *  that will display to "none" element have each of the classnames below
+ */
+ const CloseContactOnClickOutside: Array<string> = [
+    "portfolio-header-contact-item-text",
+    "no-close"
+]
+
+export {CloseContactOnClickOutside}

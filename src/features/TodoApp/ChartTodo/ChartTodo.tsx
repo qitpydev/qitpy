@@ -1,8 +1,8 @@
 import React from 'react'
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Area, AreaChart, Tooltip, Legend } from 'recharts';
-import { Month } from '../Objects';
+import { CartesianGrid, XAxis, YAxis, Area, AreaChart, Tooltip, Legend } from 'recharts';
 import "./ChartTodo.scss";
 import CustomTooltip from '../components/CustomTooltip/CustomTooltip';
+import { Month } from '../Objects';
 
 const TaskDoneInDay_objKey = "tasks done in day";
 const TaskDoneInYear_objKey = "tasks done in year";

@@ -1,3 +1,8 @@
+/**
+ * Redux store,
+ * using to save the state of Global-Wrapper
+ * see more about Global-Wrapper: ScreenWrapper.tsx
+ */
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { WrapperItemName } from '../components/ScreenWrapper/screenWrapeprItems/screenWrapperItems';

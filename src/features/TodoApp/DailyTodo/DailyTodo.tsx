@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import "./DailyTodo.scss"
 import DailyTask from '../components/DailyTask/DailyTask';
 
@@ -32,5 +31,3 @@ export const DailyTodo = (props) => {
     </div>
   )
 }
-
-const mapStateToProps = (state) => ({})
