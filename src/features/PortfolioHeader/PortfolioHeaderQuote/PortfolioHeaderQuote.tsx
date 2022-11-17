@@ -20,15 +20,17 @@ function PortfolioHeaderQuote(props) {
   }
 
   const [quote, setQuote] = useState(quoteInit)
+  const [delay, setDelay] = useState(1000)
 
   useLayoutEffect(() => {
     const resetQuote = setTimeout(() => {
       getQuote().then(data => {
         setQuote(data)
+        if (delay !== 5000) setDelay(5000)
       }).catch(err => {
         console.log(err)
       })
-    }, 5000)
+    }, delay)
     return () => clearTimeout(resetQuote)
   },[quote])
 
