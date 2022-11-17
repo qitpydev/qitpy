@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+
   .label-rotate {
     position: absolute;
     background-color: green;
@@ -30,9 +33,7 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  color: green;
- 
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
