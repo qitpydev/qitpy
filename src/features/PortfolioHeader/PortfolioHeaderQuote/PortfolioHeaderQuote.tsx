@@ -10,6 +10,7 @@ const getQuote = async () => {
   return json;
 }
 function PortfolioHeaderQuote(props) {
+  const delayTime = 7000
   let quoteInit: Quote = {
     _id: "",
     content: "l.o.a.d.i.n.g",
@@ -26,7 +27,7 @@ function PortfolioHeaderQuote(props) {
     const resetQuote = setTimeout(() => {
       getQuote().then(data => {
         setQuote(data)
-        if (delay !== 5000) setDelay(5000)
+        if (delay !== delayTime) setDelay(delayTime)
       }).catch(err => {
         console.log(err)
       })
