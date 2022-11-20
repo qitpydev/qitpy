@@ -36,7 +36,7 @@ const renderCard = (name, description, link, index) => {
         {description}
       </div>
       <div className='app_working-project_card-access_btn'>
-        <Link to={link}>Access</Link>
+        <a href={link}>Access</a>
       </div>
     </div>
   )
