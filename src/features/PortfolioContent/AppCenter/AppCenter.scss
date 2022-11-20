@@ -2,33 +2,56 @@
 @import "../../PortfolioHeader/PortfolioHeader.scss";
 
 .app_center {
-    // border: 1px solid green;
     height: 100%;
     width: 100%;
-    
     display: grid;
-    grid-template-columns: 700px auto 700px;
-    grid-template-rows: 130px auto 110px;
+
     gap: 10px;
     padding: 10px;
-
-    // & > * {
-    //     // background-color: azure;
-    // }
-    
-    &-access_frequency {
-        grid-area: 1 / 1 / 1 / 1;
-    }
-
-    &-activity_frequency {
-        grid-area: 1 / 3 / 2 / 3;
-    }
-
-    &-app_working {
-        grid-area: 2 / 1 / 2 / 4;
-    }
-    
-    &-explore_more {
-        grid-area: 3 / 1 / 3 / 4;
-    }
 }
+
+@media only screen and (min-width:1458px) {
+    .app_center {
+        grid-template-columns: 700px auto 700px;
+        grid-template-rows: 130px auto 100px;
+        
+        &-access_frequency {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+    
+        &-activity_frequency {
+            grid-area: 1 / 3 / 2 / 3;
+        }
+    
+        &-app_working {
+            grid-area: 2 / 1 / 2 / 4;
+        }
+        
+        &-explore_more {
+            grid-area: 3 / 1 / 3 / 4;
+        }
+    }
+  }
+
+@media only screen and (max-width:1458px) {
+    .app_center {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 130px auto 100px;
+        
+        &-access_frequency {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+    
+        &-activity_frequency {
+            grid-area: 1 / 3 / 2 / 3;
+        }
+    
+        &-app_working {
+            grid-area: 2 / 1 / 2 / 4;
+        }
+        
+        &-explore_more {
+            grid-area: 3 / 1 / 3 / 4;
+        }
+    }
+  }

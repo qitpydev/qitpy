@@ -3,7 +3,7 @@ import './ActivityFrequency.scss'
 
 function ActivityFrequency() {
   return (
-    <div>ActivityFrequency</div>
+    <div id='activity-frequency'>ActivityFrequency</div>
   )
 }
 

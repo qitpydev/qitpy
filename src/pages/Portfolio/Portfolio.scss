@@ -3,6 +3,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
 
     @keyframes bottomShowOn {
         from  {color: red}
@@ -10,4 +11,5 @@
     }
 
     transition: all 1s ease;
+
 }

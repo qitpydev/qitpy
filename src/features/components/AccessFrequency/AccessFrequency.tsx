@@ -3,7 +3,7 @@ import './AccessFrequency.scss'
 
 function AccessFrequency(props) {
   return (
-    <div>AccessFrequency</div>
+    <div id='access-frequency'>AccessFrequency</div>
   )
 }
 

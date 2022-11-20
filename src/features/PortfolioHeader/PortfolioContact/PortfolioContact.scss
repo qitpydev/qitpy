@@ -1,8 +1,15 @@
-$contact-width: 30%;
-
+@media only screen and (max-width:1200px) {
+    .portfolio-header-contact {
+        width: 70%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .portfolio-header-contact {
+        width: 40%;
+    }
+}
 .portfolio-header-contact {
     position: absolute;
-    width: $contact-width;
     height: 100%;
     right: 0;
     padding-right: 10px;

@@ -8,6 +8,7 @@ import { publicIpv4 } from 'public-ip';
 import { CloseContactOnClickOutside, ElementId } from '../../common/function/functions';
 import PortfolioContent from '../../features/PortfolioContent/PortfolioContent';
 import PortfolioHeader from '../../features/PortfolioHeader/PortfolioHeader';
+import { ClassNames } from '../../common/function/functions'
 
 /**
  * Portfolio Home-Page
@@ -33,13 +34,25 @@ function Portfolio() {
    *  scroll-down: display the footer screen
    *  scroll-up: display the header & body screen
    */
+  function isAtBottom() {
+    const ele = document.getElementById("portfolio")
+    if (!ele) return false
+    var sh = ele.scrollHeight;
+    var st = ele.scrollTop;
+    var ht = ele.offsetHeight;
+    if(st === sh - ht)
+        {return true;} 
+    else 
+        {return false;}
+  }
   const handleOnScroll = (event) => {
     // no-wrapper
     if (event.ctrlKey || event.shiftKey || event.altKey
       || event.target.className?.includes('no-wrap')) {
     }
     else {
-      if (event.deltaY > 0) {
+      console.log("Event", event)
+      if (event.deltaY > 0 && isAtBottom()) {
         setShowFooterOn(true)
       } else if (event.deltaY < 0) {
         setShowFooterOn(false)
@@ -48,8 +61,9 @@ function Portfolio() {
 
     /**
      * using the scroll value to verify that user scroll down or up
+     * this section handle App-working
      */
-    if (event.target.className?.includes("scroll-horizontal")) {
+    if (event.target.className?.includes(ClassNames.scrollHorizontal)) {
       const appWorkingCardContainerElement = document.getElementById(ElementId.AppWorkingCardContainer)
       if (appWorkingCardContainerElement) {
         appWorkingCardContainerElement.scrollLeft += event.deltaY;
@@ -66,7 +80,7 @@ function Portfolio() {
 
   /** Render Portfolio*/
   return (
-    <div className='portfolio' onWheel={handleOnScroll} onClick={handleOnClick}>
+    <div className='portfolio' id='portfolio' onWheel={handleOnScroll} onClick={handleOnClick}>
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
