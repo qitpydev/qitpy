@@ -80,11 +80,11 @@ function Portfolio() {
 
   /** Render Portfolio*/
   return (
-    <div className='portfolio' id='portfolio' onWheel={handleOnScroll} onClick={handleOnClick}>
+    <div className='portfolio' id='portfolio' /*onWheel={handleOnScroll}*/ onClick={handleOnClick}>
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
-      <PortfolioScrollWrapper direction={showFooterOn? 'up' : 'down'}/>
+      {/* <PortfolioScrollWrapper direction={showFooterOn? 'up' : 'down'}/> */}
     </div>
   )
 }
