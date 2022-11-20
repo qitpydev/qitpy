@@ -47,17 +47,20 @@ function Portfolio() {
   }
   const handleOnScroll = (event) => {
     // no-wrapper
-    if (event.ctrlKey || event.shiftKey || event.altKey
-      || event.target.className?.includes('no-wrap')) {
-    }
-    else {
-      console.log("Event", event)
-      if (event.deltaY > 0 && isAtBottom()) {
-        setShowFooterOn(true)
-      } else if (event.deltaY < 0) {
-        setShowFooterOn(false)
-      } 
-    }
+    /**
+     * uncommend to reset the default scroll to footer
+     */
+    // if (event.ctrlKey || event.shiftKey || event.altKey
+    //   || event.target.className?.includes('no-wrap')) {
+    // }
+    // else {
+    //   console.log("Event", event)
+    //   if (event.deltaY > 0 && isAtBottom()) {
+    //     setShowFooterOn(true)
+    //   } else if (event.deltaY < 0) {
+    //     setShowFooterOn(false)
+    //   } 
+    // }
 
     /**
      * using the scroll value to verify that user scroll down or up
@@ -80,7 +83,7 @@ function Portfolio() {
 
   /** Render Portfolio*/
   return (
-    <div className='portfolio' id='portfolio' /*onWheel={handleOnScroll}*/ onClick={handleOnClick}>
+    <div className='portfolio' id='portfolio' onWheel={handleOnScroll} onClick={handleOnClick}>
       { !showFooterOn && <PortfolioHeader   /> }
       { !showFooterOn && <PortfolioContent  /> }
       {  showFooterOn && <PortfolioFooter   /> }
