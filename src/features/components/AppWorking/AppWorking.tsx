@@ -1,13 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './AppWorking.scss'
 import { ProjectWorkings } from '../../../data'
 import { ElementId } from '../../../common/function/functions'
 import * as Util from './Util'
 
 function AppWorking() {
+  const minScrollLeftValueInit = 30;
+  const maxScrollLeftValueInit = 110;
 
   useEffect(() => {
-    Util.setDefaultValueForScrollPosition()
+    const isMaxWidth = window.matchMedia("(min-width: 1200px)").matches;
+    
+    if (isMaxWidth) { 
+      Util.setDefaultValueForScrollPosition(maxScrollLeftValueInit) 
+    } else { 
+      Util.setDefaultValueForScrollPosition(minScrollLeftValueInit) 
+    }
   }, [])
 
   return (
