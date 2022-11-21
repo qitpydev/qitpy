@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioFooter from '../../features/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import PortfolioScrollWrapper from '../../features/PortfolioScrollWrapper/PortfolioScrollWrapper';
 import { useDispatch } from 'react-redux';
 import { closeAll } from '../../common/store/contactSlice';
 import { publicIpv4 } from 'public-ip';
@@ -14,7 +13,7 @@ import { ClassNames } from '../../common/function/functions'
  * Portfolio Home-Page
  */
 function Portfolio() {
-  const [showFooterOn, setShowFooterOn] = useState(false);
+  const [showFooterOn, ] = useState(false);
   const dispatch = useDispatch();
 
   /**
@@ -34,17 +33,20 @@ function Portfolio() {
    *  scroll-down: display the footer screen
    *  scroll-up: display the header & body screen
    */
-  function isAtBottom() {
-    const ele = document.getElementById("portfolio")
-    if (!ele) return false
-    var sh = ele.scrollHeight;
-    var st = ele.scrollTop;
-    var ht = ele.offsetHeight;
-    if(st === sh - ht)
-        {return true;} 
-    else 
-        {return false;}
-  }
+  /**
+ * uncommend to reset the default scroll to footer
+ */
+  // function isAtBottom() {
+  //   const ele = document.getElementById("portfolio")
+  //   if (!ele) return false
+  //   var sh = ele.scrollHeight;
+  //   var st = ele.scrollTop;
+  //   var ht = ele.offsetHeight;
+  //   if(st === sh - ht)
+  //       {return true;} 
+  //   else 
+  //       {return false;}
+  // }
   const handleOnScroll = (event) => {
     // no-wrapper
     /**

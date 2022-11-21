@@ -33,7 +33,7 @@ function PortfolioHeaderQuote(props) {
       })
     }, delay)
     return () => clearTimeout(resetQuote)
-  },[quote])
+  },[quote, delay])
 
   return (
     <div className="quote-random" onMouseEnter={() => {console.log("AHIHIH")}} onMouseLeave={() => {console.log("leaves")}}>
