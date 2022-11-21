@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioFooter from '../../features/PortfolioFooter/PortfolioFooter';
 import './Portfolio.scss'
-import { useDispatch } from 'react-redux';
-import { closeAll } from '../../common/store/contactSlice';
-import { publicIpv4 } from 'public-ip';
-import { CloseContactOnClickOutside, ElementId } from '../../common/function/functions';
 import PortfolioContent from '../../features/PortfolioContent/PortfolioContent';
 import PortfolioHeader from '../../features/PortfolioHeader/PortfolioHeader';
 import { ClassNames } from '../../common/function/functions'
+import * as Util from './utils'
+import { useDispatch } from 'react-redux';
 
 /**
  * Portfolio Home-Page
@@ -15,17 +13,9 @@ import { ClassNames } from '../../common/function/functions'
 function Portfolio() {
   const [showFooterOn, ] = useState(false);
   const dispatch = useDispatch();
-
-  /**
-   * get some stuff data of user,
-   * to using for somthings needed
-   */
-  const getData = async () => {
-    console.log(await publicIpv4());
-  }
   
   useEffect( () => {
-    getData()
+    Util.getUserData()
   }, [])
 
   /** 
@@ -33,54 +23,19 @@ function Portfolio() {
    *  scroll-down: display the footer screen
    *  scroll-up: display the header & body screen
    */
-  /**
- * uncommend to reset the default scroll to footer
- */
-  // function isAtBottom() {
-  //   const ele = document.getElementById("portfolio")
-  //   if (!ele) return false
-  //   var sh = ele.scrollHeight;
-  //   var st = ele.scrollTop;
-  //   var ht = ele.offsetHeight;
-  //   if(st === sh - ht)
-  //       {return true;} 
-  //   else 
-  //       {return false;}
-  // }
   const handleOnScroll = (event) => {
-    // no-wrapper
-    /**
-     * uncommend to reset the default scroll to footer
-     */
-    // if (event.ctrlKey || event.shiftKey || event.altKey
-    //   || event.target.className?.includes('no-wrap')) {
-    // }
-    // else {
-    //   console.log("Event", event)
-    //   if (event.deltaY > 0 && isAtBottom()) {
-    //     setShowFooterOn(true)
-    //   } else if (event.deltaY < 0) {
-    //     setShowFooterOn(false)
-    //   } 
-    // }
-
-    /**
-     * using the scroll value to verify that user scroll down or up
-     * this section handle App-working
-     */
+    Util.enableScroll()
+    // Util.handleShowFooterWhetherOnScrollEvent(event, setShowFooterOn)
+    
     if (event.target.className?.includes(ClassNames.scrollHorizontal)) {
-      const appWorkingCardContainerElement = document.getElementById(ElementId.AppWorkingCardContainer)
-      if (appWorkingCardContainerElement) {
-        appWorkingCardContainerElement.scrollLeft += event.deltaY;
-      }
+      Util.disableScroll()
+      Util.scrollWorkingProjectsByOnWheel(event)
     }
   }
 
   /** handle Close all Contact-items when click outside of the contact **/
-  const handleOnClick = (e) => {
-    const classLists = e.target.classList;
-    const found = CloseContactOnClickOutside.find((item: string) => classLists.contains(item))
-    if (!found) { dispatch(closeAll()) }
+  const handleOnClick = (event) => {
+    Util.closeContactPopUpWhetherClickOutsise(event, dispatch)
   }
 
   /** Render Portfolio*/
