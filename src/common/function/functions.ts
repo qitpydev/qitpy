@@ -15,7 +15,8 @@ export const ClassNames: { [key: string]: string } = {
  */
 export const ElementId: { [key: string]: string } = {
     AppWorkingCardContainer: "app_working-card-container",
-    CV: "CV"
+    AppWorkingStripOfCards: "app_working-strip_of_cards",
+    CV: "CV",
 }
 
 /**

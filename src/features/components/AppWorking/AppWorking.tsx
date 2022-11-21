@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './AppWorking.scss'
 import { ProjectWorkings } from '../../../data'
 import { ElementId } from '../../../common/function/functions'
+import * as Util from './Util'
 
 function AppWorking() {
+
+  useEffect(() => {
+    Util.setDefaultValueForScrollPosition()
+  }, [])
+
   return (
     <div className='app_working'>
       <div className="app_working-left_side"></div>
       <div className="app_working-right_side"></div>
       <div className="app_working-card-container" id={ElementId.AppWorkingCardContainer}>
-        <div className="app_working-strip_of_cards">
+        <div className="app_working-strip_of_cards" id={ElementId.AppWorkingStripOfCards}>
           {
             ProjectWorkings.map((item, index) => renderCard(
                 item.name,

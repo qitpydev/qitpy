@@ -122,5 +122,10 @@ $forcus_toolbar-width: 300px;
         &-left_side, &-right_side {
             display: none;
         }
+        &-card-container {
+            .app_working-strip_of_cards {
+                padding: 10px 100px;
+            }
+        }
     }
 }
