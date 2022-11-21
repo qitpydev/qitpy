@@ -63,7 +63,6 @@ export const getWorkingTimes = () => {
     const now = new Date()
 
     const timeWorking = now.getTime() - firstTime.getTime()
-    console.log('timeworking', timeWorking);
 
     const second = Math.floor(timeWorking / 1000)
     const minute = Math.floor(second / 60)

@@ -25,7 +25,6 @@ function Portfolio() {
    */
   const handleOnScroll = (event) => {
     Util.enableScroll()
-    console.log("event, ", event)
     // Util.handleShowFooterWhetherOnScrollEvent(event, setShowFooterOn)
     
     if (event.target.className?.includes(ClassNames.scrollHorizontal)) {

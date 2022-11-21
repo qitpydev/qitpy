@@ -69,7 +69,6 @@ const handleShowFooterWhetherOnScrollEvent = (event, setFooterCallback) => {
       || event.target.className?.includes('no-wrap')) {
     }
     else {
-      console.log("Event", event)
       if (event.deltaY > 0 && isAtBottom()) {
         setFooterCallback(true)
       } else if (event.deltaY < 0) {
