@@ -20,7 +20,8 @@ function PortfolioContent() {
       <div className="portfolio-content-avatar"><PortfolioContentAvatar /></div>
       <div className="portfolio-content-skill"><Skill /></div>
       <div className="portfolio-content-experience" id={portfolioExperienceId}><Experience /></div>
-      <div className="portfolio-content-app"><AppCenter></AppCenter></div>
+      <div className="portfolio-content-app"><AppCenter /></div>
+      {/* <div className="portfolio-content-app"><h1>ss</h1></div> */}
       <div className="portfolio-content-certificate"><Certificate /></div>
     </div>
   )
