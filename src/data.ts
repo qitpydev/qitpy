@@ -14,6 +14,11 @@ interface ProjectWokring {
     link: string
 }
 
+export interface SkillDetail {
+    name: string,
+    link: string
+}
+
 
 /**
  * Static-Data
@@ -50,27 +55,126 @@ const InfoData = {
 const SkillsData = {
     os: {
         name: "Operating_system",
-        items: ["Fedora", "ubuntu"],
+        items: [
+            {
+                name: "Fedora",
+                link: "https://getfedora.org/"
+            },
+            {
+                name: "Ubuntu",
+                link: "https://ubuntu.com/"
+            }
+        ]
     },
     web_skill: {
         name: "Web_skills",
-        items: ["JavaScript", "Reactjs", "Redux", "Python", "Django", "Microservices"],
+        items: [{
+            name: "Python",
+            link: "https://www.python.org/"
+        }, {
+            name: "Django",
+            link: "https://www.djangoproject.com/"
+        }, {
+            name: "Redux",
+            link: "https://redux.js.org/"
+        }, {
+            name: "Javascript",
+            link: "https://www.javascript.com/"
+        }, {
+            name: "ReactJs",
+            link: "https://reactjs.org/"
+        }, {
+            name: "Microservices",
+            link: "https://microservices.io/"
+        }, {
+            name: "AWS",
+            link: "https://aws.amazon.com/"
+        }],
     },
     database_skill: {
         name: "Database_skills",
-        items: ["Mysql", "Postgres", "MongoDB"],
+        items: [{
+            name: "Mysql",
+            link: "https://www.mysql.com/"
+        }, {
+            name: "Postgres",
+            link: "https://www.postgresql.org/"
+        }, {
+            name: "MongoDB",
+            link: "https://www.mongodb.com/"
+        }],
     },
     devops_skill: {
         name: "Devops_skills",
-        items: ["Docker", "Kubernetes", "Helm", "ECR", "VPS", "CICD", "Crontab", "Linux"],
+        items: [{
+            name: "Docker",
+            link: "https://www.docker.com/"
+        }, {
+            name: "Kubernetes",
+            link: "https://kubernetes.io"
+        }, {
+            name: "Helm",
+            link: "https://helm.sh/"
+        }, {
+            name: "ECR",
+            link: "https://aws.amazon.com/ecr/"
+        }, {
+            name: "CICD",
+            link: "https://en.wikipedia.org/wiki/CI/CD"
+        }, {
+            name: "EC2",
+            link: "https://aws.amazon.com/ec2/"
+        }, {
+            name: "Linux",
+            link: "https://vi.wikipedia.org/wiki/Linux"
+        }],
     },
     tools: {
         name: "Tools",
-        items: ["VisualCode", "Postman", "Lens", "FireFox", "Figma", "Bitbucket", "Jira", "FileZilla", "SSH", "Git"],
+        items: [{
+            name: "VisualCode",
+            link: "https://code.visualstudio.com/"
+        }, {
+            name: "Postman",
+            link: "https://www.postman.com/"
+        }, {
+            name: "Lens",
+            link: "https://k8slens.dev/"
+        }, {
+            name: "Figma",
+            link: "https://www.figma.com/"
+        }, {
+            name: "Bitbucket",
+            link: "https://bitbucket.org"
+        }, {
+            name: "Jira",
+            link: "https://www.atlassian.com/software/jira"
+        }, {
+            name: "FileZilla",
+            link: "https://filezilla-project.org/"
+        }, {
+            name: "SSH",
+            link: "https://en.wikipedia.org/wiki/Secure_Shell"
+        }, {
+            name: "GitHub",
+            link: "https://github.com/"
+        }],
     },
     others: {
         name: "Others",
-        items: ["Heroku", "SpringBoot", "AzureFunction", "NestJs", "EMQX"],
+        items: [{
+            name: "Heroku",
+            link: "https://www.heroku.com/"
+        }, {
+            name: "SpringBoot",
+            link: "https://spring.io/projects/spring-boot"
+        }, {
+            name: "AzureFunction",
+            link: "https://azure.microsoft.com/en-us/products/functions/"
+        }, {
+            name: "NestJs",
+            link: "https://nestjs.com/"
+        }],
     }
 }
 

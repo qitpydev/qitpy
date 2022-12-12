@@ -1,6 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import './SkillItem.scss'
+import { SkillDetail } from '../../../data'
+// import {SkillDetail} from '../../../data'
 
 SkillItem.defaultProps = {
   id: "id",
@@ -11,7 +13,10 @@ SkillItem.defaultProps = {
 SkillItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  skills: PropTypes.arrayOf(PropTypes.string),
+  skills: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    link: PropTypes.string
+  })),
 }
 
 /* assign id to the tag that container items */
@@ -36,10 +41,10 @@ function SkillItem(props) {
   )
 }
 
-const renderSkills = (skills: Array<String>) => {
+const renderSkills = (skills: Array<SkillDetail>) => {
   return skills.map((item, index) => (
-      <span key={index} className="skill-item-items-child">
-        {item}
+      <span key={index} className="skill-item-items-child" onClick={ () => window.open(item.link)}>
+        {item.name}
       </span>
     ))
 }
