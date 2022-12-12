@@ -12,23 +12,20 @@
 
 @media only screen and (min-width:1450px) {
     .app_center {
-        grid-template-columns: auto 15px auto;
-        grid-template-rows: 180px auto 70px;
+        grid-template-columns: auto;
+        grid-template-rows: 180px auto 40px;
 
-        &-access_frequency {
+
+        &-activity_frequency {
             grid-area: 1 / 1 / 1 / 1;
         }
 
-        &-activity_frequency {
-            grid-area: 1 / 3 / 1 / 3;
-        }
-
         &-app_working {
-            grid-area: 2 / 1 / 2 / 4;
+            grid-area: 2 / 1 / 2 / 1;
         }
 
         &-explore_more {
-            grid-area: 3 / 1 / 3 / 4;
+            grid-area: 3 / 1 / 3 / 1;
         }
     }
   }
@@ -36,26 +33,20 @@
 @media only screen and (max-width:1450px) {
     .app_center {
         grid-template-columns: 100%;
-        grid-template-rows: 150px 170px auto 40px;
+        grid-template-rows: 170px auto 40px;
 
-        &-access_frequency {
+        &-activity_frequency {
             display: flex;
             justify-content: center;
             grid-area: 1 / 1 / 1 / 1;
         }
 
-        &-activity_frequency {
-            display: flex;
-            justify-content: center;
+        &-app_working {
             grid-area: 2 / 1 / 2 / 1;
         }
 
-        &-app_working {
-            grid-area: 3 / 1 / 3 / 1;
-        }
-
         &-explore_more {
-            grid-area: 4 / 1 / 4 / 1;
+            grid-area: 3 / 1 / 3 / 1;
         }
     }
   }

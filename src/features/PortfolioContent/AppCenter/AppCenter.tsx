@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './AppCenter.scss'
 import { recursiveToAddClassNameWith, ClassNames } from '../../../common/function/functions'
-import AccessFrequency from '../../components/AccessFrequency/AccessFrequency'
 import ActivityFrequency from '../../components/ActivityFrequency/ActivityFrequency'
 import AppWorking from '../../components/AppWorking/AppWorking'
 import ExploreMore from '../../components/ExploreMore/ExploreMore'
@@ -18,7 +17,6 @@ function AppCenter(props) {
 
   return (
     <div className="app_center">
-        <div className="app_center-access_frequency"><AccessFrequency /></div>
         <div className="app_center-activity_frequency"><ActivityFrequency /></div>
         <div className="app_center-app_working" id={appWorkingId}><AppWorking /></div>
         <div className="app_center-explore_more"><ExploreMore /></div>
