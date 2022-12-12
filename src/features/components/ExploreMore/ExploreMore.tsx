@@ -3,7 +3,7 @@ import './ExploreMore.scss'
 
 function ExploreMore() {
   return (
-    <div>ExploreMore</div>
+    <div className='explore-more'>From the earth, with -<span style={{color: "red"}}> ♥️</span>-</div>
   )
 }
 

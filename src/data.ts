@@ -8,7 +8,7 @@ import { getWorkingTimes } from './common/function/functions';
 /**
  * @interface
  */
-interface ProjectWokring {
+interface ProjectWorking {
     name: string,
     description: string,
     link: string
@@ -78,18 +78,12 @@ const SkillsData = {
             name: "Redux",
             link: "https://redux.js.org/"
         }, {
-            name: "Javascript",
-            link: "https://www.javascript.com/"
-        }, {
             name: "ReactJs",
             link: "https://reactjs.org/"
         }, {
             name: "Microservices",
             link: "https://microservices.io/"
-        }, {
-            name: "AWS",
-            link: "https://aws.amazon.com/"
-        }],
+        },],
     },
     database_skill: {
         name: "Database_skills",
@@ -107,6 +101,9 @@ const SkillsData = {
     devops_skill: {
         name: "Devops_skills",
         items: [{
+            name: "AWS",
+            link: "https://aws.amazon.com/"
+        }, {
             name: "Docker",
             link: "https://www.docker.com/"
         }, {
@@ -115,9 +112,6 @@ const SkillsData = {
         }, {
             name: "Helm",
             link: "https://helm.sh/"
-        }, {
-            name: "ECR",
-            link: "https://aws.amazon.com/ecr/"
         }, {
             name: "CICD",
             link: "https://en.wikipedia.org/wiki/CI/CD"
@@ -147,9 +141,6 @@ const SkillsData = {
             name: "Bitbucket",
             link: "https://bitbucket.org"
         }, {
-            name: "Jira",
-            link: "https://www.atlassian.com/software/jira"
-        }, {
             name: "FileZilla",
             link: "https://filezilla-project.org/"
         }, {
@@ -158,7 +149,7 @@ const SkillsData = {
         }, {
             name: "GitHub",
             link: "https://github.com/"
-        }],
+        },],
     },
     others: {
         name: "Others",
@@ -174,6 +165,21 @@ const SkillsData = {
         }, {
             name: "NestJs",
             link: "https://nestjs.com/"
+        }, {
+            name: "ECR",
+            link: "https://aws.amazon.com/ecr/"
+        }, {
+            name: "OperatingSystem",
+            link: "https://en.wikipedia.org/wiki/Operating_system"
+        }, {
+            name: "ShellScript",
+            link: "https://www.shellscript.sh/"
+        }, {
+            name: "GitActions",
+            link: "https://github.com/features/actions"
+        }, {
+            name: "PlayFab",
+            link: "https://playfab.com/"
         }],
     }
 }
@@ -280,41 +286,41 @@ const ExperienceData: Array<WorkExperienceItem> = [
     },
 ]
 
-const ProjectWorkings: Array<ProjectWokring> = [
+const ProjectWorkings: Array<ProjectWorking> = [
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "https://todo.maitocode.com"
+        name: "Personal manager",
+        description: "Let manage yourself with tool, as a partner",
+        link: "https://maitocode.com/todo"
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "Password manager",
+        description: "Store, generate & protect all of the password",
+        link: ""
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "my secret",
+        description: "",
+        link: ""
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "my secret",
+        description: "",
+        link: ""
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "my secret",
+        description: "",
+        link: ""
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "my secret",
+        description: "",
+        link: ""
     },
     {
-        name: "My TODO",
-        description: "manage your working by tool - don't keep all things in mind",
-        link: "#"
+        name: "Trading bot",
+        description: "",
+        link: ""
     }
 ]
 

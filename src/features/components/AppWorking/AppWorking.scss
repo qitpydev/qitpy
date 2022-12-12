@@ -1,4 +1,4 @@
-$forcus_toolbar-width: 300px;
+$forcus_toolbar-width: 120px;
 
 .app_working {
     position: relative;
@@ -58,7 +58,7 @@ $forcus_toolbar-width: 300px;
                 justify-content: space-evenly;
                 align-items: center;
 
-                &:hover {
+                &:hover > a {
                     background-color: green;
                     background-image: radial-gradient(circle, black, green);
                     color: red;

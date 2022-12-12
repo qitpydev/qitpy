@@ -10,12 +10,12 @@ function AppWorking() {
 
   useEffect(() => {
     const isMaxWidth = window.matchMedia('(min-width:1200px)').matches;
-    
-    if (isMaxWidth) { 
+
+    if (isMaxWidth) {
       console.log("MAX WIDTH")
-      Util.setDefaultValueForScrollPosition(maxScrollLeftValueInit) 
-    } else { 
-      Util.setDefaultValueForScrollPosition(minScrollLeftValueInit) 
+      Util.setDefaultValueForScrollPosition(maxScrollLeftValueInit)
+    } else {
+      Util.setDefaultValueForScrollPosition(minScrollLeftValueInit)
     }
   }, [])
 
@@ -41,6 +41,8 @@ function AppWorking() {
 }
 
 const renderCard = (name, description, link, index) => {
+
+
   return (
     <div className='app_working-project_card' key={index}>
       <div className="app_working-project_card-project_name">
@@ -49,9 +51,12 @@ const renderCard = (name, description, link, index) => {
       <div className="app_working-project_card-project_description">
         {description}
       </div>
-      <div className='app_working-project_card-access_btn'>
-        <a href={link}>Access</a>
-      </div>
+      {link === "" && <h3>Coming!</h3>}
+      {link !== "" &&
+        <div className='app_working-project_card-access_btn'>
+          <a href={link}>Access</a>
+        </div>
+      }
     </div>
   )
 }
