@@ -180,6 +180,12 @@ const SkillsData = {
         }, {
             name: "PlayFab",
             link: "https://playfab.com/"
+        }, {
+            name: "Terraform",
+            link: "https://www.terraform.io/"
+        }, {
+            name: "Velero",
+            link: "https://velero.io/"
         }],
     }
 }
