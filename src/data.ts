@@ -186,6 +186,9 @@ const SkillsData = {
         }, {
             name: "Velero",
             link: "https://velero.io/"
+        }, {
+            name: "Scrapy",
+            link: "https://scrapy.org/"
         }],
     }
 }
