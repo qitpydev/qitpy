@@ -1,6 +1,6 @@
 interface ProjectItem {
     prjName: string,
-    prjTeamSize: 7,
+    prjTeamSize: number,
     prjResponsibilities: Array<String>,
     prjTechnologies: Array<String>,
     prjDescription: Array<String>
@@ -27,4 +27,4 @@ interface Quote {
     tags: string[]
 }
 
-export type {ProjectItem, WorkExperienceItem, Quote}
+export type { ProjectItem, WorkExperienceItem, Quote }

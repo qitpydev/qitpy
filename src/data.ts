@@ -195,11 +195,11 @@ const SkillsData = {
 
 const ExperienceData: Array<WorkExperienceItem> = [
     {
-        company: "Smartdev",
+        company: "SmartDev LLC",
         time: {
-            period: "1 yr 3 mos",
-            from: "17/09/2022",
-            to: "17/09/2023"
+            period: "1 yr 6 mos",
+            from: "17/06/2022",
+            to: "now"
         },
         locate: "Da Nang",
         projects: [
@@ -207,92 +207,131 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "IResource",
                 prjTeamSize: 7,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"],
+                prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                    "An internal SmartDev's project. The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. This is my first project of my fresher term.",
+                    "i was working as Back-End-DevOps-TeamLeader roles, so i was concurrent keep try to work and learn so much in this project."
                 ]
             },
             {
-                prjName: "IResource",
-                prjTeamSize: 7,
+                prjName: "NFT Football Game",
+                prjTeamSize: 6,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["PlayFab", "azure-function"],
+                prjTechnologies: ["PlayFab", "Azure-Function"],
                 prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                    "This is a Product-Project by making a game that is applied NFT token, base on Football Manager type of online game.",
+                    "The server (i mean the APIs) is created by using PlayFab-Platform and Cloud Function (Azure-Function in this case) to write."
+                ],
+            },
+            {
+                prjName: "SmartDev Platform",
+                prjTeamSize: 40,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
+                prjDescription: [
+                    "Another SmartDev's internal project, The purpose is making a tool that support Project Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation in point of times.",
+                    "so many member in this project, so it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
+                    "i was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic deploy & testing in every deployment (i mean development-staging-production/release).",
+                ],
+            },
+            {
+                prjName: "KOLEDA",
+                prjTeamSize: 6,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
+                prjDescription: [
+                    "a maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
+                ],
+            },
+            {
+                prjName: "Kubernetes Cluster migration",
+                prjTeamSize: 2,
+                prjResponsibilities: ["DevOps"],
+                prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
+                prjDescription: [
+                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes.",
+                    "It's was finish after make some plan before doing it.",
+                    "In the end, some issue about Database that was Backup&Restore but can't be mount to the instance appear. But it's in control of us."
+                ],
+            },
+            {
+                prjName: "maitocode",
+                prjTeamSize: 1,
+                prjResponsibilities: ["Web fullstack"],
+                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
+                prjDescription: [
+                    "This is my personal project. It's because i don't see any tool to handle my working & learning stuffs, and for applying technologies that i want to learn purpose.",
+                    "what i am doing & going to do in this project is making a todo tool follow by my design. And Python which will be my main Language skill in the future."
                 ],
             },
         ],
     },
-    {
-        company: "Smartdev",
-        time: {
-            period: "1 yr 3 mos",
-            from: "17/09/2022",
-            to: "17/09/2023"
-        },
-        locate: "Da Nang",
-        projects: [
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"],
-                prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-                ]
-            },
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["PlayFab", "azure-function"],
-                prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-                ]
-            },
-        ],
-    },
-    {
-        company: "Smartdev",
-        time: {
-            period: "1 yr 3 mos",
-            from: "17/09/2022",
-            to: "17/09/2023"
-        },
-        locate: "Da Nang",
-        projects: [
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"],
-                prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-                ]
-            },
-            {
-                prjName: "IResource",
-                prjTeamSize: 7,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["playfab", "azure-function"],
-                prjDescription: [
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-                    "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-                    "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-                ]
-            },
-        ],
-    },
+    // {
+    //     company: "Smartdev",
+    //     time: {
+    //         period: "1 yr 3 mos",
+    //         from: "17/09/2022",
+    //         to: "17/09/2023"
+    //     },
+    //     locate: "Da Nang",
+    //     projects: [
+    //         {
+    //             prjName: "IResource",
+    //             prjTeamSize: 7,
+    //             prjResponsibilities: ["Back-end", "Devops"],
+    //             prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"],
+    //             prjDescription: [
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+    //             ]
+    //         },
+    //         {
+    //             prjName: "IResource",
+    //             prjTeamSize: 7,
+    //             prjResponsibilities: ["Back-end", "Devops"],
+    //             prjTechnologies: ["PlayFab", "azure-function"],
+    //             prjDescription: [
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+    //             ]
+    //         },
+    //     ],
+    // },
+    // {
+    //     company: "Smartdev",
+    //     time: {
+    //         period: "1 yr 3 mos",
+    //         from: "17/09/2022",
+    //         to: "17/09/2023"
+    //     },
+    //     locate: "Da Nang",
+    //     projects: [
+    //         {
+    //             prjName: "IResource",
+    //             prjTeamSize: 7,
+    //             prjResponsibilities: ["Back-end", "Devops"],
+    //             prjTechnologies: ["playfab", "azure-function"],
+    //             prjDescription: [
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+    //             ]
+    //         },
+    //         {
+    //             prjName: "IResource",
+    //             prjTeamSize: 7,
+    //             prjResponsibilities: ["Back-end", "Devops"],
+    //             prjTechnologies: ["playfab", "azure-function"],
+    //             prjDescription: [
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+    //             ]
+    //         },
+    //     ],
+    // },
 ]
 
 const ProjectWorkings: Array<ProjectWorking> = [

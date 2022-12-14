@@ -18,7 +18,15 @@ const WorkExperience = (props) => {
 
     const {company, time, locate, projects } = props.items;
     const { period, from, to } = time;
-    
+
+    const joinItemsByCommaSpace = (items: String[]) => {
+        return items.join(", ")
+    }
+
+    const joinMoreInfoItems = (items: String[]) => {
+        return items.map(item => <>{item}<br /></>)
+    }
+
     const renderProjects = (projects: Array<ProjectItem> ) => {
         return (
             <>
@@ -28,9 +36,25 @@ const WorkExperience = (props) => {
                         <div className="project-experience-content">
                             <div className="project-name">{project.prjName}</div>
                             <div className="project-info">
-                                <p className=''><span className=''>Team size: </span> {project.prjTeamSize}</p>
-                                <p className=''><span className=''>Responsibilities: </span> {project.prjResponsibilities}</p>
-                                <p className=''><span className=''>Technologies: </span>{project.prjTechnologies}</p>
+                                <p className=''>
+                                    <u className=''><b>Team size: </b></u>
+                                    {project.prjTeamSize}
+                                </p>
+                                <p className=''>
+                                    <u className=''><b>Responsibilities: </b></u>
+                                    <br />
+                                    {joinItemsByCommaSpace(project.prjResponsibilities)}
+                                </p>
+                                <p className=''>
+                                    <u className=''><b>Technologies: </b></u>
+                                    <br />
+                                    {joinItemsByCommaSpace(project.prjTechnologies)}
+                                </p>
+                                <p className=''>
+                                    <u className=''><b>description: </b></u>
+                                    <br />
+                                    {joinMoreInfoItems(project.prjDescription)}
+                                </p>
                             </div>
                         </div>
                     </div>

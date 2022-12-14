@@ -3,19 +3,19 @@ import { CloseContactOnClickOutside, ElementId } from '../../common/function/fun
 import { closeAll } from '../../common/store/contactSlice';
 
 function preventDefault(event) {
-    event.preventDefault();
+  event.preventDefault();
 }
 // modern Chrome requires { passive: false } when adding event
 var supportsPassive = false;
 try {
-window.addEventListener(
-    "onwheel", 
-    () => null, 
+  window.addEventListener(
+    "onwheel",
+    () => null,
     Object.defineProperty(
-        {}, 'passive', { get: () => { supportsPassive = true; } },
+      {}, 'passive', { get: () => { return supportsPassive = true; } },
     )
-);
-} catch(e) {}
+  );
+} catch (e) { }
 var wheelOpt = supportsPassive ? { passive: false } : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
@@ -23,19 +23,19 @@ var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewh
  * this function to enable scroll action event of the entire app
  */
 function enableScroll() {
-    window.removeEventListener(wheelEvent, preventDefault);
+  window.removeEventListener(wheelEvent, preventDefault);
 }
 
 /**
  * this function to disable scroll action event of the entire app
  */
 function disableScroll() {
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt);
 }
 
 
 const getUserData = async () => {
-    console.log(await publicIpv4());
+  console.log(await publicIpv4());
 }
 
 
@@ -45,35 +45,33 @@ function isAtBottom() {
   var sh = ele.scrollHeight;
   var st = ele.scrollTop;
   var ht = ele.offsetHeight;
-  if(st === sh - ht)
-      {return true;} 
-  else 
-      {return false;}
+  if (st === sh - ht) { return true; }
+  else { return false; }
 }
 
 const scrollWorkingProjectsByOnWheel = (event) => {
-    const appWorkingCardContainerElement = document.getElementById(ElementId.AppWorkingCardContainer)
-    if (appWorkingCardContainerElement) {
-      appWorkingCardContainerElement.scrollLeft += event.deltaY;
-    }
+  const appWorkingCardContainerElement = document.getElementById(ElementId.AppWorkingCardContainer)
+  if (appWorkingCardContainerElement) {
+    appWorkingCardContainerElement.scrollLeft += event.deltaY;
+  }
 }
 
 const closeContactPopUpWhetherClickOutsise = (event, dispatch) => {
-    const classLists = event.target.classList;
-    const found = CloseContactOnClickOutside.find((item: string) => classLists.contains(item))
-    if (!found) { dispatch(closeAll()) }
+  const classLists = event.target.classList;
+  const found = CloseContactOnClickOutside.find((item: string) => classLists.contains(item))
+  if (!found) { dispatch(closeAll()) }
 }
 
 const handleShowFooterWhetherOnScrollEvent = (event, setFooterCallback) => {
-    if (event.ctrlKey || event.shiftKey || event.altKey
-      || event.target.className?.includes('no-wrap')) {
+  if (event.ctrlKey || event.shiftKey || event.altKey
+    || event.target.className?.includes('no-wrap')) {
+  }
+  else {
+    if (event.deltaY > 0 && isAtBottom()) {
+      setFooterCallback(true)
+    } else if (event.deltaY < 0) {
+      setFooterCallback(false)
     }
-    else {
-      if (event.deltaY > 0 && isAtBottom()) {
-        setFooterCallback(true)
-      } else if (event.deltaY < 0) {
-        setFooterCallback(false)
-      }
-    }
+  }
 }
-export {getUserData, disableScroll, enableScroll, isAtBottom, scrollWorkingProjectsByOnWheel, closeContactPopUpWhetherClickOutsise, handleShowFooterWhetherOnScrollEvent }
+export { getUserData, disableScroll, enableScroll, isAtBottom, scrollWorkingProjectsByOnWheel, closeContactPopUpWhetherClickOutsise, handleShowFooterWhetherOnScrollEvent }
