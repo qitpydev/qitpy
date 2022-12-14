@@ -10,7 +10,7 @@ const getQuote = async () => {
   return json;
 }
 function PortfolioHeaderQuote(props) {
-  const delayTime = 7000
+  const delayTime = 10000
   let quoteInit: Quote = {
     _id: "",
     content: "l.o.a.d.i.n.g",
