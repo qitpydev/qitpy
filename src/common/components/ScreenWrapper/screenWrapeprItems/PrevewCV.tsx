@@ -19,15 +19,15 @@ const PreviewCV = () => {
     }
 
     /**
-     * ClassNames.noClose, that mean will be 
+     * ClassNames.noClose, that mean will be
      * close wheather user click on this component
      */
     return (
         <div id="screen-wrapper" onClick={handleClickOutside}>
-            <div id="preview-cv" 
-            className={ClassNames.noClose} 
+            <div id="preview-cv"
+            className={ClassNames.noClose}
             style={{
-                'transform': 'scale(0.5) translateY(-55%)',
+                'transform': 'scale(0.5) translateY(-57%)',
                 }}>
                 <CV classNames={ClassNames.noClose}/>
             </div>
