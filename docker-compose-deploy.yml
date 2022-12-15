@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  maitocode:
-    container_name: maito_maitocode_release
+  qitpy:
+    container_name: qitpy_release
     build:
       context: .
       dockerfile: Dockerfile.deploy
@@ -10,8 +10,8 @@ services:
     expose:
       - 80
     networks:
-      - maito-proxy_maito-proxy
+      - qitpy-proxy_qitpy-proxy
 
 networks:
-  maito-proxy_maito-proxy:
+  qitpy-proxy_qitpy-proxy:
     external: true

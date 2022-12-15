@@ -25,7 +25,7 @@ export interface SkillDetail {
  */
 const ContactData = {
     contactMe: {
-        email: "code.maito@outlook.com",
+        email: "qitpydev@gmail.com",
         phoneNumber: "+84868260254",
     },
     socialLinks: {
@@ -266,72 +266,6 @@ const ExperienceData: Array<WorkExperienceItem> = [
             },
         ],
     },
-    // {
-    //     company: "Smartdev",
-    //     time: {
-    //         period: "1 yr 3 mos",
-    //         from: "17/09/2022",
-    //         to: "17/09/2023"
-    //     },
-    //     locate: "Da Nang",
-    //     projects: [
-    //         {
-    //             prjName: "IResource",
-    //             prjTeamSize: 7,
-    //             prjResponsibilities: ["Back-end", "Devops"],
-    //             prjTechnologies: ["playfab", "azure-functionnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnn"],
-    //             prjDescription: [
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-    //             ]
-    //         },
-    //         {
-    //             prjName: "IResource",
-    //             prjTeamSize: 7,
-    //             prjResponsibilities: ["Back-end", "Devops"],
-    //             prjTechnologies: ["PlayFab", "azure-function"],
-    //             prjDescription: [
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-    //             ]
-    //         },
-    //     ],
-    // },
-    // {
-    //     company: "Smartdev",
-    //     time: {
-    //         period: "1 yr 3 mos",
-    //         from: "17/09/2022",
-    //         to: "17/09/2023"
-    //     },
-    //     locate: "Da Nang",
-    //     projects: [
-    //         {
-    //             prjName: "IResource",
-    //             prjTeamSize: 7,
-    //             prjResponsibilities: ["Back-end", "Devops"],
-    //             prjTechnologies: ["playfab", "azure-function"],
-    //             prjDescription: [
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-    //             ]
-    //         },
-    //         {
-    //             prjName: "IResource",
-    //             prjTeamSize: 7,
-    //             prjResponsibilities: ["Back-end", "Devops"],
-    //             prjTechnologies: ["playfab", "azure-function"],
-    //             prjDescription: [
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    //                 "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-    //                 "lorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-    //             ]
-    //         },
-    //     ],
-    // },
 ]
 
 const ProjectWorkings: Array<ProjectWorking> = [

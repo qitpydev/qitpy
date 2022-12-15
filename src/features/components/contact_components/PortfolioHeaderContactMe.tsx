@@ -4,7 +4,7 @@ import { ClassNames } from '../../../common/function/functions';
 
 const PortfolioHeaderContactMe = () => {
 
-    const email = "code.maito@outlook.com";
+    const email = "qitpydev@gmail.com";
     const phoneNumber = "+84868260254"
 
     const [showCopyEmail, setShowCopyEmail] = useState(false)
@@ -28,7 +28,7 @@ const PortfolioHeaderContactMe = () => {
 
     return (
         <div className={`portfolio-header-contact-contact-me ${ClassNames.noClose}`}>
-            <div className={`portfolio-header-contact-info-email ${ClassNames.noClose}`} 
+            <div className={`portfolio-header-contact-info-email ${ClassNames.noClose}`}
                 onMouseEnter={() => setShowCopyEmail(true)}
                 onMouseLeave={() => setShowCopyEmail(false)}
             >
