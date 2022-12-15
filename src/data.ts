@@ -210,7 +210,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
                     "An internal SmartDev's project. The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. This is my first project of my fresher term.",
-                    "i was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i was concurrent keep try to work and learn so much in this project."
+                    "I was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i was concurrent keep try to work and learn so much in this project."
                 ]
             },
             {
@@ -230,8 +230,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
                     "Another SmartDev's internal project, The purpose is making a tool that support Project Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation in point of times.",
-                    "so many member in this project, so it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
-                    "i was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
+                    "So many member in this project, so it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
+                    "I was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
                 ],
             },
             {
@@ -240,7 +240,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
                 prjDescription: [
-                    "a maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
+                    "A maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
                 ],
             },
             {
@@ -261,7 +261,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
                 prjDescription: [
                     "This is my personal project. It's because i don't see any tool to handle my working & learning stuffs, and for applying technologies that i want to learn purpose.",
-                    "what i am doing & going to do in this project is making a todo tool follow by my design. And Python which will be my main Language skill in the future."
+                    "What i am doing & going to do in this project is making a todo tool follow by my design. And Python which will be my main Language skill in the future."
                 ],
             },
         ],
