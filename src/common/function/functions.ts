@@ -49,7 +49,7 @@ export const Download_CV = () => {
         const img = canvas.toDataURL('image/jpeg')
         const pdf = new jsPDF()
         pdf.addImage(img, 0, 0, 210, 297)
-        pdf.save('maitocode_CV.pdf')
+        pdf.save('qitpy_CV.pdf')
     })
 }
 
@@ -76,13 +76,13 @@ export const getWorkingTimes = () => {
 }
 
 /**
- * when user click outside of the header, 
- *  close the header popup 
+ * when user click outside of the header,
+ *  close the header popup
  *  that will display to "none" element have each of the classnames below
  */
- const CloseContactOnClickOutside: Array<string> = [
+const CloseContactOnClickOutside: Array<string> = [
     "portfolio-header-contact-item-text",
     "no-close"
 ]
 
-export {CloseContactOnClickOutside}
+export { CloseContactOnClickOutside }

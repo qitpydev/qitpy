@@ -30,9 +30,9 @@ const ContactData = {
     },
     socialLinks: {
         facebook: "https://www.facebook.com/qmait/",
-        linkedin: "https://www.linkedin.com/in/maitocode/",
-        github: "https://github.com/maitocode",
-        website: "https://maitocode.com"
+        linkedin: "https://www.linkedin.com/in/qitpy/",
+        github: "https://github.com/qitpy",
+        website: "https://qitpy.com"
     }
 }
 
@@ -210,7 +210,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
                     "An internal SmartDev's project. The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. This is my first project of my fresher term.",
-                    "i was working as Back-End-DevOps-TeamLeader roles, so i was concurrent keep try to work and learn so much in this project."
+                    "i was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i was concurrent keep try to work and learn so much in this project."
                 ]
             },
             {
@@ -231,7 +231,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjDescription: [
                     "Another SmartDev's internal project, The purpose is making a tool that support Project Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation in point of times.",
                     "so many member in this project, so it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
-                    "i was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic deploy & testing in every deployment (i mean development-staging-production/release).",
+                    "i was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
                 ],
             },
             {
@@ -255,7 +255,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 ],
             },
             {
-                prjName: "maitocode",
+                prjName: "qitpy",
                 prjTeamSize: 1,
                 prjResponsibilities: ["Web fullstack"],
                 prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
@@ -338,7 +338,7 @@ const ProjectWorkings: Array<ProjectWorking> = [
     {
         name: "Personal manager",
         description: "Let manage yourself with tool, as a partner",
-        link: "https://maitocode.com/todo"
+        link: "https://qitpy.com/todo"
     },
     {
         name: "Password manager",

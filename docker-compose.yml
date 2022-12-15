@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  maitocode_dev:
-    container_name: maito_maitocode_dev
+  qitpy_dev:
+    container_name: qitpy_dev
     build:
       context: .
     restart: unless-stopped

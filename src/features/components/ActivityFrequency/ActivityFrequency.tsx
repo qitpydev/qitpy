@@ -16,7 +16,7 @@ function ActivityFrequency() {
   return (
     <div id='activity-frequency' style={{color: "green"}}>
       <GitHubCalendar
-        username="maitocode"
+        username="qitpy"
         hideColorLegend={false}
         showWeekdayLabels={true}
         theme={My_THEME}
