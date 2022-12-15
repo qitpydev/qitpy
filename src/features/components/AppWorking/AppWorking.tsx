@@ -9,7 +9,7 @@ function AppWorking() {
   const maxScrollLeftValueInit = 110;
 
   useEffect(() => {
-    const isMaxWidth = window.matchMedia('(min-width:1200px)').matches;
+    const isMaxWidth = window.matchMedia('(min-width:1230px)').matches;
 
     if (isMaxWidth) {
       console.log("MAX WIDTH")

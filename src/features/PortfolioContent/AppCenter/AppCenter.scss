@@ -10,7 +10,7 @@
     padding: 10px;
 }
 
-@media only screen and (min-width:1450px) {
+@media only screen and (min-width:1230px) {
     .app_center {
         grid-template-columns: auto;
         grid-template-rows: 180px auto 40px;
@@ -30,7 +30,7 @@
     }
   }
 
-@media only screen and (max-width:1450px) {
+@media only screen and (max-width:1230px) {
     .app_center {
         grid-template-columns: 100%;
         grid-template-rows: 170px auto 40px;

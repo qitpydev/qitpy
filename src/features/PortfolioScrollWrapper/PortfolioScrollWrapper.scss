@@ -2,7 +2,7 @@
 .portfolio-scroll-wrapper {
     position: fixed;
     left: 50%;
-    
+
     &-item-1, &-item-2 {
         position: absolute;
         transform: scale(2);
@@ -42,7 +42,7 @@
     }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1230px) {
     .portfolio-scroll-wrapper {
         display: none;
     }

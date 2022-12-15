@@ -10,7 +10,7 @@
     padding: 10px;
 }
 
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1230px) {
     .portfolio-content {
         grid-template-columns: 38% auto 330px;
         grid-template-rows: 250px auto 22%;
@@ -30,7 +30,7 @@
     }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1230px) {
     .portfolio-content {
         grid-template-columns: 100%;
         grid-template-rows: 250px 250px 120px 500px;
