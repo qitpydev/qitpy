@@ -2,10 +2,10 @@ import React from 'react'
 
 import { useDispatch } from 'react-redux';
 import { setScreenWrapper } from '../../../common/store/screenWrapperSlice';
-import { WrapperItemName } from '../../../common/components/ScreenWrapper/screenWrapeprItems/screenWrapperItems';
 import CV from '../CV/CV';
 import { renderToStaticMarkup } from "react-dom/server"
 import { Download_CV } from '../../../common/function/functions';
+import { WrapperItemName } from '../../ScreenWrapper/screenWrapeprItems/screenWrapperItems';
 
 const PortfolioHeaderGetCV = () => {
     const dispatch = useDispatch()

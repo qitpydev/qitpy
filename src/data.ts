@@ -198,7 +198,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
         company: "SmartDev LLC",
         time: {
             period: "1 yr 6 mos",
-            from: "17/06/2022",
+            from: "01/06/2021",
             to: "now"
         },
         locate: "Da Nang",

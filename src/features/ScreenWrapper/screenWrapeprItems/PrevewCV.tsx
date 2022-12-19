@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import CV from '../../../../features/components/CV/CV';
-import { ClassNames } from '../../../function/functions';
-import { clearScreenWrapper } from '../../../store/screenWrapperSlice';
+import { ClassNames } from '../../../common/function/functions';
+import { clearScreenWrapper } from '../../../common/store/screenWrapperSlice';
+import CV from '../../../features/components/CV/CV';
 
 
 /**
