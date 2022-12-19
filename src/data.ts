@@ -271,7 +271,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
 const ProjectWorkings: Array<ProjectWorking> = [
     {
         name: "Personal manager",
-        description: "Let manage yourself with tool, as a partner",
+        description: "to manage working to-do, let the tool handle and optimize your life",
         link: "https://qitpy.com/todo"
     },
     {
