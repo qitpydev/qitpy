@@ -34,7 +34,7 @@ const WorkExperience = (props) => {
                     <div key={index} className="project-experience">
                         <div className="project-experience-marker"></div>
                         <div className="project-experience-content">
-                            <div className="project-name">{project.prjName}</div>
+                            <div className="project-name"><b>{project.prjName}</b></div>
                             <div className="project-info">
                                 <p className=''>
                                     <u className=''><b>Team size: </b></u>
