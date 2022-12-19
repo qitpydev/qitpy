@@ -29,7 +29,7 @@ const ContactData = {
         phoneNumber: "+84868260254",
     },
     socialLinks: {
-        facebook: "https://www.facebook.com/qmait/",
+        facebook: "https://www.facebook.com/qitpy/",
         linkedin: "https://www.linkedin.com/in/qitpy/",
         github: "https://github.com/qitpy",
         website: "https://qitpy.com"
@@ -249,9 +249,9 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["DevOps"],
                 prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
                 prjDescription: [
-                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes.",
-                    "It's was finish after make some plan before doing it.",
-                    "In the end, some issue about Database that was Backup&Restore but can't be mount to the instance appear. But it's in control of us."
+                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes of AWS (EKS - Elastic Kubernetes Service).",
+                    "It's was finish after we make some plan before doing it.",
+                    "In the end, some issue about Database appear. GP2 volumes (Amazon EBS volumes) can't be mount to the EC2 instance. But it's in our control."
                 ],
             },
             {
@@ -261,7 +261,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
                 prjDescription: [
                     "This is my personal project. It's because i don't see any tool to handle my working & learning stuffs, and for applying technologies that i want to learn purpose.",
-                    "What i am doing & going to do in this project is making a todo tool follow by my design. And Python which will be my main Language skill in the future."
+                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects, this will be follow by my design. And to using Python, which will be my main programming language skill."
                 ],
             },
         ],
