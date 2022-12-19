@@ -255,7 +255,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 ],
             },
             {
-                prjName: "qitpy",
+                prjName: "Qitpy",
                 prjTeamSize: 1,
                 prjResponsibilities: ["Web fullstack"],
                 prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
@@ -267,6 +267,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
         ],
     },
 ]
+ExperienceData.forEach(ex => ex.projects.reverse())
 
 const ProjectWorkings: Array<ProjectWorking> = [
     {
