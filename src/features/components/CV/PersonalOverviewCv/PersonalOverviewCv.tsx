@@ -9,9 +9,9 @@ import { CvIntro,
 
 function PersonalOverviewCv() {
   return (
-    <div id='personal-overview-cv'>
+    <div className='personal-overview-cv'>
       <div className="personal-overview-cv__label">
-        <LabelLineDecor name="Personal information" />
+        <LabelLineDecor name="short intro" />
       </div>
       <div className="personal-overview-cv__intro">
 
