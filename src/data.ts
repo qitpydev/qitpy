@@ -307,4 +307,21 @@ const ProjectWorkings: Array<ProjectWorking> = [
     }
 ]
 
-export { ContactData, InfoData, SkillsData, ExperienceData, ProjectWorkings }
+const CvIntro = {}
+const CvProsCons = {}
+const CvSkill = {}
+const CvEdu = {}
+const CvCert = {}
+
+export {
+    ContactData,
+    InfoData,
+    SkillsData,
+    ExperienceData,
+    ProjectWorkings,
+    CvIntro,
+    CvProsCons,
+    CvSkill,
+    CvEdu,
+    CvCert
+}
