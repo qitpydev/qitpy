@@ -72,7 +72,7 @@ const WorkExperience = (props) => {
                         {company}
                     </div>
                     <div className="company-work-title">Fullstack Developer</div>
-                    <div className="company-timeline">
+                    <div className="company-timeline">F
                         {`${period} | ${from} - ${to}`}
                         <br />
                         {locate}

@@ -1,14 +1,16 @@
 import React from 'react'
 import "./ContactCvItem.scss";
 
-function ContactCvItem() {
+function ContactCvItem(props) {
+  const { children, name, content } = props
+
   return (
     <div id='contact-cv-item'>
         <div className="contact-cv-item__title">
-            icon  <span>name:</span>
+            {children}  <span>{name}</span>
         </div>
         <div className="contact-cv-item__content">
-            content
+            : {content}
         </div>
     </div>
   )

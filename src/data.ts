@@ -195,10 +195,52 @@ const SkillsData = {
 
 const ExperienceData: Array<WorkExperienceItem> = [
     {
+        company: "Freelance projects",
+        time: {
+            period: "1 mons",
+            from: "10/12/2022",
+            to: "now"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "Unchain Talent Lab",
+                prjTeamSize: 8,
+                prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
+                prjTechnologies: ["Scrapy", "Zyte", "Aurora", "Strapi", "Postgres"],
+                prjDescription: [
+                    "A Start-Up project, that is come from the ideas of applying Block-Chain to change and support the current Hiring-process of HR in the next several years.",
+                    "I was doing with Python Crawler roles. The project is still running in this time."
+                ]
+            },
+        ]
+    },
+    {
+        company: "Personal projects",
+        time: {
+            period: "5 mos",
+            from: "03/09/2022",
+            to: "now"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "Qitpy",
+                prjTeamSize: 1,
+                prjResponsibilities: ["Web fullstack"],
+                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL"],
+                prjDescription: [
+                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose.",
+                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects. And to using Python, which will be my main programming language skill."
+                ],
+            },
+        ]
+    },
+    {
         company: "SmartDev LLC",
         time: {
             period: "1 yr 6 mos",
-            from: "01/06/2021",
+            from: "16/06/2021",
             to: "now"
         },
         locate: "Da Nang",
@@ -209,7 +251,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
-                    "An internal SmartDev's project. The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. This is my first project of my fresher term.",
+                    "The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work",
                     "I was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i was concurrent keep try to work and learn so much in this project."
                 ]
             },
@@ -229,18 +271,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "Another SmartDev's internal projects. The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times.",
-                    "Cause of so many members in this project, it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
-                    "I was working as mainly-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
-                ],
-            },
-            {
-                prjName: "KOLEDA",
-                prjTeamSize: 6,
-                prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
-                prjDescription: [
-                    "A maintenance IoT project, that is using smartphone to manage and control the devices in the user's home.",
+                    "The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times.",
+                    "I was working as mainly-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (that's mean development-staging-production/release).",
                 ],
             },
             {
@@ -253,17 +285,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                     "It's was finish after we make some plan before doing it.",
                     "In the end, some issue about Database appear. GP2 volumes (Amazon EBS volumes) can't be mount to the EC2 instance. But it's in our control."
                 ],
-            },
-            {
-                prjName: "Qitpy",
-                prjTeamSize: 1,
-                prjResponsibilities: ["Web fullstack"],
-                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL"],
-                prjDescription: [
-                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose.",
-                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects, this will be follow by my design. And to using Python, which will be my main programming language skill."
-                ],
-            },
+            }
         ],
     },
 ]
