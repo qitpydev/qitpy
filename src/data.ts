@@ -229,9 +229,9 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "Another SmartDev's internal project, The purpose is making a tool that support Project Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation in point of times.",
-                    "So many member in this project, so it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
-                    "I was working as Main-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
+                    "Another SmartDev's internal projects. The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times.",
+                    "Cause of so many members in this project, it was done & ready to use in just 4 months building, until now it's during maintenance time & upgrade in the future.",
+                    "I was working as mainly-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (i mean development-staging-production/release).",
                 ],
             },
             {
@@ -240,7 +240,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
                 prjDescription: [
-                    "A maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
+                    "A maintenance IoT project, that is using smartphone to manage and control the devices in the user's home.",
                 ],
             },
             {
@@ -258,9 +258,9 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "Qitpy",
                 prjTeamSize: 1,
                 prjResponsibilities: ["Web fullstack"],
-                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL", "Figma"],
+                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL"],
                 prjDescription: [
-                    "This is my personal project. It's because i don't see any tool to handle my working & learning stuffs, and for applying technologies that i want to learn purpose.",
+                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose.",
                     "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects, this will be follow by my design. And to using Python, which will be my main programming language skill."
                 ],
             },
@@ -308,17 +308,17 @@ const ProjectWorkings: Array<ProjectWorking> = [
 ]
 
 const CvIntro = [
-    "As a Pythonista, With two of years working in Web-development - a quick learner - with the mind opening - always working with all of heart.",
+    "As a Pythonista, With two of years working in Web-development - a quick learner - with the mind opening - always working with all of the hearts. I hope we could keep the world working good.",
     "Currently, i am trying to become an expert in my field (Back-end/DevOps/AWS Clouds).",
-    "And, I am always keep learning everyday, and willing to deep dive into any project using Python - because i love Python and programming.",
-    "In the futures, i will use my skills to make some great projects, to follow the new technologies, to follow the world developing and earn money.",
+    "And, I am always keep learning everyday, willing to deep dive into any projects using Python - That's because i love Python",
+    "In the futures, i will use my skills to make some great projects, to follow the new technologies, to follow the world developing and earn the money.",
 ]
 const CvProsCons = {
-    pros: "i have knowledge in comprehensive of web-development, i can understand all about of the operation of project, easy to approach the issues",
+    pros: "I have knowledge in comprehensive of web-development, i can understand all about of the operation of project, easy to approach the issues.",
     cons: [
-        "I was working with Java/SpringBoot in Back-end role in a time before, so I am a new with Python. But I learned Django and deploy it by myself with EC2 (Amazon Elastic Compute Cloud), you can see it at:",
-        "https://api.qitpy.com/api/docs",
-        "I am confidently to working with Django for now."
+        "I was working with Java/SpringBoot with Back-end roles in a time before, so I am a new with Python. But I learned Django and deploy it by myself using EC2 - Amazon Elastic Compute Cloud.",
+        "More details at: https://api.qitpy.com/api/docs",
+        "So, I am confidently to working with Django/Python for now."
     ]
 }
 const CvSkill = {
@@ -328,7 +328,7 @@ const CvSkill = {
 const CvEdu = [
     "Danang University of Science and Technology",
 ]
-const CvCert = {}
+const CvCert = []
 
 export {
     ContactData,

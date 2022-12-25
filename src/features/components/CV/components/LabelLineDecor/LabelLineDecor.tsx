@@ -4,7 +4,7 @@ import './LabelLineDecor.scss'
 function LabelLineDecor({name}) {
   return (
     <div id='label-line-decor'>
-        <div className="label-line-decor__title">{name}</div>
+        <h2 className="label-line-decor__title">{name}</h2>
         <div className="label-line-decor__line"></div>
     </div>
   )

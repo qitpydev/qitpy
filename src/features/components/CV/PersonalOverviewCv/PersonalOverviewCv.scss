@@ -1,6 +1,16 @@
 .personal-overview-cv {
-    &__label {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 10px;
 
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        // margin-top: ;
     }
 
     &__intro {

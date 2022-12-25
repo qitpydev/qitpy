@@ -5,28 +5,37 @@ import { CvIntro,
   CvSkill,
   CvEdu,
   CvCert } from '../../../../data';
+import "./PersonalOverviewCv.scss"
 
 
 function PersonalOverviewCv() {
   return (
     <div className='personal-overview-cv'>
-      <div className="personal-overview-cv__label">
-        <LabelLineDecor name="short intro" />
-      </div>
       <div className="personal-overview-cv__intro">
-
+        <LabelLineDecor name="Introduction" />
+        {CvIntro.map((x, i) =>
+          <p key={i}>{x}</p>
+        )}
       </div>
       <div className="personal-overview-cv__proscons">
-
+        <LabelLineDecor name="Pros & Cons" />
+        <p>{CvProsCons.pros}</p>
+        <p>{CvProsCons.cons.map(x => (<>
+          {x} <br/>
+        </>))}</p>
       </div>
       <div className="personal-overview-cv__skill">
-
+        <LabelLineDecor name="Skills" />
+        <p><b>Main skills: </b>{CvSkill.main.join(", ")}</p>
+        <p><b>Others: </b>{CvSkill.others.join(", ")}</p>
       </div>
       <div className="personal-overview-cv__edu">
-
+        <LabelLineDecor name="Educations" />
+        <p>{CvEdu}</p>
       </div>
       <div className="personal-overview-cv__cert">
-
+        <LabelLineDecor name="Certifications" />
+        <p>{CvCert}</p>
       </div>
     </div>
   )

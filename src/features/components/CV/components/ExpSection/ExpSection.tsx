@@ -9,19 +9,21 @@ function ExpSection({data}) {
         return (
             <div className="exp-section-cv-item__project">
                 <div className="exp-section-cv-item__project__title">
-                    <div className="exp-section-cv-item__project__title__name">
-                        {project.prjName}
-                    </div>
-                    <div className="exp-section-cv-item__project__title__teamsize">
-                        team_size: {project.prjTeamSize}
-                    </div>
+                    <p className="exp-section-cv-item__project__title__name">
+                        <b>Project/ {project.prjName}</b>
+                    </p>
+                    <p className="exp-section-cv-item__project__title__teamsize">
+                        {project.prjTeamSize} members
+                    </p>
                 </div>
-                <div className="exp-section-cv-item__project__tech">
-                    technologies: {project.prjTechnologies.join(',')}
-                </div>
-                <div className="exp-section-cv-item__project__description">
-                    description: {project.prjDescription.join('')}
-                </div>
+                <p className="exp-section-cv-item__project__tech">
+                    <b>Technologies: </b><br />
+                    {project.prjTechnologies.join(', ')}
+                </p>
+                <p className="exp-section-cv-item__project__description">
+                    <b>Descriptions: </b><br />
+                    {project.prjDescription.join('')}
+                </p>
             </div>
         )
     }
@@ -30,7 +32,7 @@ function ExpSection({data}) {
         return (
             <div className="exp-section-cv-item">
                 <div className="exp-section-cv-item__working-name">
-                    {data.company}
+                    ** {data.company} **
                 </div>
                 {
                     projects.map((project) => renderProject(project))

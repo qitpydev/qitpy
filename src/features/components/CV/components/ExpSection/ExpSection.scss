@@ -1,20 +1,30 @@
 #exp-section-cv {
     .exp-section-cv-item {
         &__working-name {
-            font-size: large;
-            font-weight: 800;
+            display: flex;
+            justify-content: end;
+            text-transform: uppercase;
             font-style: italic;
             font-family: 'Times New Roman', Times, serif;
             letter-spacing: 3px;
+            margin-right: 10px;
+            margin-bottom: -15px;
         }
 
         &__project {
-            font-size: medium;
+            margin: 20px;
+
+            p {
+                margin-bottom: 2px;
+                margin-top: 2px;
+            }
 
             &__title {
+                display: flex;
+                justify-content:space-between;
 
                 &__name {
-
+                    text-transform: uppercase;
                 }
 
                 &__teamsize {

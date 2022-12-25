@@ -19,8 +19,6 @@ function CV(props) {
     recursiveToAddClassNameWith(ElementId.CV, ClassNames.noClose)
   }, [])
 
-  const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa dolore laboriosam illo est! Est natus, provident, quisquam molestiae blanditiis aliquam tenetur error, ipsam maxime iste tempora asperiores? Vel, amet?"
-
   return (
     <div id={ElementId.CV} className={classNames}>
         <div className="cv__header"><HeaderCv /></div>
