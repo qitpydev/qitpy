@@ -209,8 +209,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
                 prjTechnologies: ["Scrapy", "Zyte", "Aurora", "Strapi", "Postgres"],
                 prjDescription: [
-                    "A Start-Up project, that is come from the ideas of applying Block-Chain to change and support the current Hiring-process of HR in the next several years.",
-                    "I was doing with Python Crawler roles. The project is still running in this time."
+                    "A Start-Up project, that is come from the ideas of applying Block-Chain to change and support the current Hiring-process of HR in the next several years. ",
+                    "I was doing with Python Crawler roles. The project is still running in this time. "
                 ]
             },
         ]
@@ -230,8 +230,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Web fullstack"],
                 prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL"],
                 prjDescription: [
-                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose.",
-                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects. And to using Python, which will be my main programming language skill."
+                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose. ",
+                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects. And to using Python, which will be my main programming language skill. "
                 ],
             },
         ]
@@ -251,18 +251,18 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
-                    "The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work",
-                    "I was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i was concurrent keep try to work and learn so much in this project."
+                    "The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. ",
+                    "I was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i have been concurrent kept try to work and learn so much in this project. "
                 ]
             },
             {
                 prjName: "NFT Football Game",
                 prjTeamSize: 6,
                 prjResponsibilities: ["Back-end", "Devops"],
-                prjTechnologies: ["PlayFab", "Azure-Function"],
+                prjTechnologies: ["PlayFab", "Azure-Function", "Java"],
                 prjDescription: [
-                    "This is a Product-Project by making a game that is applied NFT token, base on Football Manager type of online game.",
-                    "The server (i mean the APIs) is created by using PlayFab-Platform and Cloud Function (Azure-Function in this case) to write."
+                    "This is a Product-Project by making a game that is applied NFT token, base on Football Manager type of online game. ",
+                    "The server (i mean the APIs) is created by using PlayFab-Platform and Cloud Function (Azure-Function in this case). "
                 ],
             },
             {
@@ -271,8 +271,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times.",
-                    "I was working as mainly-Devops of this project, keep the app high-availability and operation setting configuration to automatic to deploy & testing in every deployment (that's mean development-staging-production/release).",
+                    "The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times. ",
+                    "I was working as mainly-Devops of this project, keep the app high-availability and configure to automatic to deploy & testing in every deployment (development-staging-production/release). ",
                 ],
             },
             {
@@ -281,9 +281,9 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["DevOps"],
                 prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
                 prjDescription: [
-                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes of AWS (EKS - Elastic Kubernetes Service).",
-                    "It's was finish after we make some plan before doing it.",
-                    "In the end, some issue about Database appear. GP2 volumes (Amazon EBS volumes) can't be mount to the EC2 instance. But it's in our control."
+                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes of AWS (EKS - Elastic Kubernetes Service). ",
+                    "It's was finish after we make some plan before doing it. ",
+                    "In the end, some issues about Database appear. GP2 volumes (Amazon EBS volumes) can't be mount to the EC2 instance. But it's in our control. "
                 ],
             }
         ],
@@ -330,17 +330,17 @@ const ProjectWorkings: Array<ProjectWorking> = [
 ]
 
 const CvIntro = [
-    "As a Pythonista, With two of years working in Web-development - a quick learner - with the mind opening - always working with all of the hearts. I hope we could keep the world working good.",
-    "Currently, i am trying to become an expert in my field (Back-end/DevOps/AWS Clouds).",
-    "And, I am always keep learning everyday, willing to deep dive into any projects using Python - That's because i love Python",
-    "In the futures, i will use my skills to make some great projects, to follow the new technologies, to follow the world developing and earn the money.",
+    "As a Pythonista, With two of years working in Web-development - a quick learner - with the mind opening - always working with all of the hearts. I hope we could keep the world working good. ",
+    "Currently, i am trying to become an expert in my field (Back-end/DevOps/AWS Clouds). ",
+    "And, I am always keep learning everyday, willing to deep dive into any projects using Python - That's because i love Python. ",
+    "In the futures, i will use my skills to make some great projects, to follow the new technologies, to follow the world developing and earn the money. ",
 ]
 const CvProsCons = {
-    pros: "I have knowledge in comprehensive of web-development, i can understand all about of the operation of project, easy to approach the issues.",
+    pros: "I have knowledge in comprehensive of web-development, i can understand all about of the operation of project, easy to approach the issues. ",
     cons: [
-        "I was working with Java/SpringBoot with Back-end roles in a time before, so I am a new with Python. But I learned Django and deploy it by myself using EC2 - Amazon Elastic Compute Cloud.",
+        "I was working with Java/SpringBoot with Back-end roles in a time before, so I am a new with Python. But I learned Django and deploy it by myself using EC2 - Amazon Elastic Compute Cloud. ",
         "More details at: https://api.qitpy.com/api/docs",
-        "So, I am confidently to working with Django/Python for now."
+        "So, I am confidently to working with Django/Python for now. "
     ]
 }
 const CvSkill = {

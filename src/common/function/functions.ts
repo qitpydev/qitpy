@@ -49,7 +49,7 @@ export const Download_CV = () => {
         const img = canvas.toDataURL('image/jpeg')
         const pdf = new jsPDF()
         pdf.addImage(img, 0, 0, 210, 297)
-        pdf.save('qitpy_CV.pdf')
+        pdf.save('Python_developer_VanQuyet.pdf')
     })
 }
 
