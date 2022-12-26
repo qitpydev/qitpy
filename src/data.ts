@@ -216,27 +216,6 @@ const ExperienceData: Array<WorkExperienceItem> = [
         ]
     },
     {
-        company: "Personal projects",
-        time: {
-            period: "5 mos",
-            from: "03/09/2022",
-            to: "now"
-        },
-        locate: "Da Nang",
-        projects: [
-            {
-                prjName: "Qitpy",
-                prjTeamSize: 1,
-                prjResponsibilities: ["Web fullstack"],
-                prjTechnologies: ["Django", "ReactJs", "ReduxJs", "EC2", "GitAction", "Docker", "Nginx", "SSL", "GoogleAuth", "PostgreSQL"],
-                prjDescription: [
-                    "This is my personal project. It's because i don't see any tool to handle my working & learning, and for applying technologies that i want to learn purpose. ",
-                    "What i am doing & going to do in this project is making a Portfolio, that will link all of my Ecosystem's projects. And to using Python, which will be my main programming language skill. "
-                ],
-            },
-        ]
-    },
-    {
         company: "SmartDev LLC",
         time: {
             period: "1 yr 6 mos",

@@ -1,7 +1,6 @@
 /**
  * Redux store,
- * identify that only one element of
- * contact item will be shown on the time
+ * user information
  */
 import { createSlice } from '@reduxjs/toolkit'
 import { setUserLocal } from '../../services/localStorage';
