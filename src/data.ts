@@ -255,6 +255,15 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 ],
             },
             {
+                prjName: "KOLEDA",
+                prjTeamSize: 6,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
+                prjDescription: [
+                    "a maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
+                ],
+            },
+            {
                 prjName: "Kubernetes Cluster migration",
                 prjTeamSize: 2,
                 prjResponsibilities: ["DevOps"],

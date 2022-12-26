@@ -22,7 +22,7 @@ function ExpSection({data}) {
                 </p>
                 <p className="exp-section-cv-item__project__description">
                     <b>Descriptions: </b><br />
-                    {project.prjDescription.join('')}
+                    {project.prjDescription.map(x => <>{x}<br/></>)}
                 </p>
             </div>
         )
