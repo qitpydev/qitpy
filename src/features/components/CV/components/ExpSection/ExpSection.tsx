@@ -32,7 +32,12 @@ function ExpSection({data}) {
         return (
             <div className="exp-section-cv-item">
                 <div className="exp-section-cv-item__working-name">
-                    ** {data.company} **
+                    <div className="exp-section-cv-item__working-name__name">
+                        ** {data.company} **
+                    </div>
+                    <div className="exp-section-cv-item__working-name__time-working">
+                        FROM {data.time.from} TO {data.time.to}
+                    </div>
                 </div>
                 {
                     projects.map((project) => renderProject(project))

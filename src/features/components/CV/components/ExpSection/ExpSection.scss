@@ -1,14 +1,18 @@
 #exp-section-cv {
     .exp-section-cv-item {
         &__working-name {
+            margin-top: 10px;
             display: flex;
-            justify-content: end;
-            text-transform: uppercase;
-            font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
-            letter-spacing: 3px;
-            margin-right: 10px;
-            margin-bottom: -15px;
+            justify-content: space-around;
+
+            & > * {
+                text-transform: uppercase;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 3px;
+                margin-right: 10px;
+                margin-bottom: -15px;
+            }
         }
 
         &__project {
