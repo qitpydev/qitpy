@@ -207,7 +207,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "Unchain Talent Lab",
                 prjTeamSize: 8,
                 prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
-                prjTechnologies: ["Scrapy", "Zyte", "Aurora", "Strapi", "Postgres"],
+                prjTechnologies: ["Web3", "Scrapy", "Zyte", "Aurora", "Strapi", "Postgres"],
                 prjDescription: [
                     "A Start-Up project, that is come from the ideas of applying Block-Chain to change and support the current Hiring-process of HR in the next several years. ",
                     "I was doing with Python Crawler roles. The project is still running in this time. "
