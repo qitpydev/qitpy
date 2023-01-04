@@ -336,7 +336,7 @@ const CvSkill = {
     others: ["ReactJs", "ReduxJs", "Kubernetes", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "AzureFunction", "Microservices", "Shellscript", "Linux"]
 }
 const CvEdu = [
-    "Danang University of Science and Technology",
+    "Danang University of Science and Technology | 2017-2022 (not graduated)",
 ]
 const CvCert = []
 
