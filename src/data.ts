@@ -198,7 +198,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
         company: "Freelance projects",
         time: {
             period: "1 mons",
-            from: "10/12/2022",
+            from: "12/2022",
             to: "now"
         },
         locate: "Da Nang",
@@ -219,7 +219,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
         company: "SmartDev LLC",
         time: {
             period: "1 yr 6 mos",
-            from: "16/06/2021",
+            from: "06/2021",
             to: "now"
         },
         locate: "Da Nang",
@@ -336,7 +336,9 @@ const CvSkill = {
     others: ["ReactJs", "ReduxJs", "Kubernetes", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "AzureFunction", "Microservices", "Shellscript", "Linux"]
 }
 const CvEdu = [
-    "Danang University of Science and Technology | 2017-2022 (not graduated)",
+    "Danang University of Science and Technology",
+    "Time period: 2017-2022",
+    "(not graduated)",
 ]
 const CvCert = []
 

@@ -36,7 +36,7 @@ function ExpSection({data}) {
                         ** {data.company} **
                     </div>
                     <div className="exp-section-cv-item__working-name__time-working">
-                        FROM {data.time.from} TO {data.time.to}
+                        <b>from</b> {data.time.from} <b>to</b> {data.time.to}
                     </div>
                 </div>
                 {

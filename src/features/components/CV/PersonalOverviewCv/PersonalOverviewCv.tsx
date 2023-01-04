@@ -31,7 +31,9 @@ function PersonalOverviewCv() {
       </div>
       <div className="personal-overview-cv__edu">
         <LabelLineDecor name="Educations" />
-        <p>{CvEdu}</p>
+        {CvEdu.map(x =>
+          <p>{x}</p>
+        )}
       </div>
       <div className="personal-overview-cv__cert">
         <LabelLineDecor name="Certifications" />
