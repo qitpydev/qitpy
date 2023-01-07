@@ -1,0 +1,13 @@
+#contact-cv-item {
+    display: flex-start;
+    // justify-content: start;
+    position: relative;
+
+    // .contact-cv-item__title { }
+
+    .contact-cv-item__content {
+        position: absolute;
+        margin-left: 20px;
+        left: 80px;
+    }
+}

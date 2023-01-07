@@ -1,6 +1,7 @@
 import { publicIpv4 } from 'public-ip';
-import { CloseContactOnClickOutside, ElementId } from '../../common/function/functions';
-import { closeAll } from '../../common/store/contactSlice';
+import { ElementId, CloseContactOnClickOutside } from './common/function/functions';
+import { closeAll } from './common/store/contactSlice';
+
 
 function preventDefault(event) {
   event.preventDefault();

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ScreenWrapper from './features/ScreenWrapper/ScreenWrapper';
+import ScreenWrapper from './pages/Portfolio/features/ScreenWrapper/ScreenWrapper';
 import RouterManagement from './routes/router';
 
 /**
@@ -10,7 +10,6 @@ import RouterManagement from './routes/router';
 function App() {
   return (
     <>
-      <ScreenWrapper />
       <RouterManagement />
     </>
   );

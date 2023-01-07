@@ -2,8 +2,9 @@
  * Static-Data using for showing basic data needed for Portfolio
  */
 
-import { WorkExperienceItem } from "./common/Interfaces";
-import { getWorkingTimes } from './common/function/functions';
+import { getWorkingTimes } from "./pages/Portfolio/common/function/functions";
+import { WorkExperienceItem } from "./pages/Portfolio/common/Interfaces";
+
 
 /**
  * @interface

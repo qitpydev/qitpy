@@ -1,0 +1,44 @@
+#CV {
+    position: relative;
+    width: 1240px;
+    height: 1754px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    grid-template-rows: 155px auto;
+
+    .cv {
+        &__header {
+            grid-area: 1 / 1 / 1 / 3;
+            background-color: white;
+        }
+
+        &__contact {
+            grid-area: 1 / 3 / 1 / 3;
+            background-color: white;
+            display: flex-end;
+            flex-direction: column;
+            // justify-content: end;
+        }
+
+        &__experience {
+            grid-area: 2 / 1 / 2 / 1;
+            background-color: white;
+        }
+
+        &__personal-overview {
+            grid-area: 2 / 2 / 2 / 4;
+            background-color: white;
+        }
+    }
+}
+
+.download-cv {
+    position: absolute !important;
+    z-index: 1;
+}
+
+p {
+    font-size: larger;
+}

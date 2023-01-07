@@ -1,0 +1,43 @@
+#header-cv {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    .header-cv__left {
+        width: 70%;
+        float: left;
+
+        &__name {
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        &__title {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        &__jobs {
+            font-size: larger;
+            font-weight:bold;
+        }
+    }
+
+    .header-cv__right {
+        width: 30%;
+        display: flex-end;
+        flex-direction: column;
+        // justify-content: end;
+        // background-color: yellow;
+        float: right;
+        & > * {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+// header-cv__title
+// header-cv__jobs
+// header-cv__year-of-birth
+// header-cv__gender
+// header-cv__language
+// header-cv__locate
