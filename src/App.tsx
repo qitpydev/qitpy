@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ScreenWrapper from './pages/Portfolio/features/ScreenWrapper/ScreenWrapper';
 import RouterManagement from './routes/router';
 
 /**
