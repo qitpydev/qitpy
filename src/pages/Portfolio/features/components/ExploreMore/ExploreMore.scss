@@ -5,3 +5,12 @@
     font-family: 'Annie Use Your Telescope';font-size: 22px;
     font-weight: 550;
 }
+
+.weekly-progress {
+    position: absolute;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    // background-color: red;
+}

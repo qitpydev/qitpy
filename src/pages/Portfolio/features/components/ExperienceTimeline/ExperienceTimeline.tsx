@@ -77,7 +77,7 @@ const WorkExperience = (props) => {
                         <br />
                         {locate}
                     </div>
-                </div>git
+                </div>
             </div>
             <div className="work-experience-item-projects">
                 {renderProjects(projects)}

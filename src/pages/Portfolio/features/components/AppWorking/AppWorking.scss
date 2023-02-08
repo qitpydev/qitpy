@@ -82,12 +82,11 @@ $forcus_toolbar-width: 120px;
 
                 &-access_btn {
                     position: relative;
-                    width: 100px;
-                    height: 35px;
+                    width: fit-content;
+                    height: fit-content;
 
                     color: black;
                     text-decoration: none;
-                    background-color: green;
                     z-index: 10;
 
                     display: flex;
@@ -101,7 +100,6 @@ $forcus_toolbar-width: 120px;
                     }
 
                     &:hover {
-                        // background-color: black;
                         color: green;
                         box-shadow: 2px 2px black;
                         cursor: pointer;

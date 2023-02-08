@@ -2,7 +2,7 @@
  * Static-Data using for showing basic data needed for Portfolio
  */
 
-import { getWorkingTimes } from "./pages/Portfolio/common/function/functions";
+import { getWorkingTimes, getYearMonthDifferenceToNow } from "./pages/Portfolio/common/function/functions";
 import { WorkExperienceItem } from "./pages/Portfolio/common/Interfaces";
 
 
@@ -198,7 +198,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
     {
         company: "Freelance projects",
         time: {
-            period: "1 mons",
+            period: getYearMonthDifferenceToNow(11, 2022),
             from: "12/2022",
             to: "now"
         },
@@ -219,7 +219,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
     {
         company: "SmartDev LLC",
         time: {
-            period: "1 yr 6 mos",
+            period: getYearMonthDifferenceToNow(6, 2021),
             from: "06/2021",
             to: "now"
         },
@@ -282,39 +282,34 @@ ExperienceData.forEach(ex => ex.projects.reverse())
 
 const ProjectWorkings: Array<ProjectWorking> = [
     {
-        name: "Personal manager",
+        name: "Task manager",
         description: "to manage working to-do, let the tool handle and optimize your life",
-        link: "https://qitpy.com/todo"
+        link: "https://todoist.com/"
     },
     {
         name: "Password manager",
         description: "Store, generate & protect all of the password",
-        link: ""
+        link: "https://bitwarden.com/"
     },
     {
-        name: "my secret",
-        description: "",
-        link: ""
+        name: "Learning & noting",
+        description: "Noting app manager",
+        link: "https://www.notion.so/"
     },
     {
-        name: "my secret",
-        description: "",
-        link: ""
+        name: "VPN tooling",
+        description: "To explore news, articles,.. are blocked, Secure and Free VPN service for protecting privacy",
+        link: "https://protonvpn.com/"
     },
     {
-        name: "my secret",
-        description: "",
-        link: ""
+        name: "News tech website",
+        description: "Product reviews, advice, how-tos and the latest news",
+        link: "https://www.cnet.com/"
     },
     {
-        name: "my secret",
-        description: "",
-        link: ""
-    },
-    {
-        name: "Trading bot",
-        description: "",
-        link: ""
+        name: "Design tools",
+        description: "GIMP - GNU Image Manipulation Program",
+        link: "https://www.gimp.org/"
     }
 ]
 

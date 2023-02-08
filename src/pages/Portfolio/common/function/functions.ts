@@ -72,7 +72,51 @@ export const getWorkingTimes = () => {
     const year = Math.floor(month / 12)
     month = month % 12
 
-    return `${year} yr & ${month} mos`
+    return `${year} yr ${month} mos`
+}
+
+// return the number of year and month, from the month and the year to current time
+export const getYearMonthDifferenceToNow = (month: number, year: number): string => {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth();
+    const currentYear = currentDate.getFullYear();
+
+    let yearsDifference = currentYear - year;
+    let monthsDifference = 0;
+
+    if (currentMonth >= month) {
+        monthsDifference = currentMonth - month;
+    } else {
+        yearsDifference--;
+        monthsDifference = 12 - (month - currentMonth);
+    }
+
+    return `${yearsDifference} yr ${monthsDifference} mos`;
+};
+
+// return the number of year and month, from the before year/month to the after year/month
+export function getYearMonthDifference(beforeYear: number, beforeMonth: number, afterYear: number, afterMonth: number): string {
+    let yearDifference = afterYear - beforeYear;
+    let monthDifference = afterMonth - beforeMonth;
+
+    if (monthDifference < 0) {
+        yearDifference--;
+        monthDifference = 12 + monthDifference;
+    }
+
+    return `${yearDifference} yr ${monthDifference} mos`;
+}
+
+
+// return current the week number
+
+
+export function getWeekNumber(): number {
+    const today: any = new Date();
+    const firstDayOfYear: any = new Date(today.getFullYear(), 0, 1);
+    const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
+    const week_number: number = Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
+    return week_number
 }
 
 /**
