@@ -43,8 +43,8 @@ const InfoData = {
     ],
     paragraphBody: [
         `🍀 I am a Python Developer, with ${getWorkingTimes()} in Web Development`,
-        "🍀 I love computer, technology ..and animals :)",
-        "🍀 I am a quick learner",
+        "🍀 I love computer, technology and animals",
+        "🍀 Currently, DevOps is my main field",
         "Always and always welcome new kind friends!",
     ],
     paragraphFooter: [
