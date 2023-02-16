@@ -119,6 +119,21 @@ export function getWeekNumber(): number {
     return week_number
 }
 
+// count the number of day in current year at this time
+export function getDayNumber(): number {
+    let currentDate: any = new Date();
+    let currentYear: any = currentDate.getFullYear();
+    let firstDayOfYear: any = new Date(currentYear, 0, 1);
+    return Math.ceil((currentDate - firstDayOfYear) / (1000 * 60 * 60 * 24));
+}
+
+// count number of all the days in current year
+export function getDaysOfYear(): number {
+    let today = new Date();
+    let currentYear = today.getFullYear();
+    return (currentYear % 4 === 0) ? 366 : 365;
+}
+
 /**
  * when user click outside of the header,
  *  close the header popup

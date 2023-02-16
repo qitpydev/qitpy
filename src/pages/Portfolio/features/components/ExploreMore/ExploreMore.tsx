@@ -1,15 +1,17 @@
 import React from 'react'
-import { getWeekNumber } from '../../../common/function/functions'
+import { getWeekNumber, getDayNumber, getDaysOfYear } from '../../../common/function/functions'
 import './ExploreMore.scss'
 
 import ProgressBar from "@ramonak/react-progress-bar";
 
 function ExploreMore() {
-  const week_str = `Current week: ${getWeekNumber()} / 52`
-  const percent = Math.floor(getWeekNumber() / 52 * 100)
+  const week_str =  `Current week: ${getWeekNumber()} / 52`
+  const day_str =   `Current day: ${getDayNumber()} / ${getDaysOfYear()}`
+  const percent = Math.floor(getDayNumber() / getDaysOfYear() * 100)
   return (<>
     <div className='weekly-progress'>
       <span>{week_str}</span>
+      <span>{day_str}</span>
       <ProgressBar
         completed={percent}
         labelSize={"10px"}
