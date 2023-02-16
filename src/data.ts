@@ -208,10 +208,10 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "Unchain Talent Lab",
                 prjTeamSize: 8,
                 prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
-                prjTechnologies: ["Web3", "Scrapy", "Zyte", "Aurora", "Strapi", "Postgres"],
+                prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform"],
                 prjDescription: [
-                    "A Start-Up project, that is come from the ideas of applying Block-Chain to change and support the current Hiring-process of HR in the next several years. ",
-                    "I was doing with Python Crawler roles. The project is still running in this time. "
+                    "A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
+                    "My role involved developing Python crawlers. The project is still ongoing at this time."
                 ]
             },
         ]
@@ -231,8 +231,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
-                    "The purpose of project is make a help tool to assist between Project Manager and Developer to prefer matching projects that they love to work. ",
-                    "I was working as Back-End-DevOps-TeamLeader roles for the duration of the project, so i have been concurrent kept try to work and learn so much in this project. "
+                    "The purpose of the project is to create a tool that assists Project Managers and Developers in finding projects that match their preferences and interests. ",
+                    "During the project, I worked as the BackEnd/DevOps/Team Leader, and I concurrently tried to work and learn as much as possible. "
                 ]
             },
             {
@@ -241,8 +241,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["PlayFab", "Azure-Function", "Java"],
                 prjDescription: [
-                    "This is a Product-Project by making a game that is applied NFT token, base on Football Manager type of online game. ",
-                    "The server (i mean the APIs) is created by using PlayFab-Platform and Cloud Function (Azure-Function in this case). "
+                    "This is a product project aimed at creating an online game based on the Football Manager genre and incorporating NFT tokens. ",
+                    "The server APIs are built using the PlayFab platform and cloud functions, specifically Azure Functions in this case. "
                 ],
             },
             {
@@ -251,8 +251,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "The purpose is making a tool that support Project-Manager to manage comprehensive projects working in the company, so that they can analyze and strategy created in every situation at point of times. ",
-                    "I was working as mainly-Devops of this project, keep the app high-availability and configure to automatic to deploy & testing in every deployment (development-staging-production/release). ",
+                    "The purpose is to create a tool that supports Project Managers in managing comprehensive projects within the company, enabling them to analyze and strategies in every situation at various points in time. ",
+                    "I worked mainly as a DevOps engineer on this project, ensuring that the application remains highly available and configuring it to deploy and test automatically in every deployment stage (development, staging, production/release). ",
                 ],
             },
             {
@@ -261,7 +261,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
                 prjDescription: [
-                    "a maintenance IoT project, that is using smartphone to manage and control the devices in user's home.",
+                    "a maintenance IoT project that utilizes smartphones to manage and control devices (Heater/Sensor) in user's home. ",
                 ],
             },
             {
@@ -270,9 +270,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["DevOps"],
                 prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
                 prjDescription: [
-                    "By working with my leader, i was support him to migrate from the old cluster to new cluster in Kubernetes of AWS (EKS - Elastic Kubernetes Service). ",
-                    "It's was finish after we make some plan before doing it. ",
-                    "In the end, some issues about Database appear. GP2 volumes (Amazon EBS volumes) can't be mount to the EC2 instance. But it's in our control. "
+                    "I supported my leader in migrating from the old Kubernetes cluster to a new cluster on AWS (EKS - Elastic Kubernetes Service). ",
+                    "We planned the migration before beginning, and successfully completed the migration. "
                 ],
             }
         ],
