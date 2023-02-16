@@ -17,9 +17,10 @@ const PortfolioHeaderLeaveMessage = () => {
     return (
         <div className={`portfolio-header-contact-leave-message ${ClassNames.noClose}`}>
             <div className={`portfolio-header-contact-leave-message-frame ${ClassNames.noClose}`}>
-                <input 
-                    value={message} 
-                    type="text" 
+                <input
+                    // value={message}
+                    type="text"
+                    value="Method isn't complete yet! 😄"
                     className={ClassNames.noClose}
                     onChange={(e) => setMessage(e.target.value)}
                 />
