@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { ClassNames } from '../../../common/function/functions';
 
+
+// USE Lambda Function to implement this method
 const PortfolioHeaderLeaveMessage = () => {
 
     const [message, setMessage] = useState('')

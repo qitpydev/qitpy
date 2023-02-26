@@ -67,8 +67,8 @@ const SkillsData = {
             }
         ]
     },
-    web_skill: {
-        name: "Web_skills",
+    web: {
+        name: "Webs",
         items: [{
             name: "Python",
             link: "https://www.python.org/"
@@ -86,8 +86,8 @@ const SkillsData = {
             link: "https://microservices.io/"
         },],
     },
-    database_skill: {
-        name: "Database_skills",
+    database: {
+        name: "Database",
         items: [{
             name: "Mysql",
             link: "https://www.mysql.com/"
@@ -99,8 +99,8 @@ const SkillsData = {
             link: "https://www.mongodb.com/"
         }],
     },
-    devops_skill: {
-        name: "Devops_skills",
+    devops: {
+        name: "Devops",
         items: [{
             name: "AWS",
             link: "https://aws.amazon.com/"

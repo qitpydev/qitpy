@@ -25,9 +25,9 @@ function Skill(props) {
     <div className='portfolio-skill'>
         <div className="label-rotate">Skills</div>
         <SkillItem id={osElementId} label={SkillsData.os.name} skills={SkillsData.os.items} />
-        <SkillItem id={databaseElementId} label={SkillsData.database_skill.name} skills={SkillsData.database_skill.items} />
-        <SkillItem id={webElementId} label={SkillsData.web_skill.name} skills={SkillsData.web_skill.items} />
-        <SkillItem id={devopsElementId} label={SkillsData.devops_skill.name} skills={SkillsData.devops_skill.items} />
+        <SkillItem id={databaseElementId} label={SkillsData.database.name} skills={SkillsData.database.items} />
+        <SkillItem id={webElementId} label={SkillsData.web.name} skills={SkillsData.web.items} />
+        <SkillItem id={devopsElementId} label={SkillsData.devops.name} skills={SkillsData.devops.items} />
         <SkillItem id={toolElementId} label={SkillsData.tools.name} skills={SkillsData.tools.items} />
         <SkillItem id={otherElementId} label={SkillsData.others.name} skills={SkillsData.others.items} />
     </div>
