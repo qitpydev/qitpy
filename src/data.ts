@@ -210,8 +210,9 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
                 prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform"],
                 prjDescription: [
-                    "A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
-                    "My role involved developing Python crawlers. The project is still ongoing at this time."
+                    "- A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
+                    "- My role involved developing Python crawlers.",
+                    "- The project is still on going at this time."
                 ]
             },
         ]
@@ -231,8 +232,10 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java", "SpringBoot", "VPS", "Microservice", "MySQL"],
                 prjDescription: [
-                    "The purpose of the project is to create a tool that assists Project Managers and Developers in finding projects that match their preferences and interests. ",
-                    "During the project, I worked as the BackEnd/DevOps/Team Leader, and I concurrently tried to work and learn as much as possible. "
+                    "- The purpose of the project is to create a tool that assists Project Managers",
+                    "and Developers in finding projects that match their preferences and interests. ",
+                    "- During the project, I worked as the BackEnd/DevOps/Team Leader,",
+                    "and I concurrently tried to work and learn as much as possible. "
                 ]
             },
             {
@@ -241,8 +244,10 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["PlayFab", "Azure-Function", "Java"],
                 prjDescription: [
-                    "This is a product project aimed at creating an online game based on the Football Manager genre and incorporating NFT tokens. ",
-                    "The server APIs are built using the PlayFab platform and cloud functions, specifically Azure Functions in this case. "
+                    "- This is a product project aimed at creating an online game based on the",
+                    "Football Manager genre and incorporating NFT tokens. ",
+                    "- The server APIs are built using the PlayFab platform and cloud functions,",
+                    "specifically Azure Functions in this case. "
                 ],
             },
             {
@@ -251,8 +256,11 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "The purpose is to create a tool that supports Project Managers in managing comprehensive projects within the company, enabling them to analyze and strategies in every situation at various points in time. ",
-                    "I worked mainly as a DevOps engineer on this project, ensuring that the application remains highly available and configuring it to deploy and test automatically in every deployment stage (development, staging, production/release). ",
+                    "- The purpose is to create a tool that supports Project Managers in managing comprehensive projects within the company,",
+                    "- Enabling them to analyze and strategies in every situation at various points in time. ",
+                    "- I worked mainly as a DevOps engineer on this project,",
+                    "- Ensuring that the application remains highly available",
+                    "- And configuring to deploy and test automatically in every deployment stage (development, staging, production/release). ",
                 ],
             },
             {
@@ -261,7 +269,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
                 prjDescription: [
-                    "a maintenance IoT project that utilizes smartphones to manage and control devices (Heater/Sensor) in user's home. ",
+                    "- A maintenance IoT project that utilizes smartphones to manage and control devices (Heater/Sensor) in user's home. ",
                 ],
             },
             {
@@ -270,8 +278,8 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["DevOps"],
                 prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
                 prjDescription: [
-                    "I supported my leader in migrating from the old Kubernetes cluster to a new cluster on AWS (EKS - Elastic Kubernetes Service). ",
-                    "We planned the migration before beginning, and successfully completed the migration. "
+                    "- I supported my leader in migrating from the old Kubernetes cluster to a new cluster on AWS (EKS - Elastic Kubernetes Service). ",
+                    "- We planned the migration before beginning, and successfully completed the migration. "
                 ],
             }
         ],
@@ -313,29 +321,28 @@ const ProjectWorkings: Array<ProjectWorking> = [
 ]
 
 const CvIntro = [
-    "As a Pythonista, With two of years working in Web-development - a quick learner - with the mind opening - always working with all of the hearts. I hope we could keep the world working good. ",
-    "Currently, i am trying to become an expert in my field (Back-end/DevOps/AWS Clouds). ",
-    "And, I am always keep learning everyday, willing to deep dive into any projects using Python - That's because i love Python. ",
-    "In the futures, i will use my skills to make some great projects, to follow the new technologies, to follow the world developing and earn the money. ",
+    "As a Pythonista, and two years of experience in web development. ",
+    "I have worked with Java-SpringBoot before, and since then, I have mostly worked in the role of DevOps in several projects. ",
+    "Currently, I am striving to become an expert in my field, which includes Python, DevOps, and AWS Clouds. ",
+    "Moreover, I am always eager to learn and willing to dive deep into projects that utilizes Python because I love Python's utilities and easily readable syntax. "
 ]
 const CvProsCons = {
-    pros: "I have knowledge in comprehensive of web-development, i can understand all about of the operation of project, easy to approach the issues. ",
+    pros: "I have comprehensive knowledge of web development, which enables me to understand all aspects of project operation and to approach issues easily. ",
     cons: [
-        "I was working with Java/SpringBoot with Back-end roles in a time before, so I am a new with Python. But I learned Django and deploy it by myself using EC2 - Amazon Elastic Compute Cloud. ",
-        "More details at: https://api.qitpy.com/api/docs",
-        "So, I am confidently to working with Django/Python for now. "
+        "I am a Python newbie. ",
     ]
 }
 const CvSkill = {
-    main: ["Python", "Django", "DevOps", "AWS"],
-    others: ["ReactJs", "ReduxJs", "Kubernetes", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "AzureFunction", "Microservices", "Shellscript", "Linux"]
+    main: ["Python", "DevOps", "AWS", "Kubernetes", "Terraform"],
+    others: ["ReactJs", "ReduxJs", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "Microservices", "Shellscript", "Linux"]
 }
 const CvEdu = [
     "Danang University of Science and Technology",
     "Time period: 2017-2022",
     "(not graduated)",
 ]
-const CvCert = []
+const CvCert = [
+]
 
 export {
     ContactData,

@@ -7,8 +7,8 @@ function HeaderCv() {
         <div className="header-cv__left">
             <div className="header-cv__left__name">DOAN VAN QUYET</div>
             <div className="header-cv__left__title">PYTHON DEVELOPER</div>
-            ---
-            <div className="header-cv__left__jobs">Back-end & DevOp in Web Development</div>
+            --- DevOps --- Web Development
+            {/* <div className="header-cv__left__jobs">DevOps in Web Development</div> */}
         </div>
         <div className="header-cv__right">
             <div className="header-cv__right__year-of-birth"><span>Year of birth: </span><span>1999</span></div>
