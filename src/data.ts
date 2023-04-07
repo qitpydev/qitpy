@@ -195,28 +195,28 @@ const SkillsData = {
 }
 
 const ExperienceData: Array<WorkExperienceItem> = [
-    {
-        company: "Freelance projects",
-        time: {
-            period: getYearMonthDifferenceToNow(11, 2022),
-            from: "12/2022",
-            to: "now"
-        },
-        locate: "Da Nang",
-        projects: [
-            {
-                prjName: "Unchain Talent Lab",
-                prjTeamSize: 8,
-                prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
-                prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform"],
-                prjDescription: [
-                    "- A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
-                    "- My role involved developing Python crawlers.",
-                    "- The project is still on going at this time."
-                ]
-            },
-        ]
-    },
+    // {
+    //     company: "Freelance projects",
+    //     time: {
+    //         period: getYearMonthDifferenceToNow(11, 2022),
+    //         from: "12/2022",
+    //         to: "now"
+    //     },
+    //     locate: "Da Nang",
+    //     projects: [
+    //         {
+    //             prjName: "Unchain Talent Lab",
+    //             prjTeamSize: 8,
+    //             prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
+    //             prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform"],
+    //             prjDescription: [
+    //                 "- A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
+    //                 "- My role involved developing Python crawlers.",
+    //                 "- The project is still on going at this time."
+    //             ]
+    //         },
+    //     ]
+    // },
     {
         company: "SmartDev LLC",
         time: {
