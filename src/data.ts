@@ -72,18 +72,18 @@ const SkillsData = {
         items: [{
             name: "Python",
             link: "https://www.python.org/"
-        }, {
-            name: "Django",
-            link: "https://www.djangoproject.com/"
-        }, {
-            name: "Redux",
-            link: "https://redux.js.org/"
+            // }, {
+            //     name: "Django",
+            //     link: "https://www.djangoproject.com/"
+            // }, {
+            //     name: "Redux",
+            //     link: "https://redux.js.org/"
         }, {
             name: "ReactJs",
             link: "https://reactjs.org/"
-        }, {
-            name: "Microservices",
-            link: "https://microservices.io/"
+            // }, {
+            //     name: "Microservices",
+            //     link: "https://microservices.io/"
         },],
     },
     database: {
@@ -105,49 +105,49 @@ const SkillsData = {
             name: "AWS",
             link: "https://aws.amazon.com/"
         }, {
-            name: "Docker",
-            link: "https://www.docker.com/"
-        }, {
+            //     name: "Docker",
+            //     link: "https://www.docker.com/"
+            // }, {
             name: "Kubernetes",
             link: "https://kubernetes.io"
-        }, {
-            name: "Helm",
-            link: "https://helm.sh/"
+            // }, {
+            //     name: "Helm",
+            //     link: "https://helm.sh/"
         }, {
             name: "CICD",
             link: "https://en.wikipedia.org/wiki/CI/CD"
-        }, {
-            name: "EC2",
-            link: "https://aws.amazon.com/ec2/"
-        }, {
-            name: "Linux",
-            link: "https://vi.wikipedia.org/wiki/Linux"
+            // }, {
+            //     name: "EC2",
+            //     link: "https://aws.amazon.com/ec2/"
+            // }, {
+            // name: "Linux",
+            // link: "https://vi.wikipedia.org/wiki/Linux"
         }],
     },
     tools: {
         name: "Tools",
         items: [{
-            name: "VisualCode",
-            link: "https://code.visualstudio.com/"
-        }, {
-            name: "Postman",
-            link: "https://www.postman.com/"
-        }, {
-            name: "Lens",
-            link: "https://k8slens.dev/"
-        }, {
-            name: "Figma",
-            link: "https://www.figma.com/"
-        }, {
-            name: "Bitbucket",
-            link: "https://bitbucket.org"
-        }, {
-            name: "FileZilla",
-            link: "https://filezilla-project.org/"
-        }, {
-            name: "SSH",
-            link: "https://en.wikipedia.org/wiki/Secure_Shell"
-        }, {
+            //     name: "VisualCode",
+            //     link: "https://code.visualstudio.com/"
+            // }, {
+            //     name: "Postman",
+            //     link: "https://www.postman.com/"
+            // }, {
+            //     name: "Lens",
+            //     link: "https://k8slens.dev/"
+            // }, {
+            //     name: "Figma",
+            //     link: "https://www.figma.com/"
+            // }, {
+            //     name: "Bitbucket",
+            //     link: "https://bitbucket.org"
+            // }, {
+            //     name: "FileZilla",
+            //     link: "https://filezilla-project.org/"
+            // }, {
+            //     name: "SSH",
+            //     link: "https://en.wikipedia.org/wiki/Secure_Shell"
+            // }, {
             name: "GitHub",
             link: "https://github.com/"
         },],
@@ -155,41 +155,41 @@ const SkillsData = {
     others: {
         name: "Others",
         items: [{
-            name: "Heroku",
-            link: "https://www.heroku.com/"
-        }, {
-            name: "SpringBoot",
-            link: "https://spring.io/projects/spring-boot"
-        }, {
-            name: "AzureFunction",
-            link: "https://azure.microsoft.com/en-us/products/functions/"
-        }, {
-            name: "NestJs",
-            link: "https://nestjs.com/"
-        }, {
-            name: "ECR",
-            link: "https://aws.amazon.com/ecr/"
-        }, {
-            name: "OperatingSystem",
-            link: "https://en.wikipedia.org/wiki/Operating_system"
-        }, {
-            name: "ShellScript",
-            link: "https://www.shellscript.sh/"
-        }, {
-            name: "GitActions",
-            link: "https://github.com/features/actions"
-        }, {
-            name: "PlayFab",
-            link: "https://playfab.com/"
-        }, {
+            //     name: "Heroku",
+            //     link: "https://www.heroku.com/"
+            // }, {
+            //     name: "SpringBoot",
+            //     link: "https://spring.io/projects/spring-boot"
+            // }, {
+            //     name: "AzureFunction",
+            //     link: "https://azure.microsoft.com/en-us/products/functions/"
+            // }, {
+            //     name: "NestJs",
+            //     link: "https://nestjs.com/"
+            // }, {
+            //     name: "ECR",
+            //     link: "https://aws.amazon.com/ecr/"
+            // }, {
+            //     name: "OperatingSystem",
+            //     link: "https://en.wikipedia.org/wiki/Operating_system"
+            // }, {
+            //     name: "ShellScript",
+            //     link: "https://www.shellscript.sh/"
+            // }, {
+            //     name: "GitActions",
+            //     link: "https://github.com/features/actions"
+            // }, {
+            //     name: "PlayFab",
+            //     link: "https://playfab.com/"
+            // }, {
             name: "Terraform",
             link: "https://www.terraform.io/"
-        }, {
-            name: "Velero",
-            link: "https://velero.io/"
-        }, {
-            name: "Scrapy",
-            link: "https://scrapy.org/"
+            // }, {
+            //     name: "Velero",
+            //     link: "https://velero.io/"
+            // }, {
+            //     name: "Scrapy",
+            //     link: "https://scrapy.org/"
         }],
     }
 }
