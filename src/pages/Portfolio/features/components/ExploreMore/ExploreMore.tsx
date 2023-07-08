@@ -22,7 +22,7 @@ function ExploreMore() {
         height={"7px"}
       />
     </div>
-    <div className='explore-more'> 😌 Keep calm & carry on 🐤 Just do it | Don't worry! -<span style={{color: "red"}}> ♥️</span>-</div>
+    <div className='explore-more'> 😌 Keep calm & carry on 🐤 Just do it 🫶 Don't worry! -<span style={{color: "red"}}> ♥️</span>-</div>
   </>
   )
 }
