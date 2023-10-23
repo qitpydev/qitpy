@@ -58,13 +58,13 @@ const SkillsData = {
         name: "Operating_system",
         items: [
             {
+                name: "Ubuntu",
+                link: "https://ubuntu.com/"
+            },
+            {
                 name: "Fedora",
                 link: "https://getfedora.org/"
             },
-            {
-                name: "Ubuntu",
-                link: "https://ubuntu.com/"
-            }
         ]
     },
     web: {
@@ -72,151 +72,110 @@ const SkillsData = {
         items: [{
             name: "Python",
             link: "https://www.python.org/"
-            // }, {
-            //     name: "Django",
-            //     link: "https://www.djangoproject.com/"
-            // }, {
-            //     name: "Redux",
-            //     link: "https://redux.js.org/"
         }, {
-            name: "ReactJs",
-            link: "https://reactjs.org/"
-            // }, {
-            //     name: "Microservices",
-            //     link: "https://microservices.io/"
+            name: "DevOps",
+            link: "https://aws.amazon.com/devops/what-is-devops/"
         },],
     },
-    database: {
-        name: "Database",
-        items: [{
-            name: "Mysql",
-            link: "https://www.mysql.com/"
-        }, {
-            name: "Postgres",
-            link: "https://www.postgresql.org/"
-        }, {
-            name: "MongoDB",
-            link: "https://www.mongodb.com/"
-        }],
-    },
     devops: {
-        name: "Devops",
+        name: "DevOps",
         items: [{
             name: "AWS",
             link: "https://aws.amazon.com/"
         }, {
-            //     name: "Docker",
-            //     link: "https://www.docker.com/"
-            // }, {
+            name: "Docker",
+            link: "https://www.docker.com/"
+        }, {
             name: "Kubernetes",
             link: "https://kubernetes.io"
-            // }, {
-            //     name: "Helm",
-            //     link: "https://helm.sh/"
         }, {
-            name: "CICD",
-            link: "https://en.wikipedia.org/wiki/CI/CD"
-            // }, {
-            //     name: "EC2",
-            //     link: "https://aws.amazon.com/ec2/"
-            // }, {
-            // name: "Linux",
-            // link: "https://vi.wikipedia.org/wiki/Linux"
-        }],
+        }, {
+            name: "Helm",
+            link: "https://helm.sh/"
+        }, {
+            name: "Terraform",
+            link: "https://www.terraform.io/"
+        }, {
+            name: "Lens",
+            link: "https://k8slens.dev/"
+        }, {
+            name: "GithubActions",
+            link: "#"
+        }, {
+            name: "BitbucketPipeline",
+            link: "#"
+        }]
     },
-    tools: {
-        name: "Tools",
+    python: {
+        name: "PythonEcosystem",
         items: [{
-            //     name: "VisualCode",
-            //     link: "https://code.visualstudio.com/"
-            // }, {
-            //     name: "Postman",
-            //     link: "https://www.postman.com/"
-            // }, {
-            //     name: "Lens",
-            //     link: "https://k8slens.dev/"
-            // }, {
-            //     name: "Figma",
-            //     link: "https://www.figma.com/"
-            // }, {
-            //     name: "Bitbucket",
-            //     link: "https://bitbucket.org"
-            // }, {
-            //     name: "FileZilla",
-            //     link: "https://filezilla-project.org/"
-            // }, {
-            //     name: "SSH",
-            //     link: "https://en.wikipedia.org/wiki/Secure_Shell"
-            // }, {
-            name: "GitHub",
-            link: "https://github.com/"
-        },],
+            name: "FastAPI",
+            link: "https://fastapi.tiangolo.com/"
+        }, {
+            name: "Scrapy",
+            link: "https://scrapy.org/"
+        }, {
+            name: "Airflow",
+            link: "https://airflow.apache.org/"
+        }]
     },
     others: {
         name: "Others",
         items: [{
-            //     name: "Heroku",
-            //     link: "https://www.heroku.com/"
-            // }, {
-            //     name: "SpringBoot",
-            //     link: "https://spring.io/projects/spring-boot"
-            // }, {
-            //     name: "AzureFunction",
-            //     link: "https://azure.microsoft.com/en-us/products/functions/"
-            // }, {
-            //     name: "NestJs",
-            //     link: "https://nestjs.com/"
-            // }, {
-            //     name: "ECR",
-            //     link: "https://aws.amazon.com/ecr/"
-            // }, {
-            //     name: "OperatingSystem",
-            //     link: "https://en.wikipedia.org/wiki/Operating_system"
-            // }, {
-            //     name: "ShellScript",
-            //     link: "https://www.shellscript.sh/"
-            // }, {
-            //     name: "GitActions",
-            //     link: "https://github.com/features/actions"
-            // }, {
-            //     name: "PlayFab",
-            //     link: "https://playfab.com/"
-            // }, {
-            name: "Terraform",
-            link: "https://www.terraform.io/"
-            // }, {
-            //     name: "Velero",
-            //     link: "https://velero.io/"
-            // }, {
-            //     name: "Scrapy",
-            //     link: "https://scrapy.org/"
+            name: "ReactJS",
+            link: "https://www.heroku.com/"
+        }, {
+            name: "SpringBoot",
+            link: "https://spring.io/projects/spring-boot"
+        }, {
+            name: "AzureFunction",
+            link: "https://azure.microsoft.com/en-us/products/functions/"
+        }, {
+            name: "PlayFab",
+            link: "https://playfab.com/"
+        }, {
+        }, {
+            name: "Velero",
+            link: "https://velero.io/"
+        }, {
+            name: "NextJs",
+            link: "https://nextjs.org/"
+        }, {
+            name: "MicrosoftBotFramework",
+            link: "https://dev.botframework.com/"
+        }, {
+            name: "Android",
+            link: "https://www.android.com/"
+        }, {
+            name: "IOS",
+            link: ""
         }],
     }
 }
 
 const ExperienceData: Array<WorkExperienceItem> = [
-    // {
-    //     company: "Freelance projects",
-    //     time: {
-    //         period: getYearMonthDifferenceToNow(11, 2022),
-    //         from: "12/2022",
-    //         to: "now"
-    //     },
-    //     locate: "Da Nang",
-    //     projects: [
-    //         {
-    //             prjName: "Unchain Talent Lab",
-    //             prjTeamSize: 8,
-    //             prjResponsibilities: ["Back-end", "Devops", "Data Crawler"],
-    //             prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform"],
-    //             prjDescription: [
-    //                 "- A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
-    //                 "- My role involved developing Python crawlers.",
-    //                 "- The project is still on going at this time."
-    //             ]
-    //         },
-    //     ]
-    // },
+    {
+        company: "Start-Up Projects",
+        time: {
+            period: getYearMonthDifferenceToNow(11, 2022),
+            from: "12/2022",
+            to: "now"
+        },
+        locate: "Da Nang",
+        projects: [
+            {
+                prjName: "Unchain Talent Lab",
+                prjTeamSize: 8,
+                prjResponsibilities: ["Back-end", "Devops", "Crawler"],
+                prjTechnologies: ["Web3", "Scrapy", "Aurora", "Postgres", "NextJs", "AWSCodeBuild", "Terraform", "FastAPI"],
+                prjDescription: [
+                    "- A start-up project that originated from the idea of applying blockchain technology to change and improve the current HR hiring process in the next several years.",
+                    "- My role involved developing Python crawlers. And developing the backend system for the project.",
+                    "- The project is still on going at this time."
+                ]
+            },
+        ]
+    },
     {
         company: "SmartDev LLC",
         time: {
@@ -256,7 +215,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
-                    "- The purpose is to create a tool that supports Project Managers in managing comprehensive projects within the company,",
+                    "- The purpose is to create a platform for SmartDev managing all most of operating activities,",
                     "- Enabling them to analyze and strategies in every situation at various points in time. ",
                     "- I worked mainly as a DevOps engineer on this project,",
                     "- Ensuring that the application remains highly available",
@@ -269,19 +228,45 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["Java SpringBoot", "Kubernetes", "EMQX", "REDIS", "MongoDB"],
                 prjDescription: [
-                    "- A maintenance IoT project that utilizes smartphones to manage and control devices (Heater/Sensor) in user's home. ",
+                    "- An IoT project that utilizes smartphones to manage and control devices (Heater/Sensor) in user's home. ",
                 ],
             },
             {
-                prjName: "Kubernetes Cluster migration",
+                prjName: "Presale Command Bot",
                 prjTeamSize: 2,
-                prjResponsibilities: ["DevOps"],
-                prjTechnologies: ["Velero", "EC2", "EBS", "GP2", "Terraform", "Blueprint"],
+                prjResponsibilities: ["FullStack"],
+                prjTechnologies: ["TypeScript", "AzureCommandBot", "MsTeam", "MicrosoftBotFramework", "AzureCloud", "SharePoint", "AmazonS3", "DocuSign"],
                 prjDescription: [
-                    "- I supported my leader in migrating from the old Kubernetes cluster to a new cluster on AWS (EKS - Elastic Kubernetes Service). ",
-                    "- We planned the migration before beginning, and successfully completed the migration. "
+                    "- The command bot the serve the purpose of managing the presale process of the company. ",
+                    "- Including integrating DocuSign to sign the contract,",
+                    "- Including generating Job Description for HR to post on the company's website. ",
+                    "- And configuring to deploy and test automatically in every deployment stage (development, staging, production/release). ",
                 ],
-            }
+            },
+            {
+                prjName: "Meracle Whizz Spacer - Health Care",
+                prjTeamSize: 2,
+                prjResponsibilities: ["Back-end", "Devops"],
+                prjTechnologies: ["IOS", "Android", "AWS-ECS", "AWS-Aurora", "ECS-Copilot"],
+                prjDescription: [
+                    "- IoT project that helps asthma kids to breathe better.",
+                    "- I worked mainly as a DevOps engineer on this project,",
+                    "- Ensuring that the application remains highly available",
+                    "- And configuring to deploy and test automatically in every deployment stage (development, staging, production/release). ",
+                ],
+            },
+            {
+                prjName: "DoleUS Integration Tool",
+                prjTeamSize: 2,
+                prjResponsibilities: [],
+                prjTechnologies: ["Python", "DevOps", "Airflow", "AWS-Lambda", "FastAPI", "GitActions", "Terraform"],
+                prjDescription: [
+                    "- A tool to automate the process of integrating data from DoleUS organization to Clarifruit organization Platform. ",
+                    "- I worked alone on this project as Developer and DevOps,",
+                    "- The automate things are: get the files from a SFTP, then process and other stuffs,",
+                    "- And configuring to deploy and test automatically in every deployment stage (development, staging, production/release). ",
+                ],
+            },
         ],
     },
 ]
@@ -321,19 +306,11 @@ const ProjectWorkings: Array<ProjectWorking> = [
 ]
 
 const CvIntro = [
-    "As a Pythonista, and two years of experience in web development. ",
-    "I have worked with Java-SpringBoot before, and since then, I have mostly worked in the role of DevOps in several projects. ",
-    "Currently, I am striving to become an expert in my field, which includes Python, DevOps, and AWS Clouds. ",
-    "Moreover, I am always eager to learn and willing to dive deep into projects that utilizes Python because I love Python's utilities and easily readable syntax. "
+    "As a Python DevOps Specialist, I bring a unique blend of programming prowess and infrastructure management expertise to the table.",
+    "With a proven track record of optimizing software development and deployment processes, I am dedicated to streamlining operations, enhancing collaboration, and ensuring the reliability and scalability of complex systems.",
 ]
-const CvProsCons = {
-    pros: "I have comprehensive knowledge of web development, which enables me to understand all aspects of project operation and to approach issues easily. ",
-    cons: [
-        "I am a Python newbie. ",
-    ]
-}
 const CvSkill = {
-    main: ["Python", "DevOps", "AWS", "Kubernetes", "Terraform"],
+    main: ["Python-ecosystem", "DevOps", "AWS", "Kubernetes", "Terraform"],
     others: ["ReactJs", "ReduxJs", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "Microservices", "Shellscript", "Linux"]
 }
 const CvEdu = [
@@ -351,7 +328,6 @@ export {
     ExperienceData,
     ProjectWorkings,
     CvIntro,
-    CvProsCons,
     CvSkill,
     CvEdu,
     CvCert
