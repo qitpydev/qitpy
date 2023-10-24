@@ -209,7 +209,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
             },
             {
                 prjName: "SmartDev Platform",
-                prjTeamSize: 40,
+                prjTeamSize: 20,
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["NestJs", "Kubernetes", "Bitbucket-Pipeline", "CI/CD", "GitOps", "PostgreSQL"],
                 prjDescription: [
@@ -233,7 +233,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
                 prjName: "Presale Command Bot",
                 prjTeamSize: 2,
                 prjResponsibilities: ["FullStack"],
-                prjTechnologies: ["TypeScript", "AzureCommandBot", "MsTeam", "MicrosoftBotFramework", "AzureCloud", "SharePoint", "AmazonS3", "DocuSign"],
+                prjTechnologies: ["AI", "TypeScript", "AzureCommandBot", "MsTeam", "MicrosoftBotFramework", "AzureCloud", "SharePoint", "AmazonS3", "DocuSign"],
                 prjDescription: [
                     "- The command bot the serve the purpose of managing the presale process of the company. ",
                     "- Including integrating DocuSign to sign the contract,",
@@ -243,7 +243,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
             },
             {
                 prjName: "Meracle Whizz Spacer - Health Care",
-                prjTeamSize: 2,
+                prjTeamSize: 12,
                 prjResponsibilities: ["Back-end", "Devops"],
                 prjTechnologies: ["IOS", "Android", "AWS-ECS", "AWS-Aurora", "ECS-Copilot"],
                 prjDescription: [
@@ -255,7 +255,7 @@ const ExperienceData: Array<WorkExperienceItem> = [
             },
             {
                 prjName: "DoleUS Integration Tool",
-                prjTeamSize: 2,
+                prjTeamSize: 1,
                 prjResponsibilities: [],
                 prjTechnologies: ["Python", "DevOps", "Airflow", "AWS-Lambda", "FastAPI", "GitActions", "Terraform"],
                 prjDescription: [
