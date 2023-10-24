@@ -1,7 +1,6 @@
 import React from 'react'
 import LabelLineDecor from '../components/LabelLineDecor/LabelLineDecor'
 import { CvIntro,
-  CvProsCons,
   CvSkill,
   CvEdu,
   CvCert } from '../../../../../../data';
@@ -17,16 +16,16 @@ function PersonalOverviewCv() {
           <p key={i}>{x}</p>
         )}
       </div>
-      <div className="personal-overview-cv__proscons">
+      {/* <div className="personal-overview-cv__proscons">
         <LabelLineDecor name="Pros & Cons" />
         <p>{CvProsCons.pros}</p>
         <p>{CvProsCons.cons.map(x => (<>
           {x} <br/>
         </>))}</p>
-      </div>
+      </div> */}
       <div className="personal-overview-cv__skill">
         <LabelLineDecor name="Skills" />
-        <p><b>Main skills: </b>{CvSkill.main.join(", ")}</p>
+        <p><b>Main: </b>{CvSkill.main.join(", ")}</p>
         <p><b>Others: </b>{CvSkill.others.join(", ")}</p>
       </div>
       <div className="personal-overview-cv__edu">
