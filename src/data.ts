@@ -44,18 +44,16 @@ const InfoData = {
     paragraphBody: [
         `🍀 I have ${getWorkingTimes()} of experience in web development.`,
         "🍀 I love computer, technology and animals.",
-        "🍀 Currently, I'm focused on DevOps as my primary field.",
+        "🍀 Currently, I'm focused on Python and DevOps as my primary fields.",
     ],
     paragraphFooter: [
-        "I'm always happy to make new friends!",
-        "Please feel free to reach out to me. ♥️",
         "Wishing you a wonderful day! ♥️",
     ]
 };
 
 const SkillsData = {
     os: {
-        name: "Operating_system",
+        name: "Operating System",
         items: [
             {
                 name: "Ubuntu",
@@ -106,7 +104,7 @@ const SkillsData = {
         }]
     },
     python: {
-        name: "PythonEcosystem",
+        name: "Python Ecosystem",
         items: [{
             name: "FastAPI",
             link: "https://fastapi.tiangolo.com/"

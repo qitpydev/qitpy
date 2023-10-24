@@ -22,7 +22,7 @@ const PortfolioHeaderLeaveMessage = () => {
                 <input
                     // value={message}
                     type="text"
-                    value="Method isn't complete yet! 😄"
+                    value="feature isn't complete yet! 😄"
                     className={ClassNames.noClose}
                     onChange={(e) => setMessage(e.target.value)}
                 />

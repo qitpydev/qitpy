@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from "../../../images/portfolio-avatar.png";
+import avatar from "../../../images/portfolio-avatar.jpg";
 import { InfoData } from '../../../../../data';
 import './Avatar.scss'
 
