@@ -89,7 +89,6 @@ const SkillsData = {
             name: "Kubernetes",
             link: "https://kubernetes.io"
         }, {
-        }, {
             name: "Helm",
             link: "https://helm.sh/"
         }, {
@@ -133,7 +132,6 @@ const SkillsData = {
         }, {
             name: "PlayFab",
             link: "https://playfab.com/"
-        }, {
         }, {
             name: "Velero",
             link: "https://velero.io/"
@@ -309,14 +307,45 @@ const CvIntro = [
     "As a Python DevOps Specialist, I bring a unique blend of programming prowess and infrastructure management expertise to the table.",
     "With a proven track record of optimizing software development and deployment processes, I am dedicated to streamlining operations, enhancing collaboration, and ensuring the reliability and scalability of complex systems.",
 ]
+/**
+ *         name: "Others",
+        items: [{
+            name: "ReactJS",
+            link: "https://www.heroku.com/"
+        }, {
+            name: "SpringBoot",
+            link: "https://spring.io/projects/spring-boot"
+        }, {
+            name: "AzureFunction",
+            link: "https://azure.microsoft.com/en-us/products/functions/"
+        }, {
+            name: "PlayFab",
+            link: "https://playfab.com/"
+        }, {
+        }, {
+            name: "Velero",
+            link: "https://velero.io/"
+        }, {
+            name: "NextJs",
+            link: "https://nextjs.org/"
+        }, {
+            name: "MicrosoftBotFramework",
+            link: "https://dev.botframework.com/"
+        }, {
+            name: "Android",
+            link: "https://www.android.com/"
+        }, {
+            name: "IOS",
+            link: ""
+        }],
+ */
 const CvSkill = {
-    main: ["Python-ecosystem", "DevOps", "AWS", "Kubernetes", "Terraform"],
-    others: ["ReactJs", "ReduxJs", "CI-CD", "Scrapy", "GitActions", "EKS", "ECR", "Microservices", "Shellscript", "Linux"]
+    main: ["Python-ecosystem", "DevOps", "AWS", "Kubernetes", "Terraform", "FastAPI", "Crawling", "Airflow", "Linux", "Docker",],
+    others: ["ReactJs", "SpringBoot", "Azure", "Microsoft Bot Framework", "Android", "IOS app"]
 }
 const CvEdu = [
     "Danang University of Science and Technology",
     "Time period: 2017-2022",
-    "(not graduated)",
 ]
 const CvCert = [
 ]
