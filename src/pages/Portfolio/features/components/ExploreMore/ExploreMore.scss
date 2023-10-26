@@ -1,4 +1,5 @@
 .explore-more {
+    margin: auto;
     position: relative;
     color: green;
     display: flex;
@@ -15,3 +16,18 @@
     width: 200px;
     // background-color: red;
 }
+
+@media only screen and (max-width:510px) {
+    .explore-more {
+        display: none;
+    }
+
+    .weekly-progress {
+        margin: auto;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+  }
+

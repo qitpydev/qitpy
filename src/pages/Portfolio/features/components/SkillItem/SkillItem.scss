@@ -5,7 +5,14 @@ $tagHeight: 30px;
     height: $tagHeight;
     width: 100%;
 
+    @media only screen and (max-width:1230px) {
+        &-label {
+            content: "KK";
+        }
+    }
+
     &-label {
+        white-space: nowrap;
         position: relative;
         font-size:large;
         font-weight: 600;

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './SkillItem.scss'
 import { SkillDetail } from '../../../../../data'
-// import {SkillDetail} from '../../../data'
+import MediaQuery from 'react-responsive';
 
 SkillItem.defaultProps = {
   id: "id",
