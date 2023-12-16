@@ -26,5 +26,3 @@
   <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=qitpy&show_icons=true" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qitpy" />
 </div>
-
-since speak awesome neck comic among will student ridge vapor color mystery fiscal staff relax cargo coyote more option vehicle glimpse test exotic open empty
