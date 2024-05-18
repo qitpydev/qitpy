@@ -1,0 +1,108 @@
+<!-- src/App.svelte -->
+<script>
+  // Script content can be added here if needed
+</script>
+
+<style>
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333; /* Default text color */
+  }
+
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Navigation styles */
+  nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main content styles */
+  main {
+    padding: 2rem;
+  }
+
+  /* Profile image styles */
+  img.profile {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  img.profile:hover {
+    transform: scale(1.1);
+  }
+
+  /* Paragraph styles */
+  p {
+    line-height: 1.6; /* Improved readability with slightly increased line height */
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* for p tag */
+
+  }
+
+  .intro {
+    margin: 2rem 20rem 3rem;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
+
+
+
+<header>
+  <h1>Helloo!!</h1>
+</header>
+
+<main>
+  <section>
+      <img src="/profile.jpg" alt="Profile Picture" class="profile" />
+      <div class='title'>
+        <h2><strong>Doan Van Quyet</strong></h2>
+        <b>Software Developer</b>
+      </div>
+
+      <div class='intro'>
+        <p>I am software developer with a focus on DevOps, hailing from Vietnam. Specializing in crafting robust CI/CD pipelines and scalable infrastructure, I is dedicated to streamlining development processes and ensuring reliable deployments.
+        <p>Having started my journey as a backend developer, I seamlessly transitioned into the world of DevOps, where I excel in building and automating CI/CD pipelines. With a keen eye for efficiency and security, he leverages the latest open-source tools to create seamless workflows for developers.</p>
+        <p>Beyond CI/CD, I is also adept at designing and managing scalable infrastructure. Whether it's deploying applications on AWS, managing containers with Kubernetes, or optimizing cloud resources, I is committed to architecting solutions that are both reliable and scalable, ensuring smooth operations for businesses of all sizes.</p>
+      </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Quyet</p>
+</footer>
