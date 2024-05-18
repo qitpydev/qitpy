@@ -9,17 +9,17 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333; /* Default text color */
+    background-color: #333; /* Dark background color */
+    color: #f7f7f7; /* Default text color */
   }
 
   /* Header styles */
   header {
-    background-color: #333;
+    background-color: #222; /* Darker header background color */
     color: #fff;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
   }
 
   /* Navigation styles */
@@ -44,7 +44,7 @@
     border-radius: 50%;
     display: block;
     margin: 1rem auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
     transition: transform 0.3s ease;
   }
   img.profile:hover {
@@ -60,9 +60,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* for p tag */
-
   }
 
   .intro {
@@ -71,7 +68,7 @@
 
   /* Footer styles */
   footer {
-    background-color: #333;
+    background-color: #222; /* Darker footer background color */
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -96,9 +93,9 @@
       </div>
 
       <div class='intro'>
-        <p>I am software developer with a focus on DevOps, hailing from Vietnam. Specializing in crafting robust CI/CD pipelines and scalable infrastructure, I is dedicated to streamlining development processes and ensuring reliable deployments.
-        <p>Having started my journey as a backend developer, I seamlessly transitioned into the world of DevOps, where I excel in building and automating CI/CD pipelines. With a keen eye for efficiency and security, he leverages the latest open-source tools to create seamless workflows for developers.</p>
-        <p>Beyond CI/CD, I is also adept at designing and managing scalable infrastructure. Whether it's deploying applications on AWS, managing containers with Kubernetes, or optimizing cloud resources, I is committed to architecting solutions that are both reliable and scalable, ensuring smooth operations for businesses of all sizes.</p>
+        <p>I am software developer with a focus on DevOps, hailing from Vietnam. Specializing in crafting robust CI/CD pipelines and scalable infrastructure, I am dedicated to streamlining development processes and ensuring reliable deployments.
+        <p>Having started my journey as a backend developer, I seamlessly transitioned into the world of DevOps, where I excel in building and automating CI/CD pipelines. With a keen eye for efficiency and security, I leverage the latest open-source tools to create seamless workflows for developers.</p>
+        <p>Beyond CI/CD, I am also adept at designing and managing scalable infrastructure. Whether it's deploying applications on AWS, managing containers with Kubernetes, or optimizing cloud resources, I am committed to architecting solutions that are both reliable and scalable, ensuring smooth operations for businesses of all sizes.</p>
       </div>
   </section>
 </main>
