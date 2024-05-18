@@ -9,17 +9,17 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333; /* Default text color */
+    background-color: #333; /* Dark background color */
+    color: #f7f7f7; /* Default text color */
   }
 
   /* Header styles */
   header {
-    background-color: #333;
+    background-color: #222; /* Darker header background color */
     color: #fff;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
   }
 
   /* Navigation styles */
@@ -44,7 +44,7 @@
     border-radius: 50%;
     display: block;
     margin: 1rem auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
     transition: transform 0.3s ease;
   }
   img.profile:hover {
@@ -60,9 +60,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* for p tag */
-
   }
 
   .intro {
@@ -71,7 +68,7 @@
 
   /* Footer styles */
   footer {
-    background-color: #333;
+    background-color: #222; /* Darker footer background color */
     color: #fff;
     text-align: center;
     padding: 1rem;
