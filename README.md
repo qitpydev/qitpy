@@ -9,9 +9,9 @@
 
 - 🔭 My main weapon: `Python`.
 
-- ️️️🎧 I'm working at: `DevOps / Platform Engineer / Crawler`
+- ️️️🎧 I'm working at: `DevOps`
 
-- 🌱 My goals at this time `improve DevOps skills / keep going on with my start-up team / Machine Learning`
+- 🌱 My goals at this time `improve DevOps skills`
 
 - ⚡ My favorite quote: `Follow the while rabbit`
 
