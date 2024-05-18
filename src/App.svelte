@@ -96,9 +96,9 @@
       </div>
 
       <div class='intro'>
-        <p>I am software developer with a focus on DevOps, hailing from Vietnam. Specializing in crafting robust CI/CD pipelines and scalable infrastructure, I is dedicated to streamlining development processes and ensuring reliable deployments.
-        <p>Having started my journey as a backend developer, I seamlessly transitioned into the world of DevOps, where I excel in building and automating CI/CD pipelines. With a keen eye for efficiency and security, he leverages the latest open-source tools to create seamless workflows for developers.</p>
-        <p>Beyond CI/CD, I is also adept at designing and managing scalable infrastructure. Whether it's deploying applications on AWS, managing containers with Kubernetes, or optimizing cloud resources, I is committed to architecting solutions that are both reliable and scalable, ensuring smooth operations for businesses of all sizes.</p>
+        <p>I am software developer with a focus on DevOps, hailing from Vietnam. Specializing in crafting robust CI/CD pipelines and scalable infrastructure, I am dedicated to streamlining development processes and ensuring reliable deployments.
+        <p>Having started my journey as a backend developer, I seamlessly transitioned into the world of DevOps, where I excel in building and automating CI/CD pipelines. With a keen eye for efficiency and security, I leverage the latest open-source tools to create seamless workflows for developers.</p>
+        <p>Beyond CI/CD, I am also adept at designing and managing scalable infrastructure. Whether it's deploying applications on AWS, managing containers with Kubernetes, or optimizing cloud resources, I am committed to architecting solutions that are both reliable and scalable, ensuring smooth operations for businesses of all sizes.</p>
       </div>
   </section>
 </main>
