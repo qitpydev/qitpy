@@ -79,9 +79,16 @@
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
     bottom: 0;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
+  }
+
+    header {
+    background-color: #222; /* Darker header background color */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Adjusted shadow color */
   }
 </style>
 
@@ -122,4 +129,5 @@
 
 <footer>
   <p>&copy; 2024 Quyet</p>
+  <p>How about you today? I don't care 🤣</p>
 </footer>
