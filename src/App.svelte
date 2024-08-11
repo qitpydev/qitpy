@@ -115,12 +115,13 @@
       <div class='quote'>
         <h4>Notes for me</h4>
         <ul>
-          <li>Always do everything with the best</li>
-          <li>Always try to keep mind comfortable</li>
-          <li>Always try to have Deep-Work in life</li>
-          <li>Always Update</li>
+          <li>Do everything with the best</li>
+          <li>Keep mind relax</li>
+          <li>Deep-work</li>
+          <li>Keep update</li>
           <li>Change your posture, change your attitude</li>
-          <li>Keep body always act, keep mind always think, and sleep enough before doing anything</li>
+          <li>Sleep enough before doing anything</li>
+          <li>Routines, busy-ness and hope matter a lot</li>
           <li>Proactive when needed</li>
         </ul>
       </div>
