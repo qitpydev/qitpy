@@ -123,6 +123,8 @@
           <li>Sleep enough before doing anything</li>
           <li>Routines, busy-ness and hope matter a lot</li>
           <li>Proactive when needed</li>
+          <li>Have a purpose at least in each period of life</li>
+          <li>Find the fun in what you're doing</li>
         </ul>
       </div>
   </section>
