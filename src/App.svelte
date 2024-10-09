@@ -115,16 +115,17 @@
       <div class='quote'>
         <h4>Notes for me</h4>
         <ul>
-          <li>Do everything with the best</li>
-          <li>Keep mind relax</li>
-          <li>Deep-work</li>
-          <li>Keep update</li>
-          <li>Change your posture, change your attitude</li>
-          <li>Sleep enough before doing anything</li>
-          <li>Routines, busy-ness and hope matter a lot</li>
-          <li>Proactive when needed</li>
-          <li>Have a purpose at least in each period of life</li>
-          <li>Find the fun in what you're doing</li>
+          <ol>Do everything with the best.</ol>
+          <ol>Keep mind relax.</ol>
+          <ol>Deep-work.</ol>
+          <ol>Keep update.</ol>
+          <ol>Change your posture, change your attitude.</ol>
+          <ol>Sleep enough before doing anything.</ol>
+          <ol>Routines, busy-ness and hope matter a lot.</ol>
+          <ol>Proactive when needed.</ol>
+          <ol>Have a purpose at least in each period of life.</ol>
+          <ol>Find the fun in what you're doing.</ol>
+          <ol>balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</ol>
         </ul>
       </div>
   </section>
