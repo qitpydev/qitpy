@@ -117,7 +117,6 @@
         <ul>
           <ol>Do everything with the best.</ol>
           <ol>Keep mind relax.</ol>
-          <ol>Deep-work.</ol>
           <ol>Keep update.</ol>
           <ol>Change your posture, change your attitude.</ol>
           <ol>Sleep enough before doing anything.</ol>
