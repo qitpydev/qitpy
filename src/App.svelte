@@ -132,5 +132,4 @@
 
 <footer>
   <p>&copy; 2024 Quyet</p>
-  <p>How are you today? ... I don't care 🤣</p>
 </footer>
