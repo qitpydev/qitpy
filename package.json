@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
-    "@tenoxui/react": "^0.7.0",
     "svelte": "^4.2.12",
     "tenoxui": "^0.7.1",
     "vite": "^5.2.11"
