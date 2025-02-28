@@ -125,6 +125,7 @@
           <ol>Have a purpose at least in each period of life.</ol>
           <ol>Find the fun in what you're doing.</ol>
           <ol>balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</ol>
+          <ol>No rest time, just do something else!!!</ol>
         </ul>
       </div>
   </section>
