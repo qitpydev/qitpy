@@ -4,10 +4,10 @@
   
   let terminalText = '';
   const bootSequence = [
-    'INITIALIZING SYSTEM...',
-    'LOADING NEURAL NETWORK...',
-    'ESTABLISHING SECURE CONNECTION...',
-    'ACCESS GRANTED - WELCOME TO qitpy.dev',
+    'Hello...',
+    'Hoping you have a good day...',
+    'Hoping everything luck for you...',
+    'ACCESS GRANTED - WELCOME TO me!',
     '> _'
   ];
   
