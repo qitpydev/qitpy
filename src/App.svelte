@@ -104,7 +104,7 @@
     color: #ffffff;
     font-size: 1.4rem;
     font-style: italic;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: center;
     text-shadow: 0 0 15px #00ff41;
     animation: fadeGlow 3s ease-in-out infinite alternate;
