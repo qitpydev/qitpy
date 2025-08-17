@@ -6,9 +6,9 @@
   const bootSequence = [
     'Hello...',
     'Hoping you have a good day...',
-    'Hoping everything luck for you...',
+    'Wishing you all the best of luck...',
     'ACCESS GRANTED - WELCOME TO me!',
-    '> _'
+    '> _ <'
   ];
   
   onMount(() => {
@@ -363,9 +363,9 @@
     </div>
     
     <div class="bio-section">
-      <h3>// System Information</h3>
+      <h3>🤡 A litlle bit</h3>
       <p>DevOps Engineer | Cloud Engineer | Platform Engineer.</p>
-      <p>I architect and automate scalable infrastructure solutions.</p>
+      <p>I do everything in this role with the best.</p>
     </div>
   </div>
 
@@ -379,19 +379,19 @@
       <div class="terminal-title">~/personal/notes.txt</div>
     </div>
     
-    <div class="section-title">// Personal Directives</div>
+    <div class="section-title">Just some stuff for myself, but I hope it helps you too.</div>
     <ul class="quotes-list">
       <li>Do everything with the best.</li>
-      <li>Keep mind relax.</li>
-      <li>Keep update.</li>
+      <li>Keep mind relax, stress will destroy us by time.</li>
+      <li>Keep update, knowledge is power.</li>
       <li>Change your posture, change your attitude.</li>
       <li>Sleep enough before doing anything.</li>
       <li>Routines, busy-ness and hope matter a lot.</li>
       <li>Proactive when needed.</li>
       <li>Have a purpose at least in each period of life.</li>
       <li>Find the fun in what you're doing.</li>
-      <li>balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
-      <li>No rest time, just do something else!!!</li>
+      <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
+      <li>Free your mind from prison with knowledge.</li>
     </ul>
   </div>
 </main>
