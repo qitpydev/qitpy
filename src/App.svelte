@@ -99,18 +99,6 @@
     100% { left: 100%; }
   }
 
-  h1 {
-    font-size: 3rem;
-    margin: 0;
-    color: #ffffff;
-    font-weight: 500;
-  }
-
-  .prompt {
-    color: #00ff41;
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
 
   .main-quote {
     color: #ffffff;
@@ -312,17 +300,144 @@
     margin-top: 3rem;
   }
 
-  .glitch {
-    animation: glitch 0.3s infinite;
+
+  .recipe-section {
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.1) 0%, rgba(0, 255, 65, 0.1) 100%);
+    border: 2px solid #ff0080;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
   }
 
-  @keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
+  .recipe-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 255, 65, 0.05) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .recipe-header h2 {
+    color: #ff0080;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px #ff0080;
+    position: relative;
+    z-index: 2;
+  }
+
+  .recipe-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+
+  .recipe-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ff41;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    min-width: 120px;
+  }
+
+  .recipe-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 65, 0.3);
+    border-color: #ff0080;
+  }
+
+  .step-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-text {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .arrow {
+    color: #00ff41;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff41;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+
+  .recipe-motto {
+    position: relative;
+    z-index: 2;
+  }
+
+  .recipe-motto p {
+    color: #cccccc;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  .fun-extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .blink {
+    animation: blink 1.5s ease-in-out infinite;
+    font-size: 1.5rem;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    25%, 75% { opacity: 0.3; }
+  }
+
+  .wiggle {
+    color: #00ff41;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: wiggle 2s ease-in-out infinite;
+    text-shadow: 0 0 10px #00ff41;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
   }
 
   @media (max-width: 768px) {
@@ -337,6 +452,19 @@
     
     main {
       padding: 1rem;
+    }
+
+    .recipe-flow {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+    }
+
+    .recipe-section {
+      padding: 2rem 1rem;
     }
   }
 </style>
@@ -391,7 +519,46 @@
       <li>Find the fun in what you're doing.</li>
       <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
       <li>Free your mind from prison with knowledge.</li>
+      <li>What you think shapes who you are — it makes you better or worse.</li>
     </ul>
+
+  </div>
+
+  <div class="recipe-section">
+    <div class="recipe-header">
+      <h2>🎯 The Recipe</h2>
+    </div>
+    <div class="recipe-content">
+      <div class="recipe-flow">
+        <div class="recipe-step">
+          <div class="step-icon">⚡</div>
+          <div class="step-text">Challenge</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="recipe-step">
+          <div class="step-icon">🏆</div>
+          <div class="step-text">Reward</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="recipe-step">
+          <div class="step-icon">😌</div>
+          <div class="step-text">Satisfaction</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="recipe-step">
+          <div class="step-icon">🔄</div>
+          <div class="step-text">Repeat</div>
+        </div>
+      </div>
+      <div class="recipe-motto">
+        <p>Thank me later 😎</p>
+        <div class="fun-extras">
+          <span class="blink">✨</span>
+          <span class="wiggle">Trust the process</span>
+          <span class="blink">✨</span>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 
