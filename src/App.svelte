@@ -348,7 +348,6 @@
 {/if}
 
 <header>
-  <h1>qitpydev.com</h1>
   <div class="main-quote">
     "Curiosity is one of the most valuable talents of humankind."
   </div>
@@ -397,5 +396,5 @@
 </main>
 
 <footer>
-  <p>© 2024 qitpy.dev // Connection Terminated</p>
+  <p>© 2024 qitpy.com // Just for fun</p>
 </footer>
