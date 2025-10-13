@@ -503,10 +503,10 @@
         <div class="dot yellow"></div>
         <div class="dot green"></div>
       </div>
-      <div class="terminal-title">~/personal/notes.txt</div>
+      <div class="terminal-title">~/personal/quotes.txt</div>
     </div>
     
-    <div class="section-title">Just some stuff for myself, but I hope it helps you too.</div>
+    <div class="section-title">Just quotes for myself, but I hope it helps you too.</div>
     <ul class="quotes-list">
       <li>Do everything with the best.</li>
       <li>Keep mind relax, stress will destroy us by time.</li>
@@ -563,5 +563,5 @@
 </main>
 
 <footer>
-  <p>© 2024 qitpy.com // Just for fun</p>
+  <p>© 2024 qitpy.com // ...Made with love ❤️ and coffee ☕</p>
 </footer>
