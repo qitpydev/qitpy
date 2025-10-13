@@ -508,7 +508,7 @@
     
     <div class="section-title">Just quotes for myself, but I hope it helps you too.</div>
     <ul class="quotes-list">
-      <li>Do everything with the love.</li>
+      <li>Do everything with the love, and the best.</li>
       <li>Keep mind relax, stress will destroy us by time.</li>
       <li>Keep update, knowledge is power.</li>
       <li>Change your posture, change your attitude.</li>
