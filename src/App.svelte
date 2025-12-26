@@ -4,10 +4,10 @@
 
   let terminalText = '';
   const bootSequence = [
-    'Hello...',
-    'Hoping you have a good day...',
-    'Wishing you all the best of luck...',
-    'ACCESS GRANTED - WELCOME TO me!',
+    'Yo what\'s up! 👊',
+    'Ready to vibe? 🔥',
+    'Let\'s get it! 💪',
+    'ACCESS GRANTED - LET\'S GO!',
     '> _ <'
   ];
 
@@ -746,7 +746,7 @@
 
 <header>
   <div class="main-quote glitch">
-    "Curiosity is one of the most valuable talents of humankind."
+    "Stay curious, stay hungry, keep crushing it 🔥"
   </div>
 </header>
 
@@ -759,9 +759,9 @@
     </div>
     
     <div class="bio-section">
-      <h3>🤡 A litlle bit</h3>
+      <h3>🤡 A little bit about me</h3>
       <p>DevOps Engineer | Cloud Engineer | Platform Engineer.</p>
-      <p>I do everything in this role with the best.</p>
+      <p>Just a dude who loves crushing code, building sick infrastructure, and making things work like magic. Let's go! 💪</p>
     </div>
   </div>
 
@@ -775,20 +775,20 @@
       <div class="terminal-title">~/personal/quotes.txt</div>
     </div>
     
-    <div class="section-title glitch">Just quotes for myself, but I hope it helps you too.</div>
+    <div class="section-title glitch">Real talk - lessons I live by 💯</div>
     <ul class="quotes-list">
-      <li>Do everything with the love, and the best.</li>
-      <li>Keep mind relax, stress will destroy us by time.</li>
-      <li>Keep update, knowledge is power.</li>
-      <li>Change your posture, change your attitude.</li>
-      <li>Sleep enough before doing anything.</li>
-      <li>Routines, busy-ness and hope matter a lot.</li>
-      <li>Proactive when needed.</li>
-      <li>Have a purpose at least in each period of life.</li>
-      <li>Find the fun in what you're doing.</li>
-      <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
-      <li>Free your mind from prison with knowledge.</li>
-      <li>What you think shapes who you are — it makes you better or worse.</li>
+      <li>Do everything with love, or don't do it at all. Go hard or go home! 🔥</li>
+      <li>Chill out bro, stress is the silent killer. Keep your mind zen.</li>
+      <li>Never stop learning - knowledge is literally power, no cap.</li>
+      <li>Stand tall, think big. Your posture affects your attitude for real.</li>
+      <li>Get your sleep, king. Can't conquer the world on 4 hours.</li>
+      <li>Routines keep you sharp. Stay busy, stay hopeful, stay winning.</li>
+      <li>Be proactive, not reactive. Make moves before you have to.</li>
+      <li>Have a purpose, always. Even small goals keep you moving forward.</li>
+      <li>If you're not having fun, you're doing it wrong. Period.</li>
+      <li>Smart is good, but staying cool under pressure? That's the real flex.</li>
+      <li>Knowledge sets you free - unlock that mental prison, bro.</li>
+      <li>Your thoughts become your reality. Choose wisely. 🧠</li>
     </ul>
 
   </div>
