@@ -1,7 +1,7 @@
 <!-- src/App.svelte -->
 <script>
   import { onMount } from 'svelte';
-  
+
   let terminalText = '';
   const bootSequence = [
     'Hello...',
@@ -10,8 +10,12 @@
     'ACCESS GRANTED - WELCOME TO me!',
     '> _ <'
   ];
-  
+
+  let particles = [];
+  let matrixColumns = [];
+
   onMount(() => {
+    // Boot sequence animation
     let i = 0;
     const typeWriter = () => {
       if (i < bootSequence.length) {
@@ -21,7 +25,75 @@
       }
     };
     setTimeout(typeWriter, 1000);
+
+    // Create particles
+    for (let i = 0; i < 30; i++) {
+      particles.push({
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 4 + 1,
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: (Math.random() - 0.5) * 0.5,
+        opacity: Math.random() * 0.5 + 0.3
+      });
+    }
+    particles = particles;
+
+    // Create matrix rain columns
+    const columnCount = Math.floor(window.innerWidth / 20);
+    for (let i = 0; i < columnCount; i++) {
+      matrixColumns.push({
+        x: i * 20,
+        y: Math.random() * -100,
+        speed: Math.random() * 2 + 1,
+        chars: generateMatrixChars()
+      });
+    }
+    matrixColumns = matrixColumns;
+
+    // Animate matrix rain
+    setInterval(() => {
+      matrixColumns = matrixColumns.map(col => ({
+        ...col,
+        y: col.y > window.innerHeight ? -50 : col.y + col.speed,
+        chars: col.y > window.innerHeight ? generateMatrixChars() : col.chars
+      }));
+    }, 50);
+
+    // Animate particles
+    setInterval(() => {
+      particles = particles.map(p => ({
+        ...p,
+        x: (p.x + p.speedX + 100) % 100,
+        y: (p.y + p.speedY + 100) % 100
+      }));
+    }, 50);
+
+    // 3D tilt effect for cards
+    const cards = document.querySelectorAll('.profile-card, .bio-section, .terminal-section, .recipe-section');
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = (y - centerY) / 20;
+        const rotateY = (centerX - x) / 20;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+      });
+    });
   });
+
+  function generateMatrixChars() {
+    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノ';
+    return Array(10).fill(0).map(() => chars[Math.floor(Math.random() * chars.length)]).join('');
+  }
 </script>
 
 <style>
@@ -43,7 +115,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
       repeating-linear-gradient(
         0deg,
         transparent,
@@ -53,6 +125,12 @@
       );
     pointer-events: none;
     z-index: 1;
+    animation: scanlines 8s linear infinite;
+  }
+
+  @keyframes scanlines {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(4px); }
   }
 
   :global(*) {
@@ -60,27 +138,127 @@
     z-index: 2;
   }
 
+  /* Matrix Rain */
+  .matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+  }
+
+  .matrix-column {
+    position: absolute;
+    font-size: 14px;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: pre;
+    opacity: 0.8;
+  }
+
+  /* Particle System */
+  .particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .particle {
+    position: absolute;
+    background: radial-gradient(circle, #00ff41 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(1px);
+    animation: particleFloat 3s ease-in-out infinite;
+  }
+
+  @keyframes particleFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Glitch Effect */
+  .glitch {
+    position: relative;
+  }
+
+  .glitch:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00ff41, -0.05em -0.025em 0 #ff0080;
+    }
+    14% {
+      text-shadow: 0.05em 0 0 #00ff41, -0.05em -0.025em 0 #ff0080;
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 #00ff41, 0.05em 0.025em 0 #ff0080;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00ff41, 0.05em 0.025em 0 #ff0080;
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 #00ff41, 0.05em 0 0 #ff0080;
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 #00ff41, 0.05em 0 0 #ff0080;
+    }
+    100% {
+      text-shadow: -0.025em 0 0 #00ff41, -0.025em -0.025em 0 #ff0080;
+    }
+  }
+
   .terminal-boot {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #00ff41;
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ff41;
+    padding: 15px;
     font-size: 12px;
     max-width: 300px;
     white-space: pre-line;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+    border-radius: 8px;
+    box-shadow:
+      0 0 20px rgba(0, 255, 65, 0.4),
+      0 0 40px rgba(0, 255, 65, 0.2),
+      inset 0 0 20px rgba(0, 255, 65, 0.1);
+    animation: neonPulse 2s ease-in-out infinite;
+    backdrop-filter: blur(10px);
+  }
+
+  @keyframes neonPulse {
+    0%, 100% {
+      box-shadow:
+        0 0 20px rgba(0, 255, 65, 0.4),
+        0 0 40px rgba(0, 255, 65, 0.2),
+        inset 0 0 20px rgba(0, 255, 65, 0.1);
+    }
+    50% {
+      box-shadow:
+        0 0 30px rgba(0, 255, 65, 0.6),
+        0 0 60px rgba(0, 255, 65, 0.3),
+        inset 0 0 30px rgba(0, 255, 65, 0.2);
+    }
   }
 
   header {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 10, 26, 0.9) 100%);
-    border-bottom: 2px solid #ff0080;
+    border-bottom: 3px solid #ff0080;
     padding: 2rem;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 5px 30px rgba(255, 0, 128, 0.3);
   }
 
   header::before {
@@ -90,13 +268,30 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.3), transparent);
     animation: scan 3s infinite;
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00ff41, #ff0080, #00ff41);
+    background-size: 200% 100%;
+    animation: borderFlow 3s linear infinite;
   }
 
   @keyframes scan {
     0% { left: -100%; }
     100% { left: 100%; }
+  }
+
+  @keyframes borderFlow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
   }
 
 
@@ -133,33 +328,43 @@
   }
 
   .profile-card {
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00ff41;
-    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff41;
+    border-radius: 12px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 
-      0 0 20px rgba(0, 255, 65, 0.2),
-      inset 0 0 20px rgba(0, 255, 65, 0.1);
+    box-shadow:
+      0 0 30px rgba(0, 255, 65, 0.3),
+      inset 0 0 30px rgba(0, 255, 65, 0.1);
     position: relative;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
   }
 
   .profile-card::before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #00ff41, #ff0080, #00ff41);
-    border-radius: 8px;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #00ff41, #ff0080, #00ff41, #ff0080);
+    background-size: 400% 400%;
+    border-radius: 12px;
     z-index: -1;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
+    animation: gradientShift 8s ease infinite;
   }
 
   .profile-card:hover::before {
     opacity: 1;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   img.profile {
@@ -194,11 +399,40 @@
   }
 
   .bio-section {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid #ff0080;
-    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0080;
+    border-radius: 12px;
     padding: 2rem;
     line-height: 1.8;
+    box-shadow:
+      0 0 30px rgba(255, 0, 128, 0.3),
+      inset 0 0 30px rgba(255, 0, 128, 0.1);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+
+  .bio-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(45deg, #ff0080, #00ff41, #ff0080);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .bio-section:hover::before {
+    opacity: 1;
   }
 
   .bio-section h3 {
@@ -217,11 +451,16 @@
   .terminal-section {
     background: rgba(0, 0, 0, 0.9);
     border: 2px solid #00ff41;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 2rem;
     margin: 3rem 0;
     font-family: 'JetBrains Mono', monospace;
     position: relative;
+    box-shadow:
+      0 0 40px rgba(0, 255, 65, 0.3),
+      inset 0 0 30px rgba(0, 255, 65, 0.05);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
   }
 
   .terminal-header {
@@ -302,14 +541,19 @@
 
 
   .recipe-section {
-    background: linear-gradient(135deg, rgba(255, 0, 128, 0.1) 0%, rgba(0, 255, 65, 0.1) 100%);
-    border: 2px solid #ff0080;
-    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.15) 0%, rgba(0, 255, 65, 0.15) 100%);
+    border: 3px solid #ff0080;
+    border-radius: 16px;
     padding: 3rem 2rem;
     margin: 3rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow:
+      0 0 50px rgba(255, 0, 128, 0.3),
+      inset 0 0 40px rgba(0, 255, 65, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
   }
 
   .recipe-section::before {
@@ -471,12 +715,37 @@
 
 
 
+<!-- Matrix Rain Effect -->
+<div class="matrix-rain">
+  {#each matrixColumns as column}
+    <div class="matrix-column" style="left: {column.x}px; top: {column.y}px;">
+      {column.chars}
+    </div>
+  {/each}
+</div>
+
+<!-- Particle System -->
+<div class="particles">
+  {#each particles as particle}
+    <div
+      class="particle"
+      style="
+        left: {particle.x}%;
+        top: {particle.y}%;
+        width: {particle.size}px;
+        height: {particle.size}px;
+        opacity: {particle.opacity};
+      "
+    />
+  {/each}
+</div>
+
 {#if terminalText}
   <div class="terminal-boot">{terminalText}</div>
 {/if}
 
 <header>
-  <div class="main-quote">
+  <div class="main-quote glitch">
     "Curiosity is one of the most valuable talents of humankind."
   </div>
 </header>
@@ -485,8 +754,8 @@
   <div class="profile-section">
     <div class="profile-card">
       <img src="https://qitpydevpublic.s3.ap-southeast-1.amazonaws.com/qitpydevpfp010624.jpg" alt="Profile Picture" class="profile" />
-      <div class="name">Doan Van Quyet</div>
-      <div class="role">DevOps Engineer</div>
+      <div class="name glitch">Doan Van Quyet</div>
+      <div class="role glitch">DevOps Engineer</div>
     </div>
     
     <div class="bio-section">
@@ -506,7 +775,7 @@
       <div class="terminal-title">~/personal/quotes.txt</div>
     </div>
     
-    <div class="section-title">Just quotes for myself, but I hope it helps you too.</div>
+    <div class="section-title glitch">Just quotes for myself, but I hope it helps you too.</div>
     <ul class="quotes-list">
       <li>Do everything with the love, and the best.</li>
       <li>Keep mind relax, stress will destroy us by time.</li>
