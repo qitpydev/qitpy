@@ -13,6 +13,10 @@
 
   let particles = [];
   let matrixColumns = [];
+  let sakuraPetals = [];
+  let floatingEmojis = [];
+  let cursorTrail = [];
+  let rainbowStars = [];
 
   onMount(() => {
     // Boot sequence animation
@@ -68,6 +72,66 @@
         y: (p.y + p.speedY + 100) % 100
       }));
     }, 50);
+
+    // Create sakura petals
+    for (let i = 0; i < 20; i++) {
+      sakuraPetals.push({
+        x: Math.random() * 100,
+        y: Math.random() * -100,
+        rotation: Math.random() * 360,
+        speed: Math.random() * 1 + 0.5,
+        sway: Math.random() * 2 - 1,
+        size: Math.random() * 15 + 10
+      });
+    }
+    sakuraPetals = sakuraPetals;
+
+    // Animate sakura petals
+    setInterval(() => {
+      sakuraPetals = sakuraPetals.map(petal => ({
+        ...petal,
+        y: petal.y > 110 ? -10 : petal.y + petal.speed,
+        x: petal.x + Math.sin(petal.y / 10) * petal.sway * 0.1,
+        rotation: petal.rotation + 2
+      }));
+    }, 50);
+
+    // Create floating emojis
+    const emojis = ['✨', '💫', '⭐', '🌟', '💖', '💕', '🎀', '🌸', '🦋', '🌈'];
+    for (let i = 0; i < 15; i++) {
+      floatingEmojis.push({
+        emoji: emojis[Math.floor(Math.random() * emojis.length)],
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 15 + 15,
+        duration: Math.random() * 3 + 2
+      });
+    }
+    floatingEmojis = floatingEmojis;
+
+    // Create rainbow stars
+    for (let i = 0; i < 8; i++) {
+      rainbowStars.push({
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        delay: i * 0.5
+      });
+    }
+    rainbowStars = rainbowStars;
+
+    // Cursor trail effect
+    document.addEventListener('mousemove', (e) => {
+      const trail = {
+        x: e.clientX,
+        y: e.clientY,
+        id: Date.now()
+      };
+      cursorTrail = [...cursorTrail, trail].slice(-15);
+
+      setTimeout(() => {
+        cursorTrail = cursorTrail.filter(t => t.id !== trail.id);
+      }, 500);
+    });
 
     // 3D tilt effect for cards
     const cards = document.querySelectorAll('.profile-card, .bio-section, .terminal-section, .recipe-section');
@@ -184,6 +248,125 @@
     50% { transform: translateY(-20px); }
   }
 
+  /* Sakura Petals */
+  .sakura-petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .sakura-petal {
+    position: absolute;
+    font-size: 20px;
+    filter: drop-shadow(0 0 3px rgba(255, 182, 193, 0.8));
+    animation: sakuraFloat 1s ease-in-out infinite;
+  }
+
+  @keyframes sakuraFloat {
+    0%, 100% { transform: translateX(0) scale(1); }
+    50% { transform: translateX(10px) scale(1.1); }
+  }
+
+  /* Floating Emojis */
+  .floating-emojis {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .floating-emoji {
+    position: absolute;
+    animation: floatBounce 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+
+  @keyframes floatBounce {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+    50% {
+      transform: translateY(0) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(-5deg);
+    }
+  }
+
+  /* Rainbow Stars */
+  .rainbow-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .rainbow-star {
+    position: absolute;
+    font-size: 30px;
+    animation: rainbowPulse 2s ease-in-out infinite, starRotate 4s linear infinite;
+  }
+
+  @keyframes rainbowPulse {
+    0%, 100% {
+      filter: hue-rotate(0deg) drop-shadow(0 0 10px currentColor);
+      transform: scale(1);
+    }
+    50% {
+      filter: hue-rotate(180deg) drop-shadow(0 0 20px currentColor);
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes starRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Cursor Trail */
+  .cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .trail-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ff0080 0%, transparent 70%);
+    border-radius: 50%;
+    animation: trailFade 0.5s ease-out forwards;
+  }
+
+  @keyframes trailFade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
   /* Glitch Effect */
   .glitch {
     position: relative;
@@ -251,6 +434,47 @@
     }
   }
 
+  /* Pop-in animations */
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) rotate(-10deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Rainbow text effect */
+  .rainbow-text {
+    background: linear-gradient(90deg, #ff0080, #ff6b00, #ffd700, #00ff41, #00d4ff, #a020f0, #ff0080);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbowWave 3s linear infinite;
+  }
+
+  @keyframes rainbowWave {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
   header {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 10, 26, 0.9) 100%);
     border-bottom: 3px solid #ff0080;
@@ -259,6 +483,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 30px rgba(255, 0, 128, 0.3);
+    animation: slideUp 0.6s ease-out;
   }
 
   header::before {
@@ -339,6 +564,7 @@
     position: relative;
     transition: all 0.4s ease;
     backdrop-filter: blur(10px);
+    animation: popIn 0.8s ease-out 0.2s both;
   }
 
   .profile-card::before {
@@ -410,6 +636,7 @@
     transition: all 0.4s ease;
     backdrop-filter: blur(10px);
     position: relative;
+    animation: popIn 0.8s ease-out 0.4s both;
   }
 
   .bio-section::before {
@@ -461,6 +688,7 @@
       inset 0 0 30px rgba(0, 255, 65, 0.05);
     transition: all 0.4s ease;
     backdrop-filter: blur(10px);
+    animation: slideUp 0.8s ease-out 0.6s both;
   }
 
   .terminal-header {
@@ -554,6 +782,7 @@
       inset 0 0 40px rgba(0, 255, 65, 0.1);
     backdrop-filter: blur(10px);
     transition: all 0.4s ease;
+    animation: popIn 0.8s ease-out 0.8s both;
   }
 
   .recipe-section::before {
@@ -740,12 +969,76 @@
   {/each}
 </div>
 
+<!-- Sakura Petals -->
+<div class="sakura-petals">
+  {#each sakuraPetals as petal}
+    <div
+      class="sakura-petal"
+      style="
+        left: {petal.x}%;
+        top: {petal.y}%;
+        transform: rotate({petal.rotation}deg);
+        font-size: {petal.size}px;
+      "
+    >
+      🌸
+    </div>
+  {/each}
+</div>
+
+<!-- Floating Emojis -->
+<div class="floating-emojis">
+  {#each floatingEmojis as emoji, i}
+    <div
+      class="floating-emoji"
+      style="
+        left: {emoji.x}%;
+        top: {emoji.y}%;
+        font-size: {emoji.size}px;
+        animation-duration: {emoji.duration}s;
+        animation-delay: {i * 0.2}s;
+      "
+    >
+      {emoji.emoji}
+    </div>
+  {/each}
+</div>
+
+<!-- Rainbow Stars -->
+<div class="rainbow-stars">
+  {#each rainbowStars as star}
+    <div
+      class="rainbow-star"
+      style="
+        left: {star.x}%;
+        top: {star.y}%;
+        animation-delay: {star.delay}s;
+      "
+    >
+      ⭐
+    </div>
+  {/each}
+</div>
+
+<!-- Cursor Trail -->
+<div class="cursor-trail">
+  {#each cursorTrail as trail}
+    <div
+      class="trail-dot"
+      style="
+        left: {trail.x}px;
+        top: {trail.y}px;
+      "
+    />
+  {/each}
+</div>
+
 {#if terminalText}
   <div class="terminal-boot">{terminalText}</div>
 {/if}
 
 <header>
-  <div class="main-quote glitch">
+  <div class="main-quote glitch rainbow-text">
     "Stay curious, stay hungry, keep crushing it 🔥"
   </div>
 </header>
