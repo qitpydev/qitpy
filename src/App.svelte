@@ -520,6 +520,7 @@
       <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
       <li>Free your mind from prison with knowledge.</li>
       <li>What you think shapes who you are — it makes you better or worse.</li>
+      <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
     </ul>
 
   </div>
