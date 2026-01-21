@@ -1320,8 +1320,8 @@
 
   <div class="recipe-section">
     <div class="recipe-header">
-      <h2>📈 Level Up System</h2>
-      <p class="recipe-subtitle">Every cycle makes you stronger</p>
+      <h2>🎮 Game of Life</h2>
+      <p class="recipe-subtitle">Play it right — level up every cycle</p>
     </div>
     <div class="recipe-content">
       <div class="level-system">
