@@ -1,7 +1,7 @@
 <!-- src/App.svelte -->
 <script>
   import { onMount } from 'svelte';
-  
+
   let terminalText = '';
   const bootSequence = [
     'Hello...',
@@ -10,8 +10,25 @@
     'ACCESS GRANTED - WELCOME TO me!',
     '> _ <'
   ];
-  
+
+  // Motivation quotes
+  const motivationQuotes = [
+    { text: "Discipline is doing what you hate to do, but doing it like you love it.", author: "Mike Tyson" },
+    { text: "Everyone has a plan until they get punched in the mouth.", author: "Mike Tyson" },
+    { text: "I'm not the same person I was when I bit that guy's ear off.", author: "Mike Tyson" },
+    { text: "The pain you feel today will be the strength you feel tomorrow.", author: "Unknown" },
+    { text: "Your only limit is your mind.", author: "Unknown" },
+    { text: "Be brutal with your effort, patient with your results.", author: "Unknown" },
+    { text: "Champions aren't made in gyms. Champions are made from something deep inside.", author: "Muhammad Ali" },
+    { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" }
+  ];
+
+  let currentQuoteIndex = 0;
+  let displayedText = '';
+  let isTyping = true;
+
   onMount(() => {
+    // Boot sequence
     let i = 0;
     const typeWriter = () => {
       if (i < bootSequence.length) {
@@ -21,6 +38,32 @@
       }
     };
     setTimeout(typeWriter, 1000);
+
+    // Motivation quote typewriter
+    const typeQuote = () => {
+      const quote = motivationQuotes[currentQuoteIndex];
+      const fullText = `"${quote.text}" - ${quote.author}`;
+
+      if (isTyping) {
+        if (displayedText.length < fullText.length) {
+          displayedText = fullText.slice(0, displayedText.length + 1);
+          setTimeout(typeQuote, 50);
+        } else {
+          isTyping = false;
+          setTimeout(typeQuote, 3000); // Wait before erasing
+        }
+      } else {
+        if (displayedText.length > 0) {
+          displayedText = displayedText.slice(0, -1);
+          setTimeout(typeQuote, 30);
+        } else {
+          isTyping = true;
+          currentQuoteIndex = (currentQuoteIndex + 1) % motivationQuotes.length;
+          setTimeout(typeQuote, 500);
+        }
+      }
+    };
+    setTimeout(typeQuote, 2000);
   });
 </script>
 
@@ -647,6 +690,228 @@
       margin: 1rem;
       max-width: 100%;
     }
+
+    .motivation-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .motivation-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  /* MOTIVATION SECTION STYLES */
+  .motivation-section {
+    background: linear-gradient(180deg, rgba(13, 2, 33, 0.98) 0%, rgba(20, 0, 30, 0.98) 50%, rgba(13, 2, 33, 0.98) 100%);
+    border: 2px solid #ff2a6d;
+    margin: 3rem 0;
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 20px, 20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px));
+  }
+
+  .motivation-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255, 42, 109, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(234, 0, 255, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(10, 189, 198, 0.1) 0%, transparent 50%);
+    animation: pulseBackground 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulseBackground {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  .motivation-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .motivation-header h2 {
+    color: #ff2a6d;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 0.5rem;
+    text-shadow:
+      0 0 10px #ff2a6d,
+      0 0 20px #ff2a6d,
+      0 0 40px rgba(255, 42, 109, 0.8),
+      0 0 80px rgba(255, 42, 109, 0.4);
+    animation: textFlicker 3s infinite;
+  }
+
+  @keyframes textFlicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.8; }
+    94% { opacity: 1; }
+    95% { opacity: 0.9; }
+    96% { opacity: 1; }
+  }
+
+  .motivation-subtitle {
+    color: #fcee0a;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
+  }
+
+  .motivation-quote-display {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #0abdc6;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  }
+
+  .quote-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(10, 189, 198, 0.5);
+  }
+
+  .cursor {
+    color: #0abdc6;
+    font-weight: bold;
+    animation: cursorBlink 0.8s infinite;
+    margin-left: 2px;
+  }
+
+  @keyframes cursorBlink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .motivation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .gif-card {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 2px solid #ea00ff;
+    background: #000;
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+
+  .gif-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.2) contrast(1.1);
+    transition: all 0.3s ease;
+  }
+
+  .gif-card:hover {
+    transform: scale(1.05);
+    border-color: #0abdc6;
+    box-shadow:
+      0 0 30px rgba(234, 0, 255, 0.5),
+      0 0 60px rgba(10, 189, 198, 0.3);
+  }
+
+  .gif-card:hover img {
+    filter: saturate(1.5) contrast(1.2);
+  }
+
+  .gif-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(13, 2, 33, 0.95));
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+  }
+
+  .gif-overlay span {
+    color: #fcee0a;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow:
+      0 0 10px #fcee0a,
+      0 0 20px rgba(252, 238, 10, 0.5);
+  }
+
+  .motivation-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #0abdc6;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    transition: all 0.3s ease;
+  }
+
+  .stat-item:hover {
+    border-color: #ff2a6d;
+    box-shadow: 0 0 20px rgba(255, 42, 109, 0.3);
+    transform: translateY(-5px);
+  }
+
+  .stat-number {
+    display: block;
+    color: #ff2a6d;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow:
+      0 0 10px #ff2a6d,
+      0 0 20px rgba(255, 42, 109, 0.5);
+    animation: numberPulse 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes numberPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+  }
+
+  .stat-label {
+    display: block;
+    color: #0abdc6;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    text-shadow: 0 0 5px rgba(10, 189, 198, 0.5);
   }
 </style>
 
@@ -739,6 +1004,61 @@
           <span class="wiggle">Trust the process</span>
           <span class="blink">✨</span>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOTIVATION SECTION -->
+  <div class="motivation-section">
+    <div class="motivation-header">
+      <h2 class="glitch" data-text="STAY HARD">🔥 STAY HARD 🔥</h2>
+      <p class="motivation-subtitle">NO EXCUSES. NO LIMITS.</p>
+    </div>
+
+    <div class="motivation-quote-display">
+      <span class="quote-text">{displayedText}</span>
+      <span class="cursor">|</span>
+    </div>
+
+    <div class="motivation-grid">
+      <div class="gif-card">
+        <img src="https://media.giphy.com/media/ZEHkqDMqGbLOop0cMC/giphy.gif" alt="Boxing Training" />
+        <div class="gif-overlay">
+          <span>FIGHT</span>
+        </div>
+      </div>
+      <div class="gif-card">
+        <img src="https://media.giphy.com/media/3oEjHZPivwdJ0syhKE/giphy.gif" alt="Gym Workout" />
+        <div class="gif-overlay">
+          <span>GRIND</span>
+        </div>
+      </div>
+      <div class="gif-card">
+        <img src="https://media.giphy.com/media/l0HlPwMAzh13pcZ20/giphy.gif" alt="Running" />
+        <div class="gif-overlay">
+          <span>PUSH</span>
+        </div>
+      </div>
+      <div class="gif-card">
+        <img src="https://media.giphy.com/media/xUOwGaKseoemyk5P6E/giphy.gif" alt="Strength Training" />
+        <div class="gif-overlay">
+          <span>RISE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="motivation-stats">
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">DEDICATION</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">POTENTIAL</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">0</span>
+        <span class="stat-label">EXCUSES</span>
       </div>
     </div>
   </div>
