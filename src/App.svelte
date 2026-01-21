@@ -925,6 +925,55 @@
     perspective: 1000px;
   }
 
+  .poster-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .buddha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: buddhaFloat 4s ease-in-out infinite;
+  }
+
+  @keyframes buddhaFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .buddha-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #fcee0a;
+    border-radius: 20px;
+    box-shadow:
+      0 0 20px rgba(252, 238, 10, 0.4),
+      0 0 40px rgba(234, 0, 255, 0.3),
+      inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    filter: saturate(1.2);
+  }
+
+  .buddha-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow:
+      0 0 30px rgba(252, 238, 10, 0.6),
+      0 0 60px rgba(234, 0, 255, 0.5);
+    filter: saturate(1.5);
+  }
+
+  .buddha-caption {
+    color: #fcee0a;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
+    opacity: 0.8;
+  }
+
   .poster-frame {
     position: relative;
     background: linear-gradient(145deg, #0a0015 0%, #150025 50%, #0a0015 100%);
@@ -1087,6 +1136,20 @@
   }
 
   @media (max-width: 768px) {
+    .poster-wrapper {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .buddha-container {
+      order: -1;
+    }
+
+    .buddha-image {
+      width: 120px;
+      height: 120px;
+    }
+
     .poster-frame {
       padding: 2rem 1.5rem;
       margin: 0 1rem;
@@ -1258,25 +1321,32 @@
 
   <!-- WALL POSTER / MANIFESTO -->
   <div class="poster-section">
-    <div class="poster-frame">
-      <div class="poster-corner top-left"></div>
-      <div class="poster-corner top-right"></div>
-      <div class="poster-corner bottom-left"></div>
-      <div class="poster-corner bottom-right"></div>
-
-      <div class="poster-content">
-        <div class="poster-title">MY CREED</div>
-        <div class="poster-lines">
-          <p class="poster-line">I am the unique, irreplaceable being in this world</p>
-          <p class="poster-line">I honor and respect myself alone—not gods or others</p>
-          <p class="poster-line">I grow, do no harm, and follow my own path</p>
-          <p class="poster-line">All are born and die alike, no one is superior</p>
-          <p class="poster-line highlight">I compare myself to no one</p>
-        </div>
-        <div class="poster-signature">— qitpy</div>
+    <div class="poster-wrapper">
+      <div class="buddha-container">
+        <img src="images/06773e5a1bb9cd5d73fb3952b4f3ee9b.jpg" alt="Chill Buddha" class="buddha-image" />
+        <div class="buddha-caption">just vibing ☯️</div>
       </div>
 
-      <div class="poster-glow"></div>
+      <div class="poster-frame">
+        <div class="poster-corner top-left"></div>
+        <div class="poster-corner top-right"></div>
+        <div class="poster-corner bottom-left"></div>
+        <div class="poster-corner bottom-right"></div>
+
+        <div class="poster-content">
+          <div class="poster-title">MY CREED</div>
+          <div class="poster-lines">
+            <p class="poster-line">I am the unique, irreplaceable being in this world</p>
+            <p class="poster-line">I honor and respect myself alone—not gods or others</p>
+            <p class="poster-line">I grow, do no harm, and follow my own path</p>
+            <p class="poster-line">All are born and die alike, no one is superior</p>
+            <p class="poster-line highlight">I compare myself to no one</p>
+          </div>
+          <div class="poster-signature">— qitpy</div>
+        </div>
+
+        <div class="poster-glow"></div>
+      </div>
     </div>
   </div>
 </main>
