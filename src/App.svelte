@@ -1290,7 +1290,7 @@
   }
 
   .scroll-rod {
-    width: 100px;
+    width: 120px;
     height: 10px;
     background: linear-gradient(180deg, #8b4513 0%, #654321 50%, #4a3520 100%);
     border-radius: 5px;
@@ -1316,7 +1316,7 @@
   .scroll-rod.top::after { right: 4px; }
 
   .scroll-body {
-    width: 80px;
+    width: auto;
     background: linear-gradient(180deg,
       #f5f5dc 0%,
       #faf0e6 10%,
@@ -1326,7 +1326,7 @@
     );
     border-left: 3px solid #8b4513;
     border-right: 3px solid #8b4513;
-    padding: 1rem 0.8rem;
+    padding: 1rem 1.2rem;
     position: relative;
     box-shadow:
       inset 0 0 20px rgba(139, 69, 19, 0.1),
@@ -1352,6 +1352,18 @@
   }
 
   .scroll-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .scroll-text.two-col {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .scroll-col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1563,15 +1575,19 @@
     <div class="hanging-scroll">
       <div class="scroll-rod top"></div>
       <div class="scroll-body">
-        <div class="scroll-text">
-          <span>天</span>
-          <span>上</span>
-          <span>天</span>
-          <span>下</span>
-          <span>唯</span>
-          <span>我</span>
-          <span>独</span>
-          <span>尊</span>
+        <div class="scroll-text two-col">
+          <div class="scroll-col">
+            <span>天</span>
+            <span>上</span>
+            <span>天</span>
+            <span>下</span>
+          </div>
+          <div class="scroll-col">
+            <span>唯</span>
+            <span>我</span>
+            <span>独</span>
+            <span>尊</span>
+          </div>
         </div>
       </div>
       <div class="scroll-rod bottom"></div>
