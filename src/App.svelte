@@ -304,13 +304,14 @@
   .bio-section::before {
     content: '// ABOUT';
     position: absolute;
-    top: -12px;
+    top: -10px;
     left: 20px;
     background: #0d0221;
-    padding: 0 10px;
+    padding: 2px 10px;
     color: #0abdc6;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 2px;
+    z-index: 10;
   }
 
   .bio-section h3 {
@@ -1278,14 +1279,14 @@
   <div class="profile-section">
     <div class="profile-card">
       <img src="https://qitpydevpublic.s3.ap-southeast-1.amazonaws.com/qitpydevpfp010624.jpg" alt="Profile Picture" class="profile" />
-      <div class="name">Doan Van Quyet</div>
+      <div class="name">Quyet Doan</div>
       <div class="role">DevOps Engineer</div>
     </div>
     
     <div class="bio-section">
-      <h3>🤡 A litlle bit</h3>
-      <p>DevOps Engineer | Cloud Engineer | Platform Engineer.</p>
-      <p>I do everything in this role with the best.</p>
+      <h3>🤡 A little bit about me</h3>
+      <p>DevOps Engineer | Cloud Engineer | Platform Engineer</p>
+      <p>Passionate about automation, infrastructure, and building reliable systems. I do everything with love and dedication.</p>
     </div>
   </div>
 
