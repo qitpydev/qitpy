@@ -1443,7 +1443,7 @@
     
     <div class="bio-section">
       <h3>🤡 A little bit about me</h3>
-      <p>DevOps Engineer | Cloud Engineer | Platform Engineer</p>
+      <p>DevSecOps Engineer</p>
       <p>Passionate about automation, infrastructure, and building reliable systems. I do everything with love and dedication.</p>
     </div>
   </div>
