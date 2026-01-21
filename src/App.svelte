@@ -1290,10 +1290,10 @@
   }
 
   .scroll-rod {
-    width: 120px;
-    height: 12px;
+    width: 100px;
+    height: 10px;
     background: linear-gradient(180deg, #8b4513 0%, #654321 50%, #4a3520 100%);
-    border-radius: 6px;
+    border-radius: 5px;
     box-shadow:
       0 2px 4px rgba(0, 0, 0, 0.5),
       inset 0 2px 2px rgba(255, 255, 255, 0.1);
@@ -1316,7 +1316,7 @@
   .scroll-rod.top::after { right: 4px; }
 
   .scroll-body {
-    width: 100px;
+    width: 80px;
     background: linear-gradient(180deg,
       #f5f5dc 0%,
       #faf0e6 10%,
@@ -1326,7 +1326,7 @@
     );
     border-left: 3px solid #8b4513;
     border-right: 3px solid #8b4513;
-    padding: 2rem 1rem;
+    padding: 1rem 0.8rem;
     position: relative;
     box-shadow:
       inset 0 0 20px rgba(139, 69, 19, 0.1),
@@ -1355,26 +1355,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.1rem;
   }
 
   .scroll-text span {
     font-family: 'Noto Serif SC', 'SimSun', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #1a1a1a;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    line-height: 1.2;
   }
 
   .scroll-text span:hover {
     color: #8b0000;
     text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
-  }
-
-  .scroll-text .divider {
-    font-size: 1.5rem;
-    color: #666;
   }
 
   .scroll-rod.bottom {
@@ -1572,7 +1568,6 @@
           <span>上</span>
           <span>天</span>
           <span>下</span>
-          <span class="divider">，</span>
           <span>唯</span>
           <span>我</span>
           <span>独</span>
