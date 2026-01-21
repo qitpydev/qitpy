@@ -5,7 +5,7 @@
 
 ## 👨🏻‍💻 About Me:
 
-- 🙋‍♂️ All about me is at **[My Website](https://qitpy.com/)**
+- 🙋‍♂️ All about me is at **[My Website](https://qitpydev.github.io/qitpy/)**
 
 - 🔭 My main weapon: `Python`.
 

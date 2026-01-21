@@ -899,7 +899,7 @@
 
   .motivation-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
     position: relative;
@@ -1524,8 +1524,8 @@
   <!-- MOTIVATION SECTION -->
   <div class="motivation-section">
     <div class="motivation-header">
-      <h2 class="glitch" data-text="STAY HARD">🔥 STAY HARD 🔥</h2>
-      <p class="motivation-subtitle">NO EXCUSES. NO LIMITS.</p>
+      <h2 class="glitch" data-text="KEEP DREAMING">✨ KEEP DREAMING ✨</h2>
+      <p class="motivation-subtitle">One day at a time</p>
     </div>
 
     <div class="motivation-quote-display">
@@ -1536,21 +1536,18 @@
     <div class="motivation-grid">
       <div class="gif-card">
         <img src="images/medium-mike-tyson-boxer-wallpaper-poster-print-poster-on-13x19-original-imagc5ytjxqtnfur.webp" alt="Mike Tyson" />
-        <div class="gif-overlay">
-          <span>FIGHT</span>
-        </div>
       </div>
       <div class="gif-card">
         <img src="images/cyberpunk.jpeg" alt="Cyberpunk" />
-        <div class="gif-overlay">
-          <span>FOCUS</span>
-        </div>
       </div>
       <div class="gif-card">
         <img src="images/Rosa_Walton_I_Really_Want_to_Stay_at_Your_House.jpg" alt="Edgerunners" />
-        <div class="gif-overlay">
-          <span>DREAM</span>
-        </div>
+      </div>
+      <div class="gif-card">
+        <img src="images/mad.jpg" alt="Motivation" />
+      </div>
+      <div class="gif-card">
+        <img src="images/unnamed.png" alt="Motivation" />
       </div>
     </div>
 
