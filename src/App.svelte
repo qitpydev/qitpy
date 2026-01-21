@@ -20,7 +20,8 @@
     { text: "Your only limit is your mind.", author: "Unknown" },
     { text: "Be brutal with your effort, patient with your results.", author: "Unknown" },
     { text: "Champions aren't made in gyms. Champions are made from something deep inside.", author: "Muhammad Ali" },
-    { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" }
+    { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" },
+    { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" }
   ];
 
   let currentQuoteIndex = 0;
