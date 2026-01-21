@@ -1551,20 +1551,6 @@
       </div>
     </div>
 
-    <div class="motivation-stats">
-      <div class="stat-item">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">DEDICATION</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">∞</span>
-        <span class="stat-label">POTENTIAL</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">0</span>
-        <span class="stat-label">EXCUSES</span>
-      </div>
-    </div>
   </div>
 
   <!-- HANGING SCROLL -->
