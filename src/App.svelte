@@ -693,7 +693,7 @@
     }
 
     .motivation-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
 
     .motivation-stats {
@@ -807,7 +807,7 @@
 
   .motivation-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 2rem 0;
     position: relative;
@@ -1278,27 +1278,21 @@
 
     <div class="motivation-grid">
       <div class="gif-card">
-        <img src="https://media.giphy.com/media/ZEHkqDMqGbLOop0cMC/giphy.gif" alt="Boxing Training" />
+        <img src="images/medium-mike-tyson-boxer-wallpaper-poster-print-poster-on-13x19-original-imagc5ytjxqtnfur.webp" alt="Mike Tyson" />
         <div class="gif-overlay">
           <span>FIGHT</span>
         </div>
       </div>
       <div class="gif-card">
-        <img src="https://media.giphy.com/media/3oEjHZPivwdJ0syhKE/giphy.gif" alt="Gym Workout" />
+        <img src="images/cyberpunk.jpeg" alt="Cyberpunk" />
         <div class="gif-overlay">
-          <span>GRIND</span>
+          <span>FOCUS</span>
         </div>
       </div>
       <div class="gif-card">
-        <img src="https://media.giphy.com/media/l0HlPwMAzh13pcZ20/giphy.gif" alt="Running" />
+        <img src="images/Rosa_Walton_I_Really_Want_to_Stay_at_Your_House.jpg" alt="Edgerunners" />
         <div class="gif-overlay">
-          <span>PUSH</span>
-        </div>
-      </div>
-      <div class="gif-card">
-        <img src="https://media.giphy.com/media/xUOwGaKseoemyk5P6E/giphy.gif" alt="Strength Training" />
-        <div class="gif-overlay">
-          <span>RISE</span>
+          <span>DREAM</span>
         </div>
       </div>
     </div>
