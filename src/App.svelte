@@ -1260,6 +1260,156 @@
     .poster-line.highlight {
       font-size: 1.1rem;
     }
+
+    .hanging-scroll {
+      transform: scale(0.8);
+    }
+  }
+
+  /* HANGING SCROLL STYLES */
+  .scroll-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    margin: 3rem 0;
+  }
+
+  .hanging-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scrollSway 6s ease-in-out infinite;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+  }
+
+  @keyframes scrollSway {
+    0%, 100% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+  }
+
+  .scroll-rod {
+    width: 120px;
+    height: 12px;
+    background: linear-gradient(180deg, #8b4513 0%, #654321 50%, #4a3520 100%);
+    border-radius: 6px;
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.5),
+      inset 0 2px 2px rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+
+  .scroll-rod.top::before,
+  .scroll-rod.top::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 16px;
+    background: linear-gradient(180deg, #d4af37 0%, #b8960c 50%, #8b7500 100%);
+    border-radius: 2px;
+  }
+
+  .scroll-rod.top::before { left: 4px; }
+  .scroll-rod.top::after { right: 4px; }
+
+  .scroll-body {
+    width: 100px;
+    background: linear-gradient(180deg,
+      #f5f5dc 0%,
+      #faf0e6 10%,
+      #f5f5dc 50%,
+      #faf0e6 90%,
+      #f5f5dc 100%
+    );
+    border-left: 3px solid #8b4513;
+    border-right: 3px solid #8b4513;
+    padding: 2rem 1rem;
+    position: relative;
+    box-shadow:
+      inset 0 0 20px rgba(139, 69, 19, 0.1),
+      0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .scroll-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        rgba(139, 69, 19, 0.03) 10px,
+        rgba(139, 69, 19, 0.03) 11px
+      );
+    pointer-events: none;
+  }
+
+  .scroll-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .scroll-text span {
+    font-family: 'Noto Serif SC', 'SimSun', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .scroll-text span:hover {
+    color: #8b0000;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+  }
+
+  .scroll-text .divider {
+    font-size: 1.5rem;
+    color: #666;
+  }
+
+  .scroll-rod.bottom {
+    position: relative;
+  }
+
+  .scroll-tassel {
+    width: 4px;
+    height: 40px;
+    background: linear-gradient(180deg, #8b4513, #654321);
+    position: relative;
+    margin-top: -2px;
+  }
+
+  .scroll-tassel::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(180deg, #ff2a6d 0%, #c41e3a 100%);
+    clip-path: polygon(50% 0%, 100% 20%, 80% 100%, 20% 100%, 0% 20%);
+    box-shadow: 0 5px 15px rgba(255, 42, 109, 0.3);
+  }
+
+  .scroll-translation {
+    margin-top: 2rem;
+    color: #b4a5c7;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(180, 165, 199, 0.3);
   }
 </style>
 
@@ -1409,6 +1559,31 @@
         <span class="stat-number">0</span>
         <span class="stat-label">EXCUSES</span>
       </div>
+    </div>
+  </div>
+
+  <!-- HANGING SCROLL -->
+  <div class="scroll-section">
+    <div class="hanging-scroll">
+      <div class="scroll-rod top"></div>
+      <div class="scroll-body">
+        <div class="scroll-text">
+          <span>天</span>
+          <span>上</span>
+          <span>天</span>
+          <span>下</span>
+          <span class="divider">，</span>
+          <span>唯</span>
+          <span>我</span>
+          <span>独</span>
+          <span>尊</span>
+        </div>
+      </div>
+      <div class="scroll-rod bottom"></div>
+      <div class="scroll-tassel"></div>
+    </div>
+    <div class="scroll-translation">
+      "In heaven and on earth, I alone am the honored one"
     </div>
   </div>
 
