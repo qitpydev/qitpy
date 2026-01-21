@@ -573,6 +573,26 @@
     background: rgba(26, 5, 64, 0.9);
   }
 
+  .recipe-step.highlight-step {
+    border-color: #fcee0a;
+    background: rgba(252, 238, 10, 0.1);
+    animation: cycleGlow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes cycleGlow {
+    0% {
+      box-shadow: 0 0 10px rgba(252, 238, 10, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 25px rgba(252, 238, 10, 0.6), 0 0 50px rgba(252, 238, 10, 0.3);
+    }
+  }
+
+  .recipe-step.highlight-step .step-text {
+    color: #fcee0a;
+    text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
+  }
+
   .step-icon {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -1229,7 +1249,7 @@
 
   <div class="recipe-section">
     <div class="recipe-header">
-      <h2>🎯 The Recipe</h2>
+      <h2>🔄 The Growth Cycle</h2>
     </div>
     <div class="recipe-content">
       <div class="recipe-flow">
@@ -1239,25 +1259,30 @@
         </div>
         <div class="arrow">→</div>
         <div class="recipe-step">
-          <div class="step-icon">🏆</div>
-          <div class="step-text">Reward</div>
+          <div class="step-icon">🛌</div>
+          <div class="step-text">Recover</div>
         </div>
         <div class="arrow">→</div>
         <div class="recipe-step">
-          <div class="step-icon">😌</div>
-          <div class="step-text">Satisfaction</div>
+          <div class="step-icon">🚀</div>
+          <div class="step-text">Continue</div>
         </div>
         <div class="arrow">→</div>
         <div class="recipe-step">
-          <div class="step-icon">🔄</div>
+          <div class="step-icon">📈</div>
+          <div class="step-text">Growth</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="recipe-step highlight-step">
+          <div class="step-icon">🔁</div>
           <div class="step-text">Repeat</div>
         </div>
       </div>
       <div class="recipe-motto">
-        <p>Thank me later 😎</p>
+        <p>The cycle never ends — that's the point 💪</p>
         <div class="fun-extras">
           <span class="blink">✨</span>
-          <span class="wiggle">Trust the process</span>
+          <span class="wiggle">Embrace the grind</span>
           <span class="blink">✨</span>
         </div>
       </div>
