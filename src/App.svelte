@@ -1442,9 +1442,9 @@
     </div>
     
     <div class="bio-section">
-      <h3>🤡 A little bit about me</h3>
+      <h3>ABOUT ME</h3>
       <p>DevSecOps Engineer</p>
-      <p>Passionate about automation, infrastructure, and building reliable systems. I do everything with love and dedication.</p>
+      <p>Building secure, automated infrastructure. Bridging development, security, and operations to deliver reliable systems at scale.</p>
     </div>
   </div>
 
