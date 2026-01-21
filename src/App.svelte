@@ -530,7 +530,7 @@
   .recipe-header h2 {
     color: #fcee0a;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-shadow:
       0 0 10px #fcee0a,
       0 0 20px rgba(252, 238, 10, 0.5);
@@ -540,141 +540,203 @@
     letter-spacing: 5px;
   }
 
-  .recipe-flow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-  }
-
-  .recipe-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1.5rem;
-    background: rgba(13, 2, 33, 0.8);
-    border: 2px solid #0abdc6;
-    transition: all 0.3s ease;
-    min-width: 120px;
-    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
-  }
-
-  .recipe-step:hover {
-    transform: translateY(-10px);
-    box-shadow:
-      0 20px 40px rgba(10, 189, 198, 0.3),
-      0 0 30px rgba(234, 0, 255, 0.2);
-    border-color: #ea00ff;
-    background: rgba(26, 5, 64, 0.9);
-  }
-
-  .recipe-step.highlight-step {
-    border-color: #fcee0a;
-    background: rgba(252, 238, 10, 0.1);
-    animation: cycleGlow 2s ease-in-out infinite alternate;
-  }
-
-  @keyframes cycleGlow {
-    0% {
-      box-shadow: 0 0 10px rgba(252, 238, 10, 0.3);
-    }
-    100% {
-      box-shadow: 0 0 25px rgba(252, 238, 10, 0.6), 0 0 50px rgba(252, 238, 10, 0.3);
-    }
-  }
-
-  .recipe-step.highlight-step .step-text {
-    color: #fcee0a;
-    text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
-  }
-
-  .step-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-  }
-
-  .step-text {
-    color: #ffffff;
-    font-weight: 600;
+  .recipe-subtitle {
+    color: #0abdc6;
     font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(10, 189, 198, 0.5);
   }
 
-  .arrow {
-    color: #ff2a6d;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 0 0 15px #ff2a6d;
-    animation: arrowPulse 1.5s ease-in-out infinite;
-  }
-
-  @keyframes arrowPulse {
-    0%, 100% {
-      opacity: 0.6;
-      transform: scale(1) translateX(0);
-      text-shadow: 0 0 15px #ff2a6d;
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.2) translateX(5px);
-      text-shadow: 0 0 30px #ff2a6d, 0 0 60px rgba(255, 42, 109, 0.5);
-    }
-  }
-
-  .recipe-motto {
+  .level-system {
     position: relative;
     z-index: 2;
   }
 
-  .recipe-motto p {
-    color: #b4a5c7;
-    font-style: italic;
-    font-size: 1.2rem;
-    margin: 0 0 1rem 0;
-    text-shadow: 0 0 10px rgba(180, 165, 199, 0.3);
-  }
-
-  .fun-extras {
+  .level-indicator {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
-  .blink {
-    animation: neonBlink 1s ease-in-out infinite;
-    font-size: 1.5rem;
-    filter: drop-shadow(0 0 10px rgba(252, 238, 10, 0.8));
+  .level-bar {
+    width: 200px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #0abdc6;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
-  @keyframes neonBlink {
-    0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px rgba(252, 238, 10, 0.8)); }
-    50% { opacity: 0.3; filter: drop-shadow(0 0 5px rgba(252, 238, 10, 0.3)); }
+  .level-progress {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #0abdc6, #ea00ff, #fcee0a);
+    background-size: 200% 100%;
+    animation: progressShift 3s linear infinite;
   }
 
-  .wiggle {
-    color: #ea00ff;
-    font-weight: 600;
-    font-size: 1rem;
-    text-transform: uppercase;
+  @keyframes progressShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  .level-text {
+    color: #fcee0a;
+    font-size: 1.2rem;
+    font-weight: 700;
     letter-spacing: 3px;
-    animation: cyberWiggle 2s ease-in-out infinite;
-    text-shadow: 0 0 10px #ea00ff, 0 0 20px rgba(234, 0, 255, 0.5);
+    text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
   }
 
-  @keyframes cyberWiggle {
-    0%, 100% { transform: rotate(0deg) scale(1); }
-    25% { transform: rotate(-2deg) scale(1.02); }
-    75% { transform: rotate(2deg) scale(0.98); }
+  .cycle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cycle-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cycle-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1.2rem 1rem;
+    background: rgba(13, 2, 33, 0.8);
+    border: 2px solid #0abdc6;
+    min-width: 130px;
+    transition: all 0.3s ease;
+    position: relative;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .cycle-step:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(10, 189, 198, 0.4);
+  }
+
+  .cycle-step .step-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 24px;
+    height: 24px;
+    background: #ea00ff;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(234, 0, 255, 0.5);
+  }
+
+  .cycle-step .step-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+  }
+
+  .cycle-step .step-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .cycle-step .step-desc {
+    color: #b4a5c7;
+    font-size: 0.7rem;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .cycle-step.damage {
+    border-color: #ff2a6d;
+    background: rgba(255, 42, 109, 0.1);
+  }
+
+  .cycle-step.damage .step-number {
+    background: #ff2a6d;
+  }
+
+  .cycle-step.growth {
+    border-color: #27ca3f;
+    background: rgba(39, 202, 63, 0.1);
+  }
+
+  .cycle-step.growth .step-number {
+    background: #27ca3f;
+  }
+
+  .cycle-step.next-level {
+    border-color: #fcee0a;
+    background: rgba(252, 238, 10, 0.1);
+    animation: nextLevelGlow 2s ease-in-out infinite alternate;
+  }
+
+  .cycle-step.next-level .step-number {
+    background: #fcee0a;
+    color: #0d0221;
+  }
+
+  @keyframes nextLevelGlow {
+    0% { box-shadow: 0 0 10px rgba(252, 238, 10, 0.3); }
+    100% { box-shadow: 0 0 25px rgba(252, 238, 10, 0.6), 0 0 40px rgba(252, 238, 10, 0.3); }
+  }
+
+  .cycle-arrow {
+    color: #ff2a6d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff2a6d;
+    animation: arrowPulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes arrowPulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  .loop-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(234, 0, 255, 0.3);
+    border-radius: 8px;
+  }
+
+  .loop-arrow {
+    font-size: 2rem;
+    color: #ea00ff;
+    animation: loopSpin 3s linear infinite;
+    text-shadow: 0 0 15px #ea00ff;
+  }
+
+  @keyframes loopSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loop-text {
+    color: #b4a5c7;
+    font-size: 0.95rem;
+    font-style: italic;
+    text-shadow: 0 0 5px rgba(180, 165, 199, 0.3);
   }
 
   @media (max-width: 768px) {
@@ -691,17 +753,26 @@
       padding: 1rem;
     }
 
-    .recipe-flow {
+    .cycle-row {
       flex-direction: column;
       gap: 1rem;
     }
 
-    .arrow {
+    .cycle-arrow {
       transform: rotate(90deg);
+    }
+
+    .cycle-step {
+      min-width: 100%;
     }
 
     .recipe-section {
       padding: 2rem 1rem;
+    }
+
+    .loop-indicator {
+      flex-direction: column;
+      text-align: center;
     }
 
     .terminal-boot {
@@ -1249,41 +1320,72 @@
 
   <div class="recipe-section">
     <div class="recipe-header">
-      <h2>🔄 The Growth Cycle</h2>
+      <h2>📈 Level Up System</h2>
+      <p class="recipe-subtitle">Every cycle makes you stronger</p>
     </div>
     <div class="recipe-content">
-      <div class="recipe-flow">
-        <div class="recipe-step">
-          <div class="step-icon">⚡</div>
-          <div class="step-text">Challenge</div>
+      <div class="level-system">
+        <!-- Level indicator -->
+        <div class="level-indicator">
+          <div class="level-bar">
+            <div class="level-progress"></div>
+          </div>
+          <span class="level-text">LVL ∞</span>
         </div>
-        <div class="arrow">→</div>
-        <div class="recipe-step">
-          <div class="step-icon">🛌</div>
-          <div class="step-text">Recover</div>
+
+        <!-- The cycle -->
+        <div class="cycle-container">
+          <div class="cycle-row">
+            <div class="cycle-step">
+              <div class="step-number">1</div>
+              <div class="step-icon">⚔️</div>
+              <div class="step-text">Challenge</div>
+              <div class="step-desc">Face the hard things</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-step damage">
+              <div class="step-number">2</div>
+              <div class="step-icon">💔</div>
+              <div class="step-text">Break</div>
+              <div class="step-desc">Get damaged, fail</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-step">
+              <div class="step-number">3</div>
+              <div class="step-icon">🛌</div>
+              <div class="step-text">Recover</div>
+              <div class="step-desc">Rest and heal</div>
+            </div>
+          </div>
+
+          <div class="cycle-row">
+            <div class="cycle-step growth">
+              <div class="step-number">4</div>
+              <div class="step-icon">🌱</div>
+              <div class="step-text">Growth</div>
+              <div class="step-desc">Adapt and learn</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-step">
+              <div class="step-number">5</div>
+              <div class="step-icon">⬆️</div>
+              <div class="step-text">Level Up</div>
+              <div class="step-desc">Become stronger</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-step next-level">
+              <div class="step-number">6</div>
+              <div class="step-icon">⚔️</div>
+              <div class="step-text">Harder Challenge</div>
+              <div class="step-desc">Repeat at higher level</div>
+            </div>
+          </div>
         </div>
-        <div class="arrow">→</div>
-        <div class="recipe-step">
-          <div class="step-icon">🚀</div>
-          <div class="step-text">Continue</div>
-        </div>
-        <div class="arrow">→</div>
-        <div class="recipe-step">
-          <div class="step-icon">📈</div>
-          <div class="step-text">Growth</div>
-        </div>
-        <div class="arrow">→</div>
-        <div class="recipe-step highlight-step">
-          <div class="step-icon">🔁</div>
-          <div class="step-text">Repeat</div>
-        </div>
-      </div>
-      <div class="recipe-motto">
-        <p>The cycle never ends — that's the point 💪</p>
-        <div class="fun-extras">
-          <span class="blink">✨</span>
-          <span class="wiggle">Embrace the grind</span>
-          <span class="blink">✨</span>
+
+        <!-- Loop indicator -->
+        <div class="loop-indicator">
+          <span class="loop-arrow">↻</span>
+          <span class="loop-text">The cycle continues — each time you're stronger than before</span>
         </div>
       </div>
     </div>
