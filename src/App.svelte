@@ -914,6 +914,198 @@
     margin-top: 0.5rem;
     text-shadow: 0 0 5px rgba(10, 189, 198, 0.5);
   }
+
+  /* WALL POSTER / MANIFESTO STYLES */
+  .poster-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+  }
+
+  .poster-frame {
+    position: relative;
+    background: linear-gradient(145deg, #0a0015 0%, #150025 50%, #0a0015 100%);
+    border: 4px solid #ea00ff;
+    padding: 3rem 4rem;
+    max-width: 700px;
+    box-shadow:
+      0 0 0 2px #0d0221,
+      0 0 0 6px #ff2a6d,
+      0 0 40px rgba(234, 0, 255, 0.4),
+      0 0 80px rgba(255, 42, 109, 0.2),
+      inset 0 0 60px rgba(234, 0, 255, 0.1);
+    transform: rotateX(2deg);
+    transition: all 0.5s ease;
+  }
+
+  .poster-frame:hover {
+    transform: rotateX(0deg) scale(1.02);
+    box-shadow:
+      0 0 0 2px #0d0221,
+      0 0 0 6px #ff2a6d,
+      0 0 60px rgba(234, 0, 255, 0.6),
+      0 0 120px rgba(255, 42, 109, 0.3),
+      inset 0 0 80px rgba(234, 0, 255, 0.15);
+  }
+
+  .poster-corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: #fcee0a;
+    border-style: solid;
+  }
+
+  .poster-corner.top-left {
+    top: 10px;
+    left: 10px;
+    border-width: 3px 0 0 3px;
+  }
+
+  .poster-corner.top-right {
+    top: 10px;
+    right: 10px;
+    border-width: 3px 3px 0 0;
+  }
+
+  .poster-corner.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    border-width: 0 0 3px 3px;
+  }
+
+  .poster-corner.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    border-width: 0 3px 3px 0;
+  }
+
+  .poster-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .poster-title {
+    color: #fcee0a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow:
+      0 0 10px #fcee0a,
+      0 0 20px rgba(252, 238, 10, 0.5),
+      0 0 40px rgba(252, 238, 10, 0.3);
+    position: relative;
+  }
+
+  .poster-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ea00ff, transparent);
+  }
+
+  .poster-lines {
+    margin: 2rem 0;
+  }
+
+  .poster-line {
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 2.2;
+    margin: 0;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(234, 0, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .poster-line:last-child {
+    border-bottom: none;
+  }
+
+  .poster-line:hover {
+    color: #0abdc6;
+    text-shadow: 0 0 15px rgba(10, 189, 198, 0.8);
+    transform: translateX(5px);
+  }
+
+  .poster-line.highlight {
+    color: #ff2a6d;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-shadow:
+      0 0 10px #ff2a6d,
+      0 0 20px rgba(255, 42, 109, 0.5);
+    animation: highlightPulse 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes highlightPulse {
+    0% {
+      text-shadow: 0 0 10px #ff2a6d, 0 0 20px rgba(255, 42, 109, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 20px #ff2a6d, 0 0 40px rgba(255, 42, 109, 0.8), 0 0 60px rgba(255, 42, 109, 0.4);
+    }
+  }
+
+  .poster-signature {
+    color: #0abdc6;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    text-shadow: 0 0 10px rgba(10, 189, 198, 0.5);
+  }
+
+  .poster-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(ellipse, rgba(234, 0, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    animation: glowPulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowPulse {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+  }
+
+  @media (max-width: 768px) {
+    .poster-frame {
+      padding: 2rem 1.5rem;
+      margin: 0 1rem;
+    }
+
+    .poster-title {
+      font-size: 1.3rem;
+      letter-spacing: 5px;
+    }
+
+    .poster-line {
+      font-size: 0.95rem;
+      line-height: 2;
+    }
+
+    .poster-line.highlight {
+      font-size: 1.1rem;
+    }
+  }
 </style>
 
 
@@ -1061,6 +1253,30 @@
         <span class="stat-number">0</span>
         <span class="stat-label">EXCUSES</span>
       </div>
+    </div>
+  </div>
+
+  <!-- WALL POSTER / MANIFESTO -->
+  <div class="poster-section">
+    <div class="poster-frame">
+      <div class="poster-corner top-left"></div>
+      <div class="poster-corner top-right"></div>
+      <div class="poster-corner bottom-left"></div>
+      <div class="poster-corner bottom-right"></div>
+
+      <div class="poster-content">
+        <div class="poster-title">MY CREED</div>
+        <div class="poster-lines">
+          <p class="poster-line">I am the unique, irreplaceable being in this world</p>
+          <p class="poster-line">I honor and respect myself alone—not gods or others</p>
+          <p class="poster-line">I grow, do no harm, and follow my own path</p>
+          <p class="poster-line">All are born and die alike, no one is superior</p>
+          <p class="poster-line highlight">I compare myself to no one</p>
+        </div>
+        <div class="poster-signature">— qitpy</div>
+      </div>
+
+      <div class="poster-glow"></div>
     </div>
   </div>
 </main>
