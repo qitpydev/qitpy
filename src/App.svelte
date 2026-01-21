@@ -1289,35 +1289,6 @@
     </div>
   </div>
 
-  <div class="terminal-section">
-    <div class="terminal-header">
-      <div class="terminal-dots">
-        <div class="dot red"></div>
-        <div class="dot yellow"></div>
-        <div class="dot green"></div>
-      </div>
-      <div class="terminal-title">~/personal/quotes.txt</div>
-    </div>
-    
-    <div class="section-title glitch">Just quotes for myself, but I hope it helps you too.</div>
-    <ul class="quotes-list">
-      <li>Do everything with the love, and the best.</li>
-      <li>Keep mind relax, stress will destroy us by time.</li>
-      <li>Keep update, knowledge is power.</li>
-      <li>Change your posture, change your attitude.</li>
-      <li>Sleep enough before doing anything.</li>
-      <li>Routines, busy-ness and hope matter a lot.</li>
-      <li>Proactive when needed.</li>
-      <li>Have a purpose at least in each period of life.</li>
-      <li>Find the fun in what you're doing.</li>
-      <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
-      <li>Free your mind from prison with knowledge.</li>
-      <li>What you think shapes who you are — it makes you better or worse.</li>
-      <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
-    </ul>
-
-  </div>
-
   <div class="recipe-section">
     <div class="recipe-header">
       <h2>🎮 Game of Life</h2>
@@ -1469,6 +1440,35 @@
         <div class="poster-glow"></div>
       </div>
     </div>
+  </div>
+
+  <!-- QUOTES SECTION -->
+  <div class="terminal-section">
+    <div class="terminal-header">
+      <div class="terminal-dots">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+      <div class="terminal-title">~/personal/quotes.txt</div>
+    </div>
+
+    <div class="section-title glitch">Just quotes for myself, but I hope it helps you too.</div>
+    <ul class="quotes-list">
+      <li>Do everything with the love, and the best.</li>
+      <li>Keep mind relax, stress will destroy us by time.</li>
+      <li>Keep update, knowledge is power.</li>
+      <li>Change your posture, change your attitude.</li>
+      <li>Sleep enough before doing anything.</li>
+      <li>Routines, busy-ness and hope matter a lot.</li>
+      <li>Proactive when needed.</li>
+      <li>Have a purpose at least in each period of life.</li>
+      <li>Find the fun in what you're doing.</li>
+      <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
+      <li>Free your mind from prison with knowledge.</li>
+      <li>What you think shapes who you are — it makes you better or worse.</li>
+      <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
+    </ul>
   </div>
 </main>
 
