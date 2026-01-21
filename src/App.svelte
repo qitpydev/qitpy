@@ -1524,8 +1524,7 @@
   <!-- MOTIVATION SECTION -->
   <div class="motivation-section">
     <div class="motivation-header">
-      <h2 class="glitch" data-text="KEEP DREAMING">✨ KEEP DREAMING ✨</h2>
-      <p class="motivation-subtitle">One day at a time</p>
+      <h2 class="glitch" data-text="ONCE UPON A TIME">✨ ONCE UPON A TIME ✨</h2>
     </div>
 
     <div class="motivation-quote-display">
