@@ -1436,7 +1436,7 @@
 <main>
   <div class="profile-section">
     <div class="profile-card">
-      <img src="https://qitpydevpublic.s3.ap-southeast-1.amazonaws.com/qitpydevpfp010624.jpg" alt="Profile Picture" class="profile" />
+      <img src="images/avatar_022025.jpeg" alt="Profile Picture" class="profile" />
       <div class="name">Quyet Doan</div>
       <div class="role">DevOps Engineer</div>
     </div>
