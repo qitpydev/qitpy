@@ -999,6 +999,26 @@
     font-size: 0.9rem;
   }
 
+  .cv-download-btn {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 0.7rem 2rem;
+    background: linear-gradient(135deg, #4a7cf7, #6c5ce7);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(74, 124, 247, 0.25);
+  }
+
+  .cv-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(74, 124, 247, 0.4);
+  }
+
   /* ── Responsive ── */
   @media (max-width: 768px) {
     .profile-section {
@@ -1104,13 +1124,13 @@
     <div class="profile-card">
       <img src="images/avatar_022025.jpeg" alt="Profile Picture" class="profile" />
       <div class="name">Quyet Doan</div>
-      <div class="role">DevOps Engineer</div>
+      <div class="role">DevSecOps Engineer</div>
     </div>
-    
+
     <div class="bio-section">
       <h3>About Me</h3>
-      <p>DevSecOps Engineer</p>
-      <p>Building secure, automated infrastructure. Bridging development, security, and operations to deliver reliable systems at scale.</p>
+      <p>DevOps → DevSecOps</p>
+      <p>Building secure, automated infrastructure. Bridging development, security, and operations — currently deepening my security expertise to deliver reliable and hardened systems at scale.</p>
     </div>
   </div>
 
@@ -1304,5 +1324,8 @@
 </main>
 
 <footer>
+  <a href="cv/download" class="cv-download-btn">
+    ↓ Download CV
+  </a>
   <p>© 2024 qitpy.com · Analog Hack 🤍</p>
 </footer>
