@@ -24,6 +24,19 @@
     { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" }
   ];
 
+  let quotesRevealed = false;
+  let dotSequence = [];
+
+  function handleDotClick(color) {
+    const code = ['red', 'green', 'yellow'];
+    dotSequence = [...dotSequence, color];
+    if (dotSequence.length > code.length) dotSequence = dotSequence.slice(-code.length);
+    if (dotSequence.length === code.length && dotSequence.every((c, i) => c === code[i])) {
+      quotesRevealed = !quotesRevealed;
+      dotSequence = [];
+    }
+  }
+
   let currentQuoteIndex = 0;
   let displayedText = '';
   let isTyping = true;
@@ -969,6 +982,43 @@
     background: rgba(74, 124, 247, 0.04);
   }
 
+  .quotes-collapsed {
+    padding-bottom: 1rem !important;
+  }
+
+  .quotes-collapsed .terminal-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .terminal-locked {
+    margin-left: auto;
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #aaa;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .terminal-dots .dot {
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .terminal-dots .dot:active {
+    transform: scale(0.8);
+  }
+
+  .quotes-content {
+    animation: quotesReveal 0.5s ease-out;
+  }
+
+  @keyframes quotesReveal {
+    from { opacity: 0; max-height: 0; transform: translateY(-10px); }
+    to { opacity: 1; max-height: 800px; transform: translateY(0); }
+  }
+
   /* ── Footer ── */
   footer {
     background: rgba(255, 255, 255, 0.8);
@@ -1293,33 +1343,40 @@
     </div>
   </div>
 
-  <!-- QUOTES SECTION -->
-  <div class="terminal-section">
+  <!-- QUOTES SECTION (hidden — click dots: red, green, yellow to toggle) -->
+  <div class="terminal-section" class:quotes-collapsed={!quotesRevealed}>
     <div class="terminal-header">
       <div class="terminal-dots">
-        <div class="dot red"></div>
-        <div class="dot yellow"></div>
-        <div class="dot green"></div>
+        <div class="dot red" on:click={() => handleDotClick('red')}></div>
+        <div class="dot yellow" on:click={() => handleDotClick('yellow')}></div>
+        <div class="dot green" on:click={() => handleDotClick('green')}></div>
       </div>
       <div class="terminal-title">~/personal/quotes.txt</div>
+      {#if !quotesRevealed}
+        <div class="terminal-locked">locked</div>
+      {/if}
     </div>
 
-    <div class="section-title">Just quotes for myself, but I hope it helps you too.</div>
-    <ul class="quotes-list">
-      <li>Do everything with the love, and the best.</li>
-      <li>Keep mind relax, stress will destroy us by time.</li>
-      <li>Keep update, knowledge is power.</li>
-      <li>Change your posture, change your attitude.</li>
-      <li>Sleep enough before doing anything.</li>
-      <li>Routines, busy-ness and hope matter a lot.</li>
-      <li>Proactive when needed.</li>
-      <li>Have a purpose at least in each period of life.</li>
-      <li>Find the fun in what you're doing.</li>
-      <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
-      <li>Free your mind from prison with knowledge.</li>
-      <li>What you think shapes who you are — it makes you better or worse.</li>
-      <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
-    </ul>
+    {#if quotesRevealed}
+      <div class="quotes-content">
+        <div class="section-title">Just quotes for myself, but I hope it helps you too.</div>
+        <ul class="quotes-list">
+          <li>Do everything with the love, and the best.</li>
+          <li>Keep mind relax, stress will destroy us by time.</li>
+          <li>Keep update, knowledge is power.</li>
+          <li>Change your posture, change your attitude.</li>
+          <li>Sleep enough before doing anything.</li>
+          <li>Routines, busy-ness and hope matter a lot.</li>
+          <li>Proactive when needed.</li>
+          <li>Have a purpose at least in each period of life.</li>
+          <li>Find the fun in what you're doing.</li>
+          <li>Balancing intelligence with emotional control, ensuring that rationality, not just insight, dictates how you act.</li>
+          <li>Free your mind from prison with knowledge.</li>
+          <li>What you think shapes who you are — it makes you better or worse.</li>
+          <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
+        </ul>
+      </div>
+    {/if}
   </div>
 </main>
 
