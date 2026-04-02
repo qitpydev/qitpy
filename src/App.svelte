@@ -27,6 +27,11 @@
 
   let quotesRevealed = false;
   let dotSequence = [];
+  let creedRevealed = false;
+  let creedInput = '';
+  let quotesInput = '';
+
+  const SECRET = '183492761';
 
   function handleDotClick(color) {
     const code = ['red', 'green', 'yellow'];
@@ -36,6 +41,16 @@
       quotesRevealed = !quotesRevealed;
       dotSequence = [];
     }
+  }
+
+  function checkCreedPassword() {
+    if (creedInput === SECRET) creedRevealed = true;
+    creedInput = '';
+  }
+
+  function checkQuotesPassword() {
+    if (quotesInput === SECRET) quotesRevealed = true;
+    quotesInput = '';
   }
 
   let currentQuoteIndex = 0;
@@ -1002,6 +1017,43 @@
     text-transform: uppercase;
   }
 
+  .section-lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  .terminal-lock-row {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0 0.5rem;
+  }
+
+  .lock-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(130, 140, 200, 0.4);
+    color: #9ba4c0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    width: 160px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+
+  .lock-input::placeholder {
+    color: rgba(130, 140, 200, 0.35);
+    letter-spacing: 1px;
+  }
+
+  .lock-input:focus {
+    border-bottom-color: rgba(130, 140, 200, 0.8);
+  }
+
   .terminal-dots .dot {
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -1315,6 +1367,17 @@
 
   <!-- WALL POSTER / MANIFESTO -->
   <div class="poster-section">
+    {#if !creedRevealed}
+      <div class="section-lock">
+        <input
+          type="password"
+          class="lock-input"
+          placeholder="enter password"
+          bind:value={creedInput}
+          on:keydown={(e) => e.key === 'Enter' && checkCreedPassword()}
+        />
+      </div>
+    {:else}
     <div class="poster-wrapper">
       <div class="buddha-container">
         <img src="images/06773e5a1bb9cd5d73fb3952b4f3ee9b.jpg" alt="Chill Buddha" class="buddha-image" />
@@ -1342,6 +1405,7 @@
         <div class="poster-glow"></div>
       </div>
     </div>
+    {/if}
   </div>
 
   <!-- QUOTES SECTION (hidden — click dots: red, green, yellow to toggle) -->
@@ -1357,6 +1421,17 @@
         <div class="terminal-locked">locked</div>
       {/if}
     </div>
+    {#if !quotesRevealed}
+      <div class="terminal-lock-row">
+        <input
+          type="password"
+          class="lock-input"
+          placeholder="enter password"
+          bind:value={quotesInput}
+          on:keydown={(e) => e.key === 'Enter' && checkQuotesPassword()}
+        />
+      </div>
+    {/if}
 
     {#if quotesRevealed}
       <div class="quotes-content">
