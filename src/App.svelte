@@ -21,7 +21,8 @@
     { text: "Be brutal with your effort, patient with your results.", author: "Unknown" },
     { text: "Champions aren't made in gyms. Champions are made from something deep inside.", author: "Muhammad Ali" },
     { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" },
-    { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" }
+    { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" },
+    { text: "Forget the mountain, just upgrade the gear. Fascination leads faster than any plan.", author: "qitpy" }
   ];
 
   let quotesRevealed = false;
@@ -1374,6 +1375,7 @@
           <li>Free your mind from prison with knowledge.</li>
           <li>What you think shapes who you are — it makes you better or worse.</li>
           <li>Unlock your unlimited potential by challenging yourself and recovering to grow day by day.</li>
+          <li>Forget the mountain, just upgrade the gear. Fascination leads faster than any plan.</li>
         </ul>
       </div>
     {/if}
