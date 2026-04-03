@@ -1232,8 +1232,9 @@
 
     <div class="bio-section">
       <h3>About Me</h3>
-      <p>DevOps → DevSecOps</p>
-      <p>Building secure, automated infrastructure. Bridging development, security, and operations — currently deepening my security expertise to deliver reliable and hardened systems at scale.</p>
+      <p>👤</p>
+      <p>Not a pro — becoming one.</p>
+      <p>A realist and a dreamer.</p>
     </div>
   </div>
 
