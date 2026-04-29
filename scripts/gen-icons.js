@@ -21,6 +21,7 @@ for (const { size, name } of sizes) {
 const pngBuf = await sharp(src).resize(256, 256).png({ compressionLevel: 9 }).toBuffer();
 const b64 = pngBuf.toString('base64');
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <circle cx="128" cy="128" r="128" fill="#0d0d22"/>
   <image href="data:image/png;base64,${b64}" width="256" height="256"/>
 </svg>`;
 writeFileSync(join(__dirname, '../public/favicon.svg'), svg);
