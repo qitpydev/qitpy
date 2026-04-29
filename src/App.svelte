@@ -1,6 +1,29 @@
 <!-- src/App.svelte — Beatless Theme -->
 <script>
   import { onMount } from 'svelte';
+  import CV from './CV.svelte';
+
+  let cvContainer;
+  let isGeneratingCV = false;
+
+  async function downloadCV() {
+    if (isGeneratingCV) return;
+    isGeneratingCV = true;
+    try {
+      const html2pdf = (await import('html2pdf.js')).default;
+      const opt = {
+        margin: 0,
+        filename: 'QuyetDoan_DevOps_CV.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, logging: false },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+      await html2pdf().set(opt).from(cvContainer).save();
+    } finally {
+      isGeneratingCV = false;
+    }
+  }
 
   let terminalText = '';
   const bootSequence = [
@@ -1146,6 +1169,7 @@
     background: transparent;
     color: #00f5ff;
     text-decoration: none;
+    border: none;
     border-radius: 0;
     font-size: 0.8rem;
     font-weight: 500;
@@ -1154,6 +1178,13 @@
     box-shadow: 0 0 12px rgba(0, 245, 255, 0.2), inset 0 0 0 1px rgba(0, 245, 255, 0.4);
     font-family: 'JetBrains Mono', monospace;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .cv-download-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
   }
 
   .cv-download-btn:hover {
@@ -1499,8 +1530,17 @@
 </main>
 
 <footer>
-  <a href="cv/download" class="cv-download-btn">
-    ↓ Download CV
-  </a>
+  <button class="cv-download-btn" on:click={downloadCV} disabled={isGeneratingCV}>
+    {isGeneratingCV ? '⏳ Generating...' : '↓ Download CV'}
+  </button>
   <p>© 2024 qitpy.com · Analog Hack 🤍</p>
 </footer>
+
+<!-- Offscreen CV render target — must not be display:none for html2canvas to capture it -->
+<div
+  bind:this={cvContainer}
+  style="position:fixed;top:-9999px;left:-9999px;z-index:-1;pointer-events:none;"
+  aria-hidden="true"
+>
+  <CV />
+</div>
