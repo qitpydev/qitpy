@@ -114,6 +114,12 @@
     box-sizing: border-box;
   }
 
+  :global(.pdf-export) .cv-root {
+    min-height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   /* ── Header ── */
   .cv-header {
     text-align: center;

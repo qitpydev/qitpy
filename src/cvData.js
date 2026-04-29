@@ -38,13 +38,6 @@ export const cvData = {
   experience: [
     {
       title: 'DevOps Engineer',
-      company: 'CMC Global Company Limited',
-      period: 'Apr 2026 – Present (1 month)',
-      description: '',
-      bullets: []
-    },
-    {
-      title: 'DevOps Engineer',
       company: 'TCOM Corporation',
       period: 'Mar 2026 – Mar 2026 (1 month)',
       description: '',

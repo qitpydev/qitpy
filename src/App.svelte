@@ -11,6 +11,7 @@
 
     // Mount CV temporarily onto body at opacity:0 so html2canvas can render it
     const tempEl = document.createElement('div');
+    tempEl.className = 'pdf-export';
     Object.assign(tempEl.style, {
       position: 'absolute',
       top: '0',
@@ -29,7 +30,7 @@
       const time = now.toTimeString().slice(0, 8).replace(/:/g, '');
       await html2pdf()
         .set({
-          margin: 0,
+          margin: [64, 0, 64, 0],
           filename: `QuyetDoan_DevOps_CV_${today}_${time}.pdf`,
           image: { type: 'jpeg', quality: 0.98 },
           html2canvas: { scale: 2, useCORS: true, logging: false, width: 794 },
