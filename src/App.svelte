@@ -349,14 +349,6 @@
     font-family: 'JetBrains Mono', monospace;
   }
 
-  .bio-section h3 {
-    color: #e0e8ff;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-
   .bio-section p {
     margin-bottom: 1rem;
     color: #8892b0;
@@ -1311,7 +1303,6 @@
     </div>
 
     <div class="bio-section">
-      <h3>About Me</h3>
       <p>👤</p>
       <p>Not a pro — becoming one.</p>
       <p>A realist and a dreamer.</p>
