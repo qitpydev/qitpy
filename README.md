@@ -1,28 +1,51 @@
-<h1 align="center">Hello<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="60px"> I'm Quyet - Pythonista</h1>
+# Quyet Doan
 
+DevSecOps Engineer focused on cloud infrastructure, delivery automation, and secure operations.
 
- <br/>
+I started as a software developer and moved into DevOps, so I work with a developer-first mindset: bridging application delivery, infrastructure, CI/CD, and operations. My main cloud platform is AWS, with hands-on experience across Azure, GCP, DigitalOcean, and VPS environments.
 
-## 👨🏻‍💻 About Me:
+## Current Role
 
-- 🙋‍♂️ All about me is at **[My Website](https://qitpydev.github.io/qitpy/)**
+**DevOps Engineer, CMC Global Company Limited (HN)**  
+Apr 2026 - Present
 
-- 🔭 My main weapon: `Python`.
+- Leading 3 DevOps engineers on an on-premise to AWS EKS migration project.
+- Supporting project bidding with technical documentation and task breakdowns.
+- Designing the target architecture and GitHub/AWS delivery workflow.
+- Planning GitHub Enterprise Server (GHES) setup within project scope.
 
-- ️️️🎧 I'm working at: `DevOps`
+## Core Strengths
 
-- 🌱 My goals at this time `improve DevOps skills`
+- **Cloud & Kubernetes:** AWS, EKS, ECS, VPC, RDS, S3, CloudFront, EC2, ALB, Route53, Docker, Kubernetes.
+- **CI/CD & IaC:** GitHub Actions, Bitbucket Pipeline, Azure DevOps Pipeline, GitLab CI, Terraform, ArgoCD.
+- **Monitoring:** Grafana, Prometheus, Loki, Uptime Kuma, CloudWatch.
+- **Security Tools:** AWS WAF, Cloudflare WAF, SonarQube, Keycloak, Infisical Secrets, CrowdSec, Certbot, IAM.
+- **Programming:** Python, JavaScript, Bash.
+- **Databases:** PostgreSQL, MySQL, MongoDB, Qdrant, ChromaDB.
 
-- ⚡ My favorite quote: `Follow the while rabbit`
+## Experience Snapshot
 
-## ❤️ Let's get connected:
+- Architected and managed cloud infrastructure for 10+ projects, mostly on AWS.
+- Designed CI/CD pipelines for containerized services across multiple platforms.
+- Orchestrated infrastructure provisioning with Terraform.
+- Supported cost optimization, monitoring, logging, and reliability improvements.
+- Owned end-to-end infrastructure strategy as the sole DevOps engineer for a 10-developer product team.
+- Integrated AI-driven workflows to speed up troubleshooting, documentation, and operational tasks.
 
-<p><a href="https://twitter.com/qitpy" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"  height="30px"/></a> <a href="https://www.linkedin.com/in/qitpy/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"  height="30px"/></a><a href="https://www.instagram.com/van_quyet_210/" target="_blank"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  height="30px"/></a><a href="https://www.facebook.com/qitpy/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-%230077B5?style=for-the-badge&logo=facebook&logoColor=white"  height="30px"/></a>
-</p>
+## Site
 
-## 📊 My GitHub Data:
+This repository contains my personal Svelte/Vite website and dynamic CV generator.
 
-<div align="center">
-  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=qitpy&show_icons=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qitpy" />
-</div>
+```bash
+npm run dev
+npm run build
+npm run preview
+```
+
+The CV content is maintained in `src/cvData.js`, rendered by `src/CV.svelte`, and exported through the site using `html2pdf.js`.
+
+## Contact
+
+- Email: `qitpydev@gmail.com`
+- LinkedIn: [linkedin.com/in/qitpy](https://www.linkedin.com/in/qitpy/)
+- GitHub: [github.com/qitpydev](https://github.com/qitpydev)
