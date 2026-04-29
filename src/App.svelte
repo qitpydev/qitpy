@@ -35,6 +35,7 @@
           image: { type: 'jpeg', quality: 0.98 },
           html2canvas: { scale: 2, useCORS: true, logging: false, width: 794 },
           jsPDF: { unit: 'px', format: [794, 1123], orientation: 'portrait' },
+          enableLinks: true,
           pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
         })
         .from(tempEl.firstElementChild)

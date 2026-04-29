@@ -5,11 +5,11 @@ export const cvData = {
     email: 'qitpydev@gmail.com',
     phone: '+84-868-260-254',
     location: 'Vietnam',
-    linkedin: 'linkedin.com/in/qitpy',
+    linkedin: 'www.linkedin.com/in/qitpy',
     github: 'github.com/qitpydev',
   },
 
-  summary: `DevOps Engineer with nearly 5 years of experience in tech, including 3 years focused on DevOps and cloud infrastructure. Started as a software developer, which helps me work closely with dev teams and understand CI/CD requirements. Primarily work with AWS, with hands-on experience in Azure and GCP. Contributed to 10+ projects, focusing on cost optimization, automation, and system reliability. Currently learning cloud security, actively using AI tools to improve productivity, and growing toward a DevSecOps role.`,
+  summary: `DevOps Engineer with nearly 5 years of technology experience, including 3 years focused on DevOps and cloud infrastructure. Started as a software developer, bringing a developer-first mindset that bridges application delivery and operations. Primarily work with AWS, with hands-on experience in Azure and GCP. Contributed to 10+ projects by architecting CI/CD, improving reliability, optimizing cost, and integrating AI-driven workflows to accelerate deployment troubleshooting and operational automation. Growing toward DevSecOps with active focus on cloud security and secure delivery practices.`,
 
   skills: [
     {
@@ -20,9 +20,10 @@ export const cvData = {
         { label: 'CI/CD', detail: 'GitHub Actions, Bitbucket Pipeline, Azure DevOps Pipeline' },
         { label: 'Infrastructure as Code', detail: 'Terraform, ArgoCD' },
         { label: 'Monitoring', detail: 'Grafana, Prometheus, Loki, Uptime Kuma' },
+        { label: 'Security Tools', detail: 'AWS WAF, Cloudflare WAF, SonarQube, Keycloak, Infisical Secrets, CrowdSec, Certbot, IAM' },
         { label: 'Database', detail: 'PostgreSQL, MySQL, MongoDB, Qdrant, ChromaDB' },
         { label: 'Self-hosted', detail: 'Nginx, Apache, WordPress, Docker Compose, Dockge, Portainer, Confluent Kafka' },
-        { label: 'Other', detail: 'Kubernetes, Docker, Claude Code, FastAPI, SonarQube, AWS Copilot CLI, Keycloak' },
+        { label: 'Other', detail: 'Kubernetes, Docker, AI-assisted engineering workflows, FastAPI, AWS Copilot CLI' },
       ]
     },
     {
@@ -38,6 +39,18 @@ export const cvData = {
   experience: [
     {
       title: 'DevOps Engineer',
+      company: 'CMC Global Company Limited (HN)',
+      period: 'Apr 2026 – Present',
+      description: 'Current DevOps role focused on cloud infrastructure, delivery automation, and operational reliability',
+      bullets: [
+        'Leading 3 DevOps engineers on an on-premise to AWS EKS migration project',
+        'Supporting project bidding with technical documentation and task breakdowns',
+        'Designing the target architecture and GitHub/AWS delivery workflow',
+        'Planning GitHub Enterprise Server (GHES) setup within project scope',
+      ]
+    },
+    {
+      title: 'DevOps Engineer',
       company: 'TCOM Corporation',
       period: 'Mar 2026 – Mar 2026 (1 month)',
       description: '',
@@ -46,7 +59,7 @@ export const cvData = {
         'Designed a multi-layer security architecture for a self-hosted hardened Nginx proxy, including Anti-DDoS, rate limiting, GeoIP whitelisting, and CrowdSec Lua Bouncer',
         'Evaluated and adopted self-hosted documentation tools supporting Markdown (Outline, Docmost, MkDocs, BookStack, AppFlowy); adopted Docmost for organizational use',
         'Implemented automatic TLS certificate renewal for domains using Certbot',
-        'Leveraged AI tools (Claude Code) to accelerate development and operational workflows',
+        'Integrated AI-driven workflows to accelerate troubleshooting, documentation, and operational automation',
         'Configured Fluentd agents to forward logs from EC2 to CloudWatch and S3',
         'Gained hands-on experience with Elastic Beanstalk and AWS Support cases',
       ]
@@ -57,12 +70,12 @@ export const cvData = {
       period: 'Jun 2023 – Mar 2026 (2 years 9 months)',
       description: '',
       bullets: [
-        'Built and managed cloud infrastructure for 10+ projects, mostly on AWS, with some work on Azure, GCP, DigitalOcean, and VPS',
-        'Set up CI/CD pipelines using Bitbucket Pipeline, Azure DevOps, GitHub Actions, and GitLab CI for containerized services',
-        'Set up monitoring, logs, and alerts for websites, services, and databases using Grafana, Prometheus, Loki, Uptime Kuma',
-        'Used Terraform to provision infrastructure on all cloud projects',
+        'Architected and managed cloud infrastructure for 10+ projects, mostly on AWS, with some work on Azure, GCP, DigitalOcean, and VPS',
+        'Designed CI/CD pipelines using Bitbucket Pipeline, Azure DevOps, GitHub Actions, and GitLab CI for containerized services',
+        'Built monitoring, logs, and alerts for websites, services, and databases using Grafana, Prometheus, Loki, Uptime Kuma',
+        'Orchestrated infrastructure provisioning across cloud projects using Terraform',
         'Reduced cloud costs by finding the right resource sizes and setting up auto-scaling',
-        'Worked with dev teams to fix infrastructure issues and improve system speed',
+        'Bridged development and operations teams to resolve infrastructure issues and improve application performance',
         'Migrated PHP websites from AWS to DigitalOcean to reduce costs',
         'Applied Cloudflare WAF to protect a compromised vanilla PHP website on DigitalOcean',
         'Applied AWS WAF to protect a compromised WordPress website on EC2',
@@ -75,10 +88,11 @@ export const cvData = {
       title: 'DevOps Engineer',
       company: 'Beelabs Product Team',
       period: 'Jan 2025 – Jul 2025 (7 months)',
-      description: 'Solo DevOps work with team of 10 developers',
+      description: 'Sole DevOps engineer supporting a team of 10 developers',
       bullets: [
+        'Owned the end-to-end infrastructure strategy, delivery pipeline, and production readiness plan as the sole DevOps engineer',
         'Migrated self-hosted platform from Docker Containers on EC2 to AWS EKS for better scaling and production readiness',
-        'Built and maintained multiple environment EKS clusters and infrastructure using Terraform',
+        'Architected and maintained multiple environment EKS clusters and infrastructure using Terraform',
         'Applied Karpenter to save cost on Worker Nodes for non-production clusters and enable auto-scaling',
         'Applied ArgoCD to practice GitOps in team culture',
         'Applied GitHub Actions Reusable Workflow to optimize CI/CD pipelines across many microservices',
@@ -114,8 +128,8 @@ export const cvData = {
 
   additional: [
     'Languages: Vietnamese (native), English (working level)',
-    'Currently learning: Cloud Security, Basic Security, applying AI at work',
-    'AI tools: Actively using and investing in Claude Code Max plan to improve work speed',
+    'Currently learning: Cloud Security, Basic Security, applying AI-driven workflows at work',
+    'AI workflows: Applying AI to reduce manual troubleshooting, improve documentation, and speed up operational tasks',
     'Interests: Security, MLOps, IoT, Humanoid Robotics',
   ],
 };

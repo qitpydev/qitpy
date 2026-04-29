@@ -12,7 +12,9 @@
       {cv.contact.email} &nbsp;|&nbsp; {cv.contact.phone} &nbsp;|&nbsp; {cv.contact.location}
     </p>
     <p class="cv-contact">
-      LinkedIn: {cv.contact.linkedin} &nbsp;|&nbsp; GitHub: {cv.contact.github}
+      LinkedIn: <a href={`https://${cv.contact.linkedin}`}>{cv.contact.linkedin}</a>
+      &nbsp;|&nbsp;
+      GitHub: <a href={`https://${cv.contact.github}`}>{cv.contact.github}</a>
     </p>
   </div>
 
@@ -55,11 +57,13 @@
           <em>{job.company}</em> &nbsp;|&nbsp; {job.period}
           {#if job.description}<br/><em class="entry-desc">{job.description}</em>{/if}
         </div>
-        <ul>
-          {#each job.bullets as b}
-            <li>{b}</li>
-          {/each}
-        </ul>
+        {#if job.bullets.length}
+          <ul>
+            {#each job.bullets as b}
+              <li>{b}</li>
+            {/each}
+          </ul>
+        {/if}
       </div>
     {/each}
   </section>
@@ -144,6 +148,11 @@
     color: #444444;
     font-size: 9.5pt;
     margin: 2px 0;
+  }
+
+  .cv-contact a {
+    color: inherit;
+    text-decoration: none;
   }
 
   /* ── Section headers ── */
