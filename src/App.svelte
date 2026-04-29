@@ -66,7 +66,7 @@
     { text: "Champions aren't made in gyms. Champions are made from something deep inside.", author: "Muhammad Ali" },
     { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" },
     { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" },
-    { text: "Forget the mountain, just upgrade the gear. Fascination leads faster than any plan.", author: "qitpy" }
+    { text: "Forget the mountain, just upgrade the gear. Fascination leads faster than any plan.", author: "makeitbetter" }
   ];
 
   let quotesRevealed = false;
@@ -244,17 +244,6 @@
     margin: 0 auto;
     line-height: 1.8;
     letter-spacing: 0.5px;
-  }
-
-  .main-quote .attribution {
-    display: block;
-    margin-top: 0.8rem;
-    font-size: 0.9rem;
-    color: #00f5ff;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
   }
 
   /* ── Main ── */
@@ -1308,8 +1297,7 @@
 
 <header>
   <div class="main-quote">
-    "Do you trust me even without understanding me?"
-    <span class="attribution">— Beatless</span>
+    "Bound by journey, blessed by luck."
   </div>
 </header>
 
@@ -1491,7 +1479,7 @@
             <p class="poster-line">All are born and die alike, no one is superior</p>
             <p class="poster-line highlight">I compare myself to no one</p>
           </div>
-          <div class="poster-signature">— qitpy</div>
+          <div class="poster-signature">— makeitbetter</div>
         </div>
 
         <div class="poster-glow"></div>
@@ -1553,5 +1541,5 @@
   <button class="cv-download-btn" on:click={downloadCV} disabled={isGeneratingCV}>
     {isGeneratingCV ? '⏳ Generating...' : '↓ Download CV'}
   </button>
-  <p>© 2024 qitpy.com · Analog Hack 🤍</p>
+  <p>© 2024 🤖🔗🍀 · Analog Hack 🤍</p>
 </footer>
