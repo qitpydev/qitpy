@@ -1,6 +1,6 @@
 export const cvData = {
   name: 'QUYET DOAN',
-  title: 'DevOps Engineer',
+  title: 'DevSecOps Engineer',
   contact: {
     email: 'qitpydev@gmail.com',
     phone: '+84-868-260-254',
@@ -38,8 +38,31 @@ export const cvData = {
   experience: [
     {
       title: 'DevOps Engineer',
+      company: 'CMC Global Company Limited',
+      period: 'Apr 2026 – Present (1 month)',
+      description: '',
+      bullets: []
+    },
+    {
+      title: 'DevOps Engineer',
+      company: 'TCOM Corporation',
+      period: 'Mar 2026 – Mar 2026 (1 month)',
+      description: '',
+      bullets: [
+        'Set up an on-premise monitoring system using Prometheus, Grafana, Node Exporter, Netdata, and Postgres Exporter',
+        'Designed a multi-layer security architecture for a self-hosted hardened Nginx proxy, including Anti-DDoS, rate limiting, GeoIP whitelisting, and CrowdSec Lua Bouncer',
+        'Evaluated and adopted self-hosted documentation tools supporting Markdown (Outline, Docmost, MkDocs, BookStack, AppFlowy); adopted Docmost for organizational use',
+        'Implemented automatic TLS certificate renewal for domains using Certbot',
+        'Leveraged AI tools (Claude Code) to accelerate development and operational workflows',
+        'Configured Fluentd agents to forward logs from EC2 to CloudWatch and S3',
+        'Gained hands-on experience with Elastic Beanstalk and AWS Support cases',
+      ]
+    },
+    {
+      title: 'DevOps Engineer',
       company: 'SmartDev LLC - Outsourcing',
-      period: 'Jun 2023 – Present (2.5 years)',
+      period: 'Jun 2023 – Mar 2026 (2 years 9 months)',
+      description: '',
       bullets: [
         'Built and managed cloud infrastructure for 10+ projects, mostly on AWS, with some work on Azure, GCP, DigitalOcean, and VPS',
         'Set up CI/CD pipelines using Bitbucket Pipeline, Azure DevOps, GitHub Actions, and GitLab CI for containerized services',
@@ -55,20 +78,6 @@ export const cvData = {
         'Supported Pre-sale team to plan and design system documentation for small projects',
       ]
     },
-    {
-      title: 'Software Developer',
-      company: 'SmartDev LLC - Outsourcing',
-      period: 'Jun 2021 – Jun 2023 (2 years)',
-      bullets: [
-        'Started as Java Back-end developer building Enterprise Internal Web Application with AI recommendation system for matching employees to projects',
-        'Worked as Python Developer solo with US clients to build end-to-end automation tools using AWS ECS, Lambda, RDS, Atlas MongoDB, Airflow, FastAPI',
-        'Developed Enterprise Internal Bot to automate NDA signing contracts and generate Job Description files',
-        'Started DevOps role building Enterprise Internal microservices platform using AWS EKS, Terraform, FluxCD, Next.js, NestJS, Java',
-      ]
-    },
-  ],
-
-  projects: [
     {
       title: 'DevOps Engineer',
       company: 'Beelabs Product Team',
@@ -94,7 +103,21 @@ export const cvData = {
         'Processed and mapped job data to better structure and saved into database',
       ]
     },
+    {
+      title: 'Software Developer',
+      company: 'SmartDev LLC - Outsourcing',
+      period: 'Jun 2021 – Jun 2023 (2 years)',
+      description: '',
+      bullets: [
+        'Started as Java Back-end developer building Enterprise Internal Web Application with AI recommendation system for matching employees to projects',
+        'Worked as Python Developer solo with US clients to build end-to-end automation tools using AWS ECS, Lambda, RDS, Atlas MongoDB, Airflow, FastAPI',
+        'Developed Enterprise Internal Bot to automate NDA signing contracts and generate Job Description files',
+        'Started DevOps role building Enterprise Internal microservices platform using AWS EKS, Terraform, FluxCD, Next.js, NestJS, Java',
+      ]
+    },
   ],
+
+  education: 'Da Nang University of Technology — Information Technology, 2017–2021',
 
   additional: [
     'Languages: Vietnamese (native), English (working level)',

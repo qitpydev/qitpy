@@ -51,7 +51,10 @@
     {#each cv.experience as job}
       <div class="entry">
         <div class="entry-title">{job.title}</div>
-        <div class="entry-meta"><em>{job.company}</em> &nbsp;|&nbsp; {job.period}</div>
+        <div class="entry-meta">
+          <em>{job.company}</em> &nbsp;|&nbsp; {job.period}
+          {#if job.description}<br/><em class="entry-desc">{job.description}</em>{/if}
+        </div>
         <ul>
           {#each job.bullets as b}
             <li>{b}</li>
@@ -61,26 +64,16 @@
     {/each}
   </section>
 
-  <!-- SIDE PROJECTS -->
+  <!-- EDUCATION -->
   <section>
     <div class="cv-section-head">
-      <h2>Side Projects</h2>
+      <h2>Education</h2>
       <hr />
     </div>
-    {#each cv.projects as proj}
-      <div class="entry">
-        <div class="entry-title">{proj.title}</div>
-        <div class="entry-meta">
-          <em>{proj.company}</em> &nbsp;|&nbsp; {proj.period}
-          {#if proj.description}<br/><em class="entry-desc">{proj.description}</em>{/if}
-        </div>
-        <ul>
-          {#each proj.bullets as b}
-            <li>{b}</li>
-          {/each}
-        </ul>
-      </div>
-    {/each}
+    <div class="skill-row">
+      <span class="skill-bullet">&bull;</span>
+      <span>{cv.education}</span>
+    </div>
   </section>
 
   <!-- ADDITIONAL INFORMATION -->
@@ -110,13 +103,13 @@
   }
 
   .cv-root {
-    width: 210mm;
-    min-height: 297mm;
-    padding: 16mm 20mm;
+    width: 794px;
+    min-height: 1123px;
+    padding: 64px 72px 64px 72px;
     background: #ffffff;
     color: #1a1a1a;
     font-family: Calibri, 'Segoe UI', Arial, sans-serif;
-    font-size: 10.5pt;
+    font-size: 13.5px;
     line-height: 1.5;
     box-sizing: border-box;
   }

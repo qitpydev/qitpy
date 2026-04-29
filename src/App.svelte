@@ -3,24 +3,44 @@
   import { onMount } from 'svelte';
   import CV from './CV.svelte';
 
-  let cvContainer;
   let isGeneratingCV = false;
 
   async function downloadCV() {
     if (isGeneratingCV) return;
     isGeneratingCV = true;
+
+    // Mount CV temporarily onto body at opacity:0 so html2canvas can render it
+    const tempEl = document.createElement('div');
+    Object.assign(tempEl.style, {
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      opacity: '0',
+      pointerEvents: 'none',
+      zIndex: '-9999',
+    });
+    document.body.appendChild(tempEl);
+    const cvInstance = new CV({ target: tempEl });
+
     try {
       const html2pdf = (await import('html2pdf.js')).default;
-      const opt = {
-        margin: 0,
-        filename: 'QuyetDoan_DevOps_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, logging: false },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-      };
-      await html2pdf().set(opt).from(cvContainer).save();
+      const now = new Date();
+      const today = now.toISOString().slice(0, 10).replace(/-/g, '');
+      const time = now.toTimeString().slice(0, 8).replace(/:/g, '');
+      await html2pdf()
+        .set({
+          margin: 0,
+          filename: `QuyetDoan_DevOps_CV_${today}_${time}.pdf`,
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true, logging: false, width: 794 },
+          jsPDF: { unit: 'px', format: [794, 1123], orientation: 'portrait' },
+          pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        })
+        .from(tempEl.firstElementChild)
+        .save();
     } finally {
+      cvInstance.$destroy();
+      document.body.removeChild(tempEl);
       isGeneratingCV = false;
     }
   }
@@ -305,7 +325,6 @@
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
   }
 
@@ -1535,12 +1554,3 @@
   </button>
   <p>© 2024 qitpy.com · Analog Hack 🤍</p>
 </footer>
-
-<!-- Offscreen CV render target — must not be display:none for html2canvas to capture it -->
-<div
-  bind:this={cvContainer}
-  style="position:fixed;top:-9999px;left:-9999px;z-index:-1;pointer-events:none;"
-  aria-hidden="true"
->
-  <CV />
-</div>
