@@ -1406,6 +1406,9 @@
       <div class="gif-card">
         <img src="images/unnamed.png" alt="Motivation" />
       </div>
+      <div class="gif-card">
+        <img src="images/ranger_training.png" alt="Ranger Training" />
+      </div>
     </div>
   </div>
 
