@@ -1481,6 +1481,9 @@
       <div class="gif-card" on:click={() => openLightbox('images/ranger_training.png', 'Ranger Training')}>
         <img src="images/ranger_training.png" alt="Ranger Training" />
       </div>
+      <div class="gif-card" on:click={() => openLightbox('images/fearless.png', 'Fearless')}>
+        <img src="images/fearless.png" alt="Fearless" />
+      </div>
     </div>
   </div>
 
