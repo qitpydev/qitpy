@@ -150,7 +150,5 @@
     <div class="scroll-rod bottom"></div>
     <div class="scroll-tassel"></div>
   </div>
-  <div class="scroll-translation">
-    "In heaven and on earth, I alone am the honored one"
-  </div>
+
 </div>
