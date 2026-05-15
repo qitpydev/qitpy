@@ -9,4 +9,5 @@ export const motivationQuotes = [
   { text: "Pain is temporary. Quitting lasts forever.", author: "Lance Armstrong" },
   { text: "Any sufficiently advanced technology is indistinguishable from magic.", author: "Arthur C. Clarke" },
   { text: "Forget the mountain, just upgrade the gear. Fascination leads faster than any plan.", author: "makeitbetter" },
+  { text: "To stay sharp, you must stimulate and engage every region of the brain and every sense.", author: "Unknown" },
 ];
