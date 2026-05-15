@@ -255,6 +255,9 @@
     <button type="button" class="gif-card" on:click={() => openLightbox('images/valhalla.png', 'Valhalla')}>
       <img src="images/valhalla.png" alt="Valhalla" />
     </button>
+    <button type="button" class="gif-card" on:click={() => openLightbox('images/vikings.png', 'Vikings')}>
+      <img src="images/vikings.png" alt="Vikings" />
+    </button>
   </div>
 </div>
 
