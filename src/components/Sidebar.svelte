@@ -84,6 +84,18 @@
     display: block;
   }
 
+  .logo-motto {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    color: #00f5ff;
+    letter-spacing: 3px;
+    margin-top: 0.6rem;
+    display: block;
+    opacity: 0.75;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
+  }
+
   /* ── Nav ── */
   nav {
     flex: 1;
@@ -182,6 +194,7 @@
   <div class="sidebar-logo">
     <span class="logo-text">qitpy</span>
     <span class="logo-sub">// personal space</span>
+    <span class="logo-motto">valhalla calling me</span>
   </div>
 
   <nav>
