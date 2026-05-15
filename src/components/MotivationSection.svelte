@@ -249,6 +249,9 @@
     <button type="button" class="gif-card" on:click={() => openLightbox('images/fearless.png', 'Fearless')}>
       <img src="images/fearless.png" alt="Fearless" />
     </button>
+    <button type="button" class="gif-card" on:click={() => openLightbox('images/seven_kings_must_die.png', 'Seven Kings Must Die')}>
+      <img src="images/seven_kings_must_die.png" alt="Seven Kings Must Die" />
+    </button>
   </div>
 </div>
 
