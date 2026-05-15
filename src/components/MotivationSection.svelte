@@ -252,6 +252,9 @@
     <button type="button" class="gif-card" on:click={() => openLightbox('images/seven_kings_must_die.png', 'Seven Kings Must Die')}>
       <img src="images/seven_kings_must_die.png" alt="Seven Kings Must Die" />
     </button>
+    <button type="button" class="gif-card" on:click={() => openLightbox('images/valhalla.png', 'Valhalla')}>
+      <img src="images/valhalla.png" alt="Valhalla" />
+    </button>
   </div>
 </div>
 
